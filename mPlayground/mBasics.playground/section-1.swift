@@ -6,6 +6,7 @@ import UIKit
 let mVersion = 1.0
 let mFloat: Float = -33.861382
 var mDouble = 1.3
+var mCount = 1
 
 
 // Strings
@@ -16,9 +17,10 @@ mString += " \(mVersion)"
 mString = "cat "
 mString += "fish"
 mString = NSString(format: "%.2f", mFloat)
+println("hello" + "test")
 
 
-// Numbers
+// Number conversions
 let stringNumber = "123"
 var mInt = stringNumber.toInt()!
 var someNumber: Int = stringNumber.toInt()!
@@ -39,7 +41,7 @@ mArray += ["orange", "lemon"]
 println(mArray)
 
 
-// Control
+// Control flow
 var total: String = ""
 for item in mArray {
   total += item
@@ -57,12 +59,16 @@ number
 
 // Optional
 var optionalString: String? = "Hello"
-optionalString = nil;
+//optionalString = nil;
 
 if let name = optionalString {
   var result = name
   println(result)
 }
+
+// Nil Coalescing Operator
+var x: String = optionalString ?? "sentinel"
+
 
 // Switch
 var test = "cat"
@@ -76,14 +82,5 @@ switch test {
   default:
     println("huh")
 }
-
-println("hello" + "test")
-
-
-// Test
-func testFunction() {}
-
-testFunction()
-
 
 
