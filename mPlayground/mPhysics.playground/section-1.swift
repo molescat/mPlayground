@@ -2,7 +2,7 @@
 
 import UIKit
 
-var str = "Hello, playground"
+// Currently not working!
 
 var animator: UIDynamicAnimator!
 var gravity: UIGravityBehavior!
