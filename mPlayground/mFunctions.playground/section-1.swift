@@ -78,11 +78,19 @@ hasAnyMatches(numbers, lessThanTen)
 
 
 // ---------------------------------------- Closure
-var numbersToMap = [10, 12, 8, 16]
-let answer = numbersToMap.map({
+var strangeNumbers = [10, 100, 8, 16]
+
+let doubledNumbers = strangeNumbers.map({
   (number: Int) -> Int in
   let result = 2 * number
   return result
 })
-answer
+doubledNumbers
 
+let trippledNumbers = strangeNumbers.map({ number in
+  3 * number })
+trippledNumbers
+
+
+let sortedNumbers = sorted(strangeNumbers) { $0 > $1 }
+sortedNumbers

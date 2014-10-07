@@ -45,6 +45,7 @@
 		334F453119DB6C14005774CF /* mAlgorithm.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = mAlgorithm.playground; sourceTree = "<group>"; };
 		334F453219DB6C14005774CF /* mBasics.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = mBasics.playground; sourceTree = "<group>"; };
 		334F453319DB6C14005774CF /* mUIKit.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = mUIKit.playground; sourceTree = "<group>"; };
+		33A97A8D19E49698008E9617 /* mClasses.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = mClasses.playground; sourceTree = "<group>"; };
 		33EBC4E319E344CF0096855B /* mContainers.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = mContainers.playground; sourceTree = "<group>"; };
 		33EBC4E419E3454F0096855B /* mFunctions.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = mFunctions.playground; sourceTree = "<group>"; };
 		33EBC4E519E347590096855B /* mControlFlow.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = mControlFlow.playground; sourceTree = "<group>"; };
@@ -100,6 +101,7 @@
 				334F453219DB6C14005774CF /* mBasics.playground */,
 				33EBC4E519E347590096855B /* mControlFlow.playground */,
 				33EBC4E419E3454F0096855B /* mFunctions.playground */,
+				33A97A8D19E49698008E9617 /* mClasses.playground */,
 				33EBC4E319E344CF0096855B /* mContainers.playground */,
 				334F453319DB6C14005774CF /* mUIKit.playground */,
 				334F451619DB6BAD005774CF /* Images.xcassets */,
