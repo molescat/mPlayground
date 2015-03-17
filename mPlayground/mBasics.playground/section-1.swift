@@ -1,4 +1,5 @@
-// Playground - noun: a place where people can play
+// Playground - Basics
+// Plain old types, strings, and optionals
 
 import UIKit
 
@@ -28,7 +29,7 @@ var someNumber: Int = stringNumber.toInt()!
 
 // ---------------------------------------- Optional
 var optionalString: String? = "Hello"
-//optionalString = nil;
+//optionalString = nil
 
 if let name = optionalString {
   var result = name
@@ -37,5 +38,4 @@ if let name = optionalString {
 
 // Nil Coalescing Operator
 var x: String = optionalString ?? "sentinel"
-
 
