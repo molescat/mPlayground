@@ -1,8 +1,18 @@
-// Playground - noun: a place where people can play
+// Playground - Control Flow
 
 import UIKit
 
 var mStringArray = ["dog", "cat", "fish"]
+
+//  ---------------------------------------- if
+var temperatureInFahrenheit = 30
+if temperatureInFahrenheit <= 32 {
+  println("It's freezing")
+} else if temperatureInFahrenheit > 86 {
+  println("It's damn hot")
+} else {
+  println("It's meh")
+}
 
 //  ---------------------------------------- iteration
 var concat: String = ""
@@ -22,7 +32,7 @@ total
 
 
 total = 0
-for i in 1..<10
+for i in 1..<10  // Half open
 {
   total += i
 }
