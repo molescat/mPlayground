@@ -31,6 +31,8 @@ var someNumber: Int = stringNumber.toInt()!
 var optionalString: String? = "Hello"
 //optionalString = nil
 
+//let bang = optionalString!
+
 if let name = optionalString {
   var result = name
   println(result)
