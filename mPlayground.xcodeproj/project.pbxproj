@@ -46,6 +46,7 @@
 		334F453219DB6C14005774CF /* mBasics.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = mBasics.playground; sourceTree = "<group>"; };
 		334F453319DB6C14005774CF /* mUIKit.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = mUIKit.playground; sourceTree = "<group>"; };
 		33A97A8D19E49698008E9617 /* mClasses.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = mClasses.playground; sourceTree = "<group>"; };
+		33B7FF251ABA8B9A003E4A8B /* mAnimation.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = mAnimation.playground; sourceTree = "<group>"; };
 		33EBC4E319E344CF0096855B /* mContainers.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = mContainers.playground; sourceTree = "<group>"; };
 		33EBC4E419E3454F0096855B /* mFunctions.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = mFunctions.playground; sourceTree = "<group>"; };
 		33EBC4E519E347590096855B /* mControlFlow.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = mControlFlow.playground; sourceTree = "<group>"; };
@@ -104,6 +105,7 @@
 				33A97A8D19E49698008E9617 /* mClasses.playground */,
 				33EBC4E319E344CF0096855B /* mContainers.playground */,
 				334F453319DB6C14005774CF /* mUIKit.playground */,
+				33B7FF251ABA8B9A003E4A8B /* mAnimation.playground */,
 				334F451619DB6BAD005774CF /* Images.xcassets */,
 				334F451819DB6BAD005774CF /* LaunchScreen.xib */,
 				334F450919DB6BAD005774CF /* Supporting Files */,
