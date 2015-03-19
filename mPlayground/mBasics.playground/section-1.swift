@@ -1,13 +1,17 @@
 // Playground - Basics
-// Plain old types, strings, and optionals
+// Plain old types, strings, casts and optionals
 
 import UIKit
 
-// ---------------------------------------- Plain types
+// ---------------------------------------- Plain types, const and variables
 let mVersion = 1.0
-let mFloat: Float = -33.861382
-var mDouble = 1.3
+let mFloat: Float = -33.3
+var mDouble = -33.3
 var mCount = 1
+var mCounter: UInt64 = 1
+var mBool: Bool = true
+let mUnicode = "\u{1F425}"
+let mAcute: Character = "\u{E9}"
 
 
 // ---------------------------------------- Strings
@@ -18,13 +22,25 @@ mString += " \(mVersion)"
 mString = "cat "
 mString += "fish"
 mString = NSString(format: "%.2f", mFloat)
-println("hello" + "test")
+println("hello " + mString)
+println("Welcome \(mString)")
+println("String length \(countElements(mString))")
 
 
 // ---------------------------------------- Number conversions
 let stringNumber = "123"
 var mInt = stringNumber.toInt()!
 var someNumber: Int = stringNumber.toInt()!
+
+
+// ---------------------------------------- Number bounds
+var mMax8 = UInt8.max
+var mMax32 = UInt32.max
+var mMinS32 = Int32.min
+
+
+// ---------------------------------------- Casting
+let mUInt16: UInt16 = UInt16(mMax8)
 
 
 // ---------------------------------------- Optional
