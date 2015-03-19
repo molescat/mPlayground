@@ -1,4 +1,5 @@
-// Playground - noun: a place where people can play
+// Playground - Classes
+// Inheritence
 
 import UIKit
 
