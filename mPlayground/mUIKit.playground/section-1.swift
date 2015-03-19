@@ -23,8 +23,7 @@ class DataSource: NSObject, UITableViewDataSource {
   func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell
   {
     let row = indexPath.row
-    let style = UITableViewCellStyle.fromRaw(row)
-    let cellStyle = (style != nil) ? style! : .Default
+    let cellStyle = UITableViewCellStyle.Default
     let cell = UITableViewCell(style: cellStyle, reuseIdentifier: nil)
     cell.textLabel?.text = "text"
     if let detailTextLabel = cell.detailTextLabel
