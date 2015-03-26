@@ -27,6 +27,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		331D5EFA1AC3C46700206C2F /* mStrings.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = mStrings.playground; sourceTree = "<group>"; };
 		334F450619DB6BAD005774CF /* mPlayground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mPlayground.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		334F450A19DB6BAD005774CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		334F450B19DB6BAD005774CF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -98,6 +99,7 @@
 				334F451119DB6BAD005774CF /* ViewController.m */,
 				334F451319DB6BAD005774CF /* Main.storyboard */,
 				334F453219DB6C14005774CF /* mBasics.playground */,
+				331D5EFA1AC3C46700206C2F /* mStrings.playground */,
 				33EBC4E319E344CF0096855B /* mContainers.playground */,
 				33EBC4E519E347590096855B /* mControlFlow.playground */,
 				33A8FCC01ABA9E2A006B68C3 /* mColor.playground */,

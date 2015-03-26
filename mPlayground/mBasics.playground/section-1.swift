@@ -14,19 +14,6 @@ let mUnicode = "\u{1F425}"
 let mAcute: Character = "\u{E9}"
 
 
-// ---------------------------------------- Strings
-var mString = "Hello, world"
-mString += " cow"
-mString = "dog"
-mString += " \(mVersion)"
-mString = "cat "
-mString += "fish"
-mString = NSString(format: "%.2f", mFloat)
-println("hello " + mString)
-println("Welcome \(mString)")
-println("String length \(countElements(mString))")
-
-
 // ---------------------------------------- Number conversions
 let stringNumber = "123"
 var mInt = stringNumber.toInt()!
