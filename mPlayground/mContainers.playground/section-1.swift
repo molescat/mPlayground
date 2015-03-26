@@ -9,21 +9,55 @@ func printMyType<T>(myType: T) {
   println("TypeName = \(_stdlib_getTypeName(myType))")
 }
 
-// ---------------------------------------- Dictionary
-let mEmptyDictionary = [:]
-printMyType(mEmptyDictionary)
-
-var mDict = ["apple":1, "banana":2]
-mDict["orange"] = 3
-mDict
-
-
 // ---------------------------------------- Array
 let mEmptyArray = []
 printMyType(mEmptyArray)
 
+var stringArray: [String] = []
+stringArray.append("fish")
+
+
 var mArray = ["apple", "banana"]
-mString = mArray[1]
+mArray[1]
 mArray.append("cherry")
 mArray += ["orange", "lemon"]
+
+mArray[0...3] = ["dog", "cat"] // shortens the array
+mArray
+
+mArray.insert("frog", atIndex: 1)
+
+mArray.removeLast()
+mArray
+mArray.count
+
+
+// ---------------------------------------- Dictionary
+let mEmptyDictionary = [:]
+printMyType(mEmptyDictionary)
+
+var simpleDictionary: [String:AnyObject] = [:]
+simpleDictionary["pet"] = "fluffy"
+simpleDictionary["books"] = 10
+simpleDictionary
+
+simpleDictionary.isEmpty
+simpleDictionary["books"] = nil
+simpleDictionary
+
+
+var mDict = ["apple":1, "banana":2]
+mDict["orange"] = 3
+//mDict["pear"] = "awesome" // Must be Int
+mDict
+
+var keys = [String](mDict.keys)
+
+var values = [Int](mDict.values)
+
+for (key, value) in mDict {
+  println("\(key) \(value)")
+}
+
+
 
