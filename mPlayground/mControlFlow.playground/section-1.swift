@@ -22,32 +22,43 @@ for item in mStringArray {
 }
 concat
 
-
 var total = 0
-for i in 1...10
-{
+for i in 1...10 { // Closed range
   total += i
 }
 total
-
 
 total = 0
-for i in 1..<10  // Half open
-{
+for i in 1..<10 { // Half open
   total += i
 }
 total
+
+total = 0
+for _ in 1...10 {
+  total += 2
+}
+total
+
+let numberOfLegs = ["spider" : 8, "ant" : 6, "dog" : 4]
+for (creature, legs) in numberOfLegs {
+  println("\(creature) = \(legs)")
+}
+
+for var index = 0; index < 3; ++index {
+  println("index = \(index)")
+}
 
 
 // ----------------------------------------- Switch
-var test = "cat"
+var test = "catfish"
 switch test {
 case "cat":
-  println("meow")
-case "dog":
-  println("woof")
-case let x where x.hasSuffix("at"):
-  println(" thing is \(x)")
+  println("Meow")
+case "dog", "fish":
+  println("Woof/bubble")
+case let x where x.hasSuffix("atfish"):
+  println("Thing is \(x)")
 default:
-  println("huh")
+  println("huh?")
 }
