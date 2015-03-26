@@ -24,6 +24,10 @@ if pet == animal {
   println("Woof")
 }
 
+if pet.hasPrefix("do") {
+  println("Nike")
+}
+
 var emptyString = ""
 var alsoEmpty = String()
 if emptyString == alsoEmpty {
@@ -33,4 +37,3 @@ if emptyString == alsoEmpty {
 if emptyString.isEmpty {
   println("Empty")
 }
-
