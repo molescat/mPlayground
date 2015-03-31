@@ -1,6 +1,36 @@
-// Playground - noun: a place where people can play
+// Playground - Functions
 
 import UIKit
+
+// ---------------------------------------- Passing out a value
+func passingOut(inout number :Int) {
+  number += 10
+}
+
+var myNumber = 10
+passingOut(&myNumber)
+myNumber
+
+
+// ---------------------------------------- Local mutable copy of passed in variable
+func simpleAddition(var number :Int) -> Int {
+  number += 10
+  return number
+}
+
+var anotherNumber = 10
+simpleAddition(anotherNumber)
+anotherNumber
+
+
+// ---------------------------------------- Default parameters
+func joiner(a :String, b :String, join :String = "", suffix :String = ".") -> String {
+  return a + join + b + suffix
+}
+
+let dogCat = joiner("dog", "cat")
+let dogMinusCat = joiner("dog", "cat", suffix: "!", join: " - ")
+
 
 // ---------------------------------------- Tupples
 func calculate(scores: [Int]) ->(min: Int, max: Int, sum: Int) {
@@ -92,5 +122,12 @@ let trippledNumbers = strangeNumbers.map({ number in
 trippledNumbers
 
 
+func backwards(a :Int, b :Int) -> Bool {
+  return a > b
+}
+let reverseNumbers = sorted(strangeNumbers, backwards)
+
+
 let sortedNumbers = sorted(strangeNumbers) { $0 > $1 }
 sortedNumbers
+
