@@ -59,6 +59,9 @@ case "dog", "fish":
   println("Woof/bubble")
 case let x where x.hasSuffix("atfish"):
   println("Thing is \(x)")
+  fallthrough  // C Styled case switch
 default:
-  println("huh?")
+//  println("huh?")
+  break // default needs at least one statement
 }
+
