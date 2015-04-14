@@ -26,5 +26,6 @@ class Square: Shape {
   }
 }
 
+
 var myShape = Square()
 myShape.simpleDescription()

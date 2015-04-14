@@ -11,10 +11,10 @@ mString = "dog"
 mString += " \(version)"
 mString = "cat "
 mString += "fish"
-mString = NSString(format: "%.2f", version)
+mString = NSString(format: "%.2f", version) as String
 println("hello " + mString)
 println("Welcome \(mString)")
-println("String length \(countElements(mString))")
+println("String length \(count(mString))")
 
 
 // ---------------------------------------- Strings

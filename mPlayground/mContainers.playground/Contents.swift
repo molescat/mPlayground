@@ -6,7 +6,7 @@ import UIKit
 var mString = "Hello, world"
 
 func printMyType<T>(myType: T) {
-  println("TypeName = \(_stdlib_getTypeName(myType))")
+  println("TypeName = \(_stdlib_getDemangledTypeName(myType))")
 }
 
 // ---------------------------------------- Array
@@ -34,7 +34,7 @@ mArray.count
 
 // ---------------------------------------- Dictionary
 let mEmptyDictionary = [:]
-printMyType(mEmptyDictionary)
+//printMyType(mEmptyDictionary)
 
 var simpleDictionary: [String:AnyObject] = [:]
 simpleDictionary["pet"] = "fluffy"
@@ -58,6 +58,3 @@ var values = [Int](mDict.values)
 for (key, value) in mDict {
   println("\(key) \(value)")
 }
-
-
-

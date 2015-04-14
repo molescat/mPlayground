@@ -131,3 +131,19 @@ let reverseNumbers = sorted(strangeNumbers, backwards)
 let sortedNumbers = sorted(strangeNumbers) { $0 > $1 }
 sortedNumbers
 
+
+let sortedNumbersA = sorted(strangeNumbers, >)
+sortedNumbersA
+
+
+// ---------------------------------------- Trailing Closure
+func someFunctionThatTakesAClosure(closure: () -> ()) {
+  closure()
+}
+
+someFunctionThatTakesAClosure({println("without using trailing closure")})
+
+someFunctionThatTakesAClosure() {
+  println("Using trailing closure")
+}
+

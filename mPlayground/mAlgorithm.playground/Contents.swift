@@ -41,6 +41,7 @@ func isort<T: Comparable>(inout data: [T]) {
 
 visualize(data, "start")
 
+data
 
 isort(&data)
 
