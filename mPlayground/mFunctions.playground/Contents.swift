@@ -107,7 +107,7 @@ var numbers = [20, 19, 7, 12]
 hasAnyMatches(numbers, lessThanTen)
 
 
-// ---------------------------------------- Closure
+// ---------------------------------------- Closure (sort, map)
 var strangeNumbers = [10, 100, 8, 16]
 
 let doubledNumbers = strangeNumbers.map({
@@ -146,4 +146,25 @@ someFunctionThatTakesAClosure({println("without using trailing closure")})
 someFunctionThatTakesAClosure() {
   println("Using trailing closure")
 }
+
+
+// ---------------------------------------- Function as a return type
+func makeIncrementor(forIncrement amount :Int) -> () -> Int {
+  var runningTotal = 0
+  func incrementor() -> Int {
+    runningTotal += amount
+    return runningTotal
+  }
+  return incrementor
+}
+
+let incrementByTen = makeIncrementor(forIncrement: 10)
+incrementByTen()
+incrementByTen()
+
+let incrementByFive = makeIncrementor(forIncrement: 5)
+incrementByFive()
+
+incrementByTen()
+
 
