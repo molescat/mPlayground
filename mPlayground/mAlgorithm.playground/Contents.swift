@@ -1,21 +1,16 @@
-// Playground - noun: a place where people can play
+// Playground - sorting and graphing the results
 
 import UIKit
-import XCPlayground
 
+// Use this to help make the random numbers for 'data'
 var randomData: [Int] = []
 for i in 0..<20 {
   randomData.append(Int(arc4random() % 100))
 }
 randomData
 
+// ------------------------------------------------
 var data = [84, 74, 56, 54, 18, 26, 69, 91, 35, 48, 45, 15, 19, 70, 63, 32, 79, 31, 79, 41]
-
-func visualize<T>(data: [T], identifier: String) {
-  for x in data {
-    XCPCaptureValue(identifier, x)
-  }
-}
 
 func exchange<T>(inout data: [T], i: Int, j: Int) {
   let temp = data[i]
@@ -39,10 +34,12 @@ func isort<T: Comparable>(inout data: [T]) {
   }
 }
 
-visualize(data, "start")
-
-data
+for item in data {
+  item
+}
 
 isort(&data)
 
-visualize(data, "end")
+for item in data {
+  item
+}
