@@ -1,5 +1,4 @@
-// Playground - Classes
-// Inheritence
+// Playground - Classes (Inheritence, Lazy)
 
 import UIKit
 
@@ -27,5 +26,35 @@ class Square: Shape {
 }
 
 
-var myShape = Square()
+let myShape = Square()
 myShape.simpleDescription()
+
+
+let anotherShape = myShape
+anotherShape.numberOfSides = 10
+if anotherShape === myShape {
+  println("refers to exacly the same object")
+}
+myShape  // note - myShape is now 10 sided, even though it is const, and you modified anotherShape
+
+
+// ---------------------------------------------- Lazy
+class DataImporter {
+  /*
+  The class is assumed to take a non-trivial amount of time to initialize.
+  */
+  var fileName = "data.txt"
+  // ...
+}
+
+class DataManager {
+  lazy var importer = DataImporter()
+  var data = [String]()
+  // ...
+}
+
+let manager = DataManager()
+manager.data.append("Some data")
+manager.data.append("Some more data")
+// the DataImporter instance for the importer property has not yet been created
+
