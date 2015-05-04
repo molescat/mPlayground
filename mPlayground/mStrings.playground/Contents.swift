@@ -37,3 +37,8 @@ if emptyString == alsoEmpty {
 if emptyString.isEmpty {
   println("Empty")
 }
+
+
+var wildAnimal = "elephant"
+var zooAnimal = wildAnimal
+zooAnimal += " (endangered)"
