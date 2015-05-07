@@ -99,3 +99,20 @@ var somePoint = MyPoint(x: 1.0, y: 1.0)
 somePoint.mutatingMoveByX(2.0, y: 3.0)
 
 var anotherPoint = somePoint.moveByX(3.0, y: 4.0)
+
+
+// ---------------------------------------------- Override
+class Animal {
+  func species() -> String { return "" }
+  final func youCantOverrideThis() -> String { return "final" }
+}
+
+class Dog: Animal {
+  override func species() -> String {
+    return "Canine"
+  }
+//  override func youCantOverrideThis() -> String { return "" }
+}
+
+var spot = Dog()
+spot.species()
