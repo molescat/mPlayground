@@ -5,19 +5,21 @@ import UIKit
 let version = 33.333333333
 
 // ---------------------------------------- Strings
+var name: String
+name = "Ruffus"
+
 var mString = "Hello, world"
 mString += " cow"
-mString = "dog"
+mString = name
 mString += " \(version)"
-mString = "cat "
-mString += "fish"
 mString = NSString(format: "%.2f", version) as String
+
 println("hello " + mString)
 println("Welcome \(mString)")
 println("String length \(count(mString))")
 
 
-// ---------------------------------------- Strings
+// ---------------------------------------- using strings
 var animal = "dog"
 var pet = "dog"
 if pet == animal {
