@@ -11,7 +11,7 @@ func printMyType<T>(myType: T) {
 
 // ---------------------------------------- Array
 let mEmptyArray = []
-printMyType(mEmptyArray)
+//printMyType(mEmptyArray)
 
 var stringArray: [String] = []
 stringArray.append("fish")
@@ -33,6 +33,15 @@ mArray.count
 
 
 // ---------------------------------------- Dictionary
+let thingDict = [
+  "a" : 1,
+  "b" : "cat",
+  "c" : ["d" : "dog"],
+  "e" : 2
+]
+//printMyType(thingDict)
+
+
 let mEmptyDictionary = [:]
 //printMyType(mEmptyDictionary)
 
