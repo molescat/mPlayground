@@ -113,3 +113,39 @@ var somePoint = MyPoint(x: 1.0, y: 1.0)
 somePoint.mutatingMoveByX(2.0, y: 3.0)
 
 var anotherPoint = somePoint.moveByX(3.0, y: 4.0)
+
+
+// -------------------- Initializers
+// Note - there is no func on a init declaration
+struct Celsius {
+  var temperatureInCelsius: Double
+  init(fromFahrenheit fahrenheit: Double) {
+    temperatureInCelsius = (fahrenheit - 32.0) / 1.8
+  }
+  init(fromKelvin kelvin: Double) {
+    temperatureInCelsius = kelvin - 273.15
+  }
+  init(_ celsius: Double) {
+    temperatureInCelsius = celsius
+  }
+}
+let boilingPointOfWater = Celsius(fromFahrenheit: 212.0)
+let freezingPointOfWater = Celsius(fromKelvin: 273.15)
+let bodyTemperature = Celsius(37.0)
+
+
+// --------------------- constant & deferred initialiation
+class SurveyQuestion {
+  let text: String
+  var response: String?
+  init(text: String) {
+    self.text = text
+  }
+  func ask() {
+    println(text)
+  }
+}
+let beetsQuestion = SurveyQuestion(text: "How about beets?")
+beetsQuestion.ask()
+beetsQuestion.response = "I also like beets. (But not with cheese.)"
+
