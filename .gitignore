@@ -1,0 +1,22 @@
+# Xcode Noise
+build/
+dist/
+.idea/
+*.pbxuser
+*.xcuserdatad
+*.trace
+*project.xcworkspace/
+*.log
+*.xccheckout
+
+# OSX Noise
+.DS_Store
+*.swp
+
+# Git Noise
+*.orig
+*.BACKUP.*
+*.REMOTE.*
+*.LOCAL.*
+*.BASE.*
+
