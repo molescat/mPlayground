@@ -22,7 +22,6 @@ class DataSource: NSObject, UITableViewDataSource {
 
   func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell
   {
-    let row = indexPath.row
     let cellStyle = UITableViewCellStyle.Value1	
     let cell = UITableViewCell(style: cellStyle, reuseIdentifier: nil)
     cell.textLabel?.text = "text"
@@ -37,6 +36,6 @@ class DataSource: NSObject, UITableViewDataSource {
 }
 
 let ds = DataSource()
-let tableView = UITableView(frame: CGRect(x: 0, y: 0, width: 320, height: 400), style: .Plain)
+let tableView = UITableView(frame: CGRect(x: 0, y: 0, width: 320, height: 200), style: .Plain)
 tableView.dataSource = ds
 tableView.reloadData()
