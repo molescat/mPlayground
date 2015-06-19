@@ -19,9 +19,9 @@ func exchange<T>(inout data: [T], i: Int, j: Int) {
 }
 
 func swapLeft<T: Comparable>(inout data: [T], index: Int) {
-  for i in reverse(1...index) {
+  for i in Array((1...index).reverse()) {
     if data[i] < data[i - 1] {
-      exchange(&data, i, i - 1)
+      exchange(&data, i: i, j: i - 1)
     } else {
       break
     }
@@ -30,7 +30,7 @@ func swapLeft<T: Comparable>(inout data: [T], index: Int) {
 
 func isort<T: Comparable>(inout data: [T]) {
   for i in 1...(data.count - 1) {
-    swapLeft(&data, i)
+    swapLeft(&data, index: i)
   }
 }
 
@@ -41,5 +41,5 @@ for item in data {
 isort(&data)
 
 for item in data {
-  item
+    item
 }

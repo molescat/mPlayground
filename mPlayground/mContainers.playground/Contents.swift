@@ -6,7 +6,7 @@ import UIKit
 var mString = "Hello, world"
 
 func printMyType<T>(myType: T) {
-  println("TypeName = \(_stdlib_getDemangledTypeName(myType))")
+  print("TypeName = \(_stdlib_getDemangledTypeName(myType))")
 }
 
 // ---------------------------------------- Array
@@ -65,5 +65,5 @@ var keys = [String](mDict.keys)
 var values = [Int](mDict.values)
 
 for (key, value) in mDict {
-  println("\(key) \(value)")
+  print("\(key) \(value)")
 }

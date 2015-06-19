@@ -14,30 +14,30 @@ mString = name
 mString += " \(version)"
 mString = NSString(format: "%.2f", version) as String
 
-println("hello " + mString)
-println("Welcome \(mString)")
-println("String length \(count(mString))")
+print("hello " + mString)
+print("Welcome \(mString)")
+print("String length \(mString.characters.count)")
 
 
 // ---------------------------------------- using strings
 var animal = "dog"
 var pet = "dog"
 if pet == animal {
-  println("Woof")
+  print("Woof")
 }
 
 if pet.hasPrefix("do") {
-  println("Nike")
+  print("Nike")
 }
 
 var emptyString = ""
 var alsoEmpty = String()
 if emptyString == alsoEmpty {
-  println("Empty")
+  print("Empty")
 }
 
 if emptyString.isEmpty {
-  println("Empty")
+  print("Empty")
 }
 
 

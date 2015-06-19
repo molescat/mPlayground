@@ -28,8 +28,8 @@ func joiner(a :String, b :String, join :String = "", suffix :String = ".") -> St
   return a + join + b + suffix
 }
 
-let dogCat = joiner("dog", "cat")
-let dogMinusCat = joiner("dog", "cat", suffix: "!", join: " - ")
+let dogCat = joiner("dog", b: "cat")
+let dogMinusCat = joiner("dog", b: "cat", suffix: "!", join: " - ")
 
 
 // ---------------------------------------- Tupples
@@ -104,7 +104,7 @@ func lessThanTen(number: Int) -> Bool {
 }
 
 var numbers = [20, 19, 7, 12]
-hasAnyMatches(numbers, lessThanTen)
+hasAnyMatches(numbers, condition: lessThanTen)
 
 
 // ---------------------------------------- Closure (sort, map)
@@ -125,14 +125,14 @@ trippledNumbers
 func backwards(a :Int, b :Int) -> Bool {
   return a > b
 }
-let reverseNumbers = sorted(strangeNumbers, backwards)
+let reverseNumbers = strangeNumbers.sort(backwards)
 
 
-let sortedNumbers = sorted(strangeNumbers) { $0 > $1 }
+let sortedNumbers = strangeNumbers.sort { $0 > $1 }
 sortedNumbers
 
 
-let sortedNumbersA = sorted(strangeNumbers, >)
+let sortedNumbersA = strangeNumbers.sort(>)
 sortedNumbersA
 
 
@@ -141,10 +141,10 @@ func someFunctionThatTakesAClosure(closure: () -> ()) {
   closure()
 }
 
-someFunctionThatTakesAClosure({println("without using trailing closure")})
+someFunctionThatTakesAClosure({print("without using trailing closure")})
 
 someFunctionThatTakesAClosure() {
-  println("Using trailing closure")
+  print("Using trailing closure")
 }
 
 

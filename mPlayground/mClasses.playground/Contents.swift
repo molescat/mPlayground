@@ -33,7 +33,7 @@ myShape.simpleDescription()
 let anotherShape = myShape
 anotherShape.numberOfSides = 10
 if anotherShape === myShape {
-  println("refers to exacly the same object")
+  print("refers to exacly the same object", appendNewline: false)
 }
 myShape  // note - myShape is now 10 sided, even though it is const, and you modified anotherShape
 
@@ -69,7 +69,7 @@ class SomeClass {
     return 24
   }
   class func someTypeMethod() {
-    println("hello class type method")
+    print("hello class type method")
   }
 }
 
@@ -162,7 +162,7 @@ var breakfastList = [
 breakfastList[0].name = "Orange juice"
 breakfastList[0].purchased = true
 for item in breakfastList {
-  println(item.description)
+  print(item.description)
 }
 
 // ---------------------------------------------- Failable initializers
@@ -176,7 +176,7 @@ class Product {
 
 if let tool = Product(name: "hammer") {
   // no need to check if tool.name == nil
-  println("The Product name is \(tool.name)")
+  print("The Product name is \(tool.name)")
 }
 
 class CartItem: Product {
@@ -189,7 +189,8 @@ class CartItem: Product {
 }
 
 if let oneUnnamed = CartItem(name: "", quantity: 1) {
-  println("Item: \(oneUnnamed.name), quantity: \(oneUnnamed.quantity)")
+  print("Item: \(oneUnnamed.name), quantity: \(oneUnnamed.quantity)")
 } else {
-  println("Unable to initialize one unnamed product")
+  print("Unable to initialize one unnamed product")
 }
+

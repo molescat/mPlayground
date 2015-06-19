@@ -16,8 +16,8 @@ let mAcute: Character = "\u{E9}"
 
 // ---------------------------------------- Number conversions
 let stringNumber = "123"
-var mInt = stringNumber.toInt()!
-var someNumber: Int = stringNumber.toInt()!
+var mInt = Int(stringNumber)!
+var someNumber: Int = Int(stringNumber)!
 
 
 // ---------------------------------------- Number bounds
@@ -38,7 +38,7 @@ var optionalString: String? = "Hello"
 
 if let name = optionalString {
   var result = name
-  println(result)
+  print(result, appendNewline: false)
 }
 
 // Nil Coalescing Operator

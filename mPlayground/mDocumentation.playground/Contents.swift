@@ -11,7 +11,7 @@ var str = "Hello, playground documentation"
 //: These two lines of single delimiter text
 //: show up as one rich comment block in the playground
 
-println("Remember to toggle on the 'Render Documention' in the playground settings")
+print("Remember to toggle on the 'Render Documention' in the playground settings", appendNewline: false)
 
 /*: A comment that is not displayed in rich text view
 # The First Heading Shown
@@ -23,3 +23,4 @@ The first content line displayed in this block of rich text.
 * Item 1
 * Item 2
 */
+

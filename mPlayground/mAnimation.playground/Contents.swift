@@ -8,7 +8,7 @@ import UIKit
 import XCPlayground
 
 let containerView = UIView(frame: CGRect(x: 0.0, y: 0.0, width: 375.0, height: 667.0))
-XCPShowView("Container View", containerView)
+XCPShowView("Container View", view: containerView)
 
 let circle = UIView(frame: CGRect(x: 0.0, y: 0.0, width: 50.0, height: 50.0))
 circle.center = containerView.center
@@ -37,3 +37,4 @@ UIView.animateWithDuration(2.0, animations: { () -> Void in
   let rotationTransform = CGAffineTransformMakeRotation( CGFloat(M_PI) )
   rectangle.transform = rotationTransform
 })
+
