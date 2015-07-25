@@ -1,21 +1,21 @@
 mPlayground
 ===========
 
-Simple experimental project to test Xcode6 and Swift playgrounds
+Simple experimental project to test Xcode and Swift playgrounds
 
 
 
 Usage:
 ------
 
-Build and run using Xcode6 (or later), targeting iOS8 (or later).
+Build and run using Xcode7, targeting iOS9 and Swift2 (or later).
 
 
 
 Support:
 --------
 
-Not much I'm afraid. This is really an experimental playground, have fun.
+Not much I'm afraid. This is really just an experimental playground, have fun.
 
 * Twitter: [@molescat](http://twitter.com/molescat)
 
@@ -29,7 +29,7 @@ If you have any feature requests/bug-fixes etc. feel free to help out and send a
 License:
 --------
 
-mPlayground is Copyright (c) 2013 Myles Abbott and released open source
+mPlayground is Copyright (c) 2014 Myles Abbott and released open source
 under a MIT license:
 
     Permission is hereby granted, free of charge, to any person obtaining a copy

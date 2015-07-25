@@ -2,16 +2,13 @@
 
 import UIKit
 
-var str = "Hello, playground documentation"
-
-
-//: This is a line of text that will appear as a rich comment in a playground.
+var str = "Remember to toggle on the 'Render Documention' in the playground settings"
 
 
 //: These two lines of single delimiter text
 //: show up as one rich comment block in the playground
 
-print("Remember to toggle on the 'Render Documention' in the playground settings", appendNewline: false)
+print("Remember to edit the markdown, you need to toggle via the menu Editor > Show Raw Markup")
 
 /*: A comment that is not displayed in rich text view
 # The First Heading Shown
@@ -19,8 +16,6 @@ The first content line displayed in this block of rich text.
 */
 
 
-/*: A bulleted list of 2 items
-* Item 1
-* Item 2
-*/
+print("To add a new page, right click in the navigator 'New Playground Page")
 
+//: [Next](@next)
