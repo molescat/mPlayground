@@ -125,15 +125,12 @@ trippledNumbers
 func backwards(a :Int, b :Int) -> Bool {
   return a > b
 }
-let reverseNumbers = strangeNumbers.sortInPlace(backwards)
+let reverseNumbers = strangeNumbers.sort(backwards)
 
-
-let sortedNumbers = strangeNumbers.sortInPlace { $0 > $1 }
+let sortedNumbers = strangeNumbers.sort{ $0 > $1 }
 sortedNumbers
 
-
-let sortedNumbersA = strangeNumbers.sortInPlace(>)
-sortedNumbersA
+strangeNumbers.sortInPlace(<)
 
 
 // ---------------------------------------- Trailing Closure
