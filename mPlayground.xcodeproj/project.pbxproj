@@ -48,6 +48,7 @@
 		334F453119DB6C14005774CF /* mAlgorithm.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = mAlgorithm.playground; sourceTree = "<group>"; };
 		334F453219DB6C14005774CF /* mBasics.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = mBasics.playground; sourceTree = "<group>"; };
 		334F453319DB6C14005774CF /* mUIKit.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = mUIKit.playground; sourceTree = "<group>"; };
+		3371D9671B66246C004D04CC /* mGrouping.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = mGrouping.playground; sourceTree = "<group>"; };
 		33A8FCC01ABA9E2A006B68C3 /* mColor.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = mColor.playground; sourceTree = "<group>"; };
 		33A97A8D19E49698008E9617 /* mClasses.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = mClasses.playground; sourceTree = "<group>"; };
 		33B7FF251ABA8B9A003E4A8B /* mAnimation.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = mAnimation.playground; sourceTree = "<group>"; };
@@ -115,6 +116,7 @@
 				334F453119DB6C14005774CF /* mAlgorithm.playground */,
 				334F453019DB6C14005774CF /* mPhysics.playground */,
 				334F453319DB6C14005774CF /* mUIKit.playground */,
+				3371D9671B66246C004D04CC /* mGrouping.playground */,
 				33B7FF251ABA8B9A003E4A8B /* mAnimation.playground */,
 				334F451619DB6BAD005774CF /* Images.xcassets */,
 				334F451819DB6BAD005774CF /* LaunchScreen.xib */,
