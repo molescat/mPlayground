@@ -53,4 +53,15 @@ for (key, value) in groups {
   print("Key '\(key)' Value '\(value)'")
 }
 
+/*
+
+[
+  [Alice at 1, David at 1]
+  [Bob at 2, Frank at 2]
+  [Charles at 3]
+  [Eric at 4]
+]
+
+*/
+
 //: [Next](@next)
