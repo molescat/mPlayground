@@ -35,8 +35,7 @@ for listing in listings {
   if let index = map[key] {
     results[index].append(listing)
   } else {
-    results.append([])
-    results[counter].append(listing)
+    results.append([listing])
     map[key] = counter++
   }
 }
