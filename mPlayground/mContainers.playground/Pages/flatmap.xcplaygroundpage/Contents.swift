@@ -4,7 +4,7 @@ import Foundation
 
 let nestedArray = [[1,2,3,4],[6,7,8,9]]
 
-let joined = [].join(nestedArray)
+let joined = Array(nestedArray.joinWithSeparator([]))
 let reduced = nestedArray.reduce([], combine: {$0 + $1})
 let flattened = nestedArray.flatMap{$0}
 joined // [1, 2, 3, 4, 6, 7, 8, 9]
@@ -12,7 +12,7 @@ reduced // [1, 2, 3, 4, 6, 7, 8, 9]
 flattened // [1, 2, 3, 4, 6, 7, 8, 9]
 
 
-let joinedPlus = [5].join(nestedArray)
+let joinedPlus = Array(nestedArray.joinWithSeparator([5]))
 let reducedPlus = nestedArray.reduce([], combine: {$0 + [5] + $1})
 let flattenedPlus = nestedArray.flatMap{$0 + [5]}
 joinedPlus // [1, 2, 3, 4, 5, 6, 7, 8, 9]
@@ -26,7 +26,7 @@ let myStrings = ["one","two","three"]
 
 
 //: Joining things together
-", ".join(myStrings)  // "one, two, three"
+myStrings.joinWithSeparator(", ")  // "one, two, three"
 
 
 //: Reducing things together
@@ -48,7 +48,7 @@ myList
 //: So next let's look at nested arrays
 let myThreeNestedStrings = [["one","two","three"],["five","six","seven"],["eight","nine","ten"]]
 
-["XXX"].join(myThreeNestedStrings)
+Array(myThreeNestedStrings.joinWithSeparator(["XXX"]))
 
 //: Notice 'YYY' is at the start
 let reducedNested = myThreeNestedStrings.reduce(["YYY"],combine:{$0 + $1})

@@ -58,4 +58,5 @@ enum ASCIIControlChars: Character {
   case CarriageReturn = "\r"
 }
 
-print("test\(ASCIIControlChars.Tab.rawValue)test")
+print("test\(ASCIIControlChars.LineFeed.rawValue)test")
+

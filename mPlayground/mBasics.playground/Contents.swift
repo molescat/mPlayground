@@ -38,7 +38,7 @@ var optionalString: String? = "Hello"
 
 if let name = optionalString {
   var result = name
-  print(result, appendNewline: false)
+  print(result)
 }
 
 // Nil Coalescing Operator
