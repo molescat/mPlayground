@@ -6,7 +6,8 @@ import UIKit
 var mString = "Hello, world"
 
 func printMyType<T>(myType: T) {
-  print("TypeName = \(_stdlib_getDemangledTypeName(myType))")
+  debugPrint("TypeName = \(_stdlib_getDemangledTypeName(myType))")
+  debugPrint(myType)
 }
 
 // ---------------------------------------- Array
@@ -15,7 +16,8 @@ let mEmptyArray = []
 
 var stringArray: [String] = []
 stringArray.append("fish")
-
+stringArray.append("dog")
+printMyType(stringArray)
 
 var mArray = ["apple", "banana"]
 mArray[1]

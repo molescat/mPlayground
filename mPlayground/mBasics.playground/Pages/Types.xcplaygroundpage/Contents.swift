@@ -1,3 +1,7 @@
+//: [Previous](@previous)
+
+import Foundation
+
 // Playground - Basics
 // Plain old types, strings, casts and optionals
 
@@ -30,17 +34,4 @@ var mMinS32 = Int32.min
 let mUInt16: UInt16 = UInt16(mMax8)
 
 
-// ---------------------------------------- Optional
-var optionalString: String? = "Hello"
-//optionalString = nil
-
-//let bang = optionalString!
-
-if let name = optionalString {
-  var result = name
-  print(result)
-}
-
-// Nil Coalescing Operator
-var x: String = optionalString ?? "sentinel"
-
+//: [Next](@next)
