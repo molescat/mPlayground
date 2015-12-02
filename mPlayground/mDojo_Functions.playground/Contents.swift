@@ -3,8 +3,6 @@
 import UIKit
 import Foundation
 
-var str = "Hello, playground"
-
 
 func sayHelloTo(name: String) {
   print("Hello \(name)")
