@@ -24,9 +24,9 @@ switch planet {
 case Planet.Jupiter:
   fallthrough
 case .Saturn:
-  print("gas giants", terminator: "")
+  print("gas giants")
 default: // switch must be exhaustive
-  print("just a rock", terminator: "")
+  print("just a rock")
 }
 
 let possiblePlanet = Planet(rawValue: 7)
@@ -45,9 +45,9 @@ item = Barcode.QRCode("1234567890")
 
 switch item {
 case .UPCA(let numberSystem, let manufacturer, let product, let check):
-  print("UPCA-A: \(numberSystem), \(manufacturer), \(product), \(check)", terminator: "")
+  print("UPCA-A: \(numberSystem), \(manufacturer), \(product), \(check)")
 case let .QRCode(productCode):
-  print("QR Code: \(productCode)", terminator: "")
+  print("QR Code: \(productCode)")
 }
 
 
@@ -58,5 +58,5 @@ enum ASCIIControlChars: Character {
   case CarriageReturn = "\r"
 }
 
-print("test\(ASCIIControlChars.LineFeed.rawValue)test", terminator: "")
+print("test\(ASCIIControlChars.LineFeed.rawValue)test")
 

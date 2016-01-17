@@ -14,8 +14,8 @@ mString = name
 mString += " \(version)"
 mString = NSString(format: "%.2f", version) as String
 
-print("hello " + mString, terminator: "")
-print("Welcome \(mString)", terminator: "")
+print("hello " + mString)
+print("Welcome \(mString)")
 print("String length \(mString.characters.count)")
 
 
@@ -23,21 +23,21 @@ print("String length \(mString.characters.count)")
 var animal = "dog"
 var pet = "dog"
 if pet == animal {
-  print("Woof", terminator: "")
+  print("Woof")
 }
 
 if pet.hasPrefix("do") {
-  print("Nike", terminator: "")
+  print("Nike")
 }
 
 var emptyString = ""
 var alsoEmpty = String()
 if emptyString == alsoEmpty {
-  print("Empty", terminator: "")
+  print("Empty")
 }
 
 if emptyString.isEmpty {
-  print("Empty", terminator: "")
+  print("Empty")
 }
 
 

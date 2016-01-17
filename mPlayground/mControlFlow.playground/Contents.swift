@@ -7,18 +7,18 @@ var mStringArray = ["dog", "cat", "fish"]
 //  ---------------------------------------- if
 var temperatureInFahrenheit = 30
 if temperatureInFahrenheit <= 32 {
-  print("It's freezing", terminator: "")
+  print("It's freezing")
 } else if temperatureInFahrenheit > 86 {
-  print("It's damn hot", terminator: "")
+  print("It's damn hot")
 } else {
-  print("It's meh", terminator: "")
+  print("It's meh")
 }
 
 //  ---------------------------------------- iteration
 var concat: String = ""
 for item in mStringArray {
   concat += item
-  print(concat, terminator: "")
+  print(concat)
 }
 concat
 
@@ -42,11 +42,11 @@ total
 
 let numberOfLegs = ["spider" : 8, "ant" : 6, "dog" : 4]
 for (creature, legs) in numberOfLegs {
-  print("\(creature) = \(legs)", terminator: "")
+  print("\(creature) = \(legs)")
 }
 
 for var index = 0; index < 3; ++index {
-  print("index = \(index)", terminator: "")
+  print("index = \(index)")
 }
 
 
@@ -54,11 +54,11 @@ for var index = 0; index < 3; ++index {
 var test = "catfish"
 switch test {
 case "cat":
-  print("Meow", terminator: "")
+  print("Meow")
 case "dog", "fish":
-  print("Woof/bubble", terminator: "")
+  print("Woof/bubble")
 case let x where x.hasSuffix("atfish"):
-  print("Thing is \(x)", terminator: "")
+  print("Thing is \(x)")
   fallthrough  // C Styled case switch
 default:
 //  println("huh?")

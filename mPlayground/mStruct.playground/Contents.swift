@@ -31,7 +31,7 @@ var square = Rect(origin: zeroPoint,
   size: Size(width: 10.0, height: 10.0))
 let initialSquareCenter = square.center
 square.center = Point(x: 15.0, y: 15.0)  // Custom getter/setter
-print("square.origin is now at (\(square.origin.x), \(square.origin.y))", terminator: "")
+print("square.origin is now at (\(square.origin.x), \(square.origin.y))")
 
 // -- Alternate version
 struct ShorthandRect {
@@ -66,11 +66,11 @@ fourByFiveByTwo.volume
 class StepCounter {
   var totalSteps: Int = 0 {
     willSet(newTotalSteps) {
-      print("About to set totalSteps to \(newTotalSteps)", terminator: "")
+      print("About to set totalSteps to \(newTotalSteps)")
     }
     didSet {
       if totalSteps > oldValue  {
-        print("Added \(totalSteps - oldValue) steps", terminator: "")
+        print("Added \(totalSteps - oldValue) steps")
       }
     }
   }
@@ -93,7 +93,7 @@ struct SomeStructure {
     return 23
   }
   static func someTypeMethod() {
-    print("Hello some Type Method", terminator: "")
+    print("Hello some Type Method")
   }
 }
 SomeStructure.storedTypeProperty
@@ -144,7 +144,7 @@ class SurveyQuestion {
     self.text = text
   }
   func ask() {
-    print(text, terminator: "")
+    print(text)
   }
 }
 let beetsQuestion = SurveyQuestion(text: "How about beets?")

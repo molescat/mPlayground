@@ -10,7 +10,7 @@ var optionalString: String? = "Hello"
 
 if let name = optionalString {
   var result = name
-  print(result, terminator: "")
+  print(result)
 }
 
 // Nil Coalescing Operator

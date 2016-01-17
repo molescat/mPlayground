@@ -6,8 +6,8 @@ import UIKit
 var mString = "Hello, world"
 
 func printMyType<T>(myType: T) {
-  debugPrint("TypeName = \(_stdlib_getDemangledTypeName(myType))", terminator: "")
-  debugPrint(myType, terminator: "")
+  debugPrint("TypeName = \(_stdlib_getDemangledTypeName(myType))")
+  debugPrint(myType)
 }
 
 // ---------------------------------------- Array
