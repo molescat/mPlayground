@@ -24,4 +24,5 @@ print("Card is \(a.value) of \(a.suit)")
 print("Card is \(a.0) of \(a.1)")
 
 
-let b = dealACard()
+let b = dealACard().suit
+

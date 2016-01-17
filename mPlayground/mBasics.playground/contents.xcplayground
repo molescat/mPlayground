@@ -3,5 +3,6 @@
     <pages>
         <page name='Types'/>
         <page name='Optionals'/>
+        <page name='Tupples'/>
     </pages>
 </playground>
