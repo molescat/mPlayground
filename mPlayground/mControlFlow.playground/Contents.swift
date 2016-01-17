@@ -51,17 +51,24 @@ for var index = 0; index < 3; ++index {
 
 
 // ----------------------------------------- Switch
-var test = "catfish"
-switch test {
-case "cat":
-  print("Meow")
-case "dog", "fish":
-  print("Woof/bubble")
-case let x where x.hasSuffix("atfish"):
-  print("Thing is \(x)")
-  fallthrough  // C Styled case switch
+
+let die1 = [1,2,3,4,5,6]
+let die2 = [1,2,3,4,5,6]
+
+let rolled = (die1[2], die2[3])
+
+switch rolled {
+case (1, 1):
+  print("cat's eye")
+case let (a, _) where rolled.0 == rolled.1:
+  print("doubles \(a)")
+case let (a, b) where rolled.0 + rolled.1 == 7:
+  print("sevens \(a) & \(b)")
+case (6, _):
+  fallthrough
+case (_, 6):
+  print("a six")
 default:
-//  println("huh?")
-  break // default needs at least one statement
+  print("nothing")
 }
 
