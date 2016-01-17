@@ -33,7 +33,7 @@ var keys = [String](mDict.keys)
 var values = [Int](mDict.values)
 
 for (key, value) in mDict {
-    print("Key '\(key)' Value '\(value)'")
+    print("Key '\(key)' Value '\(value)'", terminator: "")
 }
 
 //: [Next](@next)
