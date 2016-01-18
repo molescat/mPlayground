@@ -2,6 +2,8 @@
 <playground version='6.0' target-platform='ios' last-migration='0700'>
     <pages>
         <page name='if'/>
+        <page name='guard'/>
+        <page name='ifcase'/>
         <page name='iteration'/>
         <page name='Switch'/>
     </pages>
