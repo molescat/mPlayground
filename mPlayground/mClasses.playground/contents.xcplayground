@@ -1,4 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<playground version='5.0' target-platform='ios' last-migration='0700'>
-    <timeline fileName='timeline.xctimeline'/>
+<playground version='6.0' target-platform='ios' last-migration='0700'>
+    <pages>
+        <page name='Inheritence'/>
+        <page name='Initializers'/>
+        <page name='Designated'/>
+        <page name='Failable'/>
+        <page name='Lazy'/>
+        <page name='Final'/>
+        <page name='TypeProperties'/>
+        <page name='AvoidReferenceCycle'/>
+    </pages>
 </playground>
