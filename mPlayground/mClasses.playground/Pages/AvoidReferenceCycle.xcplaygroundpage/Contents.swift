@@ -15,8 +15,8 @@ class Band {
 }
 
 class Drummer {
-//  weak var band: Band?
-  var band: Band?
+  weak var band: Band?
+//  var band: Band?
   
   deinit {
     print("Drummer will be deallocated")
@@ -31,6 +31,10 @@ ringo?.band = beatles
 
 ringo = nil
 beatles = nil
+
+
+
+print("----")
 
 // ---------- Closures
 
