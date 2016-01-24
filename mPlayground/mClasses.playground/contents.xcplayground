@@ -9,5 +9,6 @@
         <page name='Final'/>
         <page name='TypeProperties'/>
         <page name='AvoidReferenceCycle'/>
+        <page name='Singleton'/>
     </pages>
 </playground>
