@@ -28,6 +28,7 @@
 
 /* Begin PBXFileReference section */
 		331D5EFA1AC3C46700206C2F /* mStrings.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = mStrings.playground; sourceTree = "<group>"; };
+		3327DB211C5EBA9200246731 /* mProtocol.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = mProtocol.playground; sourceTree = "<group>"; };
 		332C75BF1AF8350C00CF9881 /* mStruct.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = mStruct.playground; sourceTree = "<group>"; };
 		33381DD31AF0499C0097F5D6 /* mEnumeration.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = mEnumeration.playground; sourceTree = "<group>"; };
 		334F450619DB6BAD005774CF /* mPlayground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mPlayground.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -115,6 +116,7 @@
 				334F452F19DB6C14005774CF /* mGraph.playground */,
 				334F453119DB6C14005774CF /* mAlgorithm.playground */,
 				334F453019DB6C14005774CF /* mPhysics.playground */,
+				3327DB211C5EBA9200246731 /* mProtocol.playground */,
 				334F453319DB6C14005774CF /* mUIKit.playground */,
 				3371D9671B66246C004D04CC /* mGrouping.playground */,
 				33B7FF251ABA8B9A003E4A8B /* mAnimation.playground */,
