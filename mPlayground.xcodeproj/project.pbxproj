@@ -31,6 +31,7 @@
 		3327DB211C5EBA9200246731 /* mProtocol.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = mProtocol.playground; sourceTree = "<group>"; };
 		332C75BF1AF8350C00CF9881 /* mStruct.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = mStruct.playground; sourceTree = "<group>"; };
 		33381DD31AF0499C0097F5D6 /* mEnumeration.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = mEnumeration.playground; sourceTree = "<group>"; };
+		334EA0721C6BEE050017B18F /* mSet.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = mSet.playground; sourceTree = "<group>"; };
 		334F450619DB6BAD005774CF /* mPlayground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mPlayground.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		334F450A19DB6BAD005774CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		334F450B19DB6BAD005774CF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -112,6 +113,7 @@
 				33A8FCC01ABA9E2A006B68C3 /* mColor.playground */,
 				332C75BF1AF8350C00CF9881 /* mStruct.playground */,
 				33A97A8D19E49698008E9617 /* mClasses.playground */,
+				334EA0721C6BEE050017B18F /* mSet.playground */,
 				33381DD31AF0499C0097F5D6 /* mEnumeration.playground */,
 				334F452F19DB6C14005774CF /* mGraph.playground */,
 				334F453119DB6C14005774CF /* mAlgorithm.playground */,
