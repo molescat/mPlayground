@@ -3,5 +3,9 @@
     <pages>
         <page name='protocol'/>
         <page name='composition'/>
+        <page name='extensionStruct'/>
+        <page name='extensionDefaultComputedProperties'/>
+        <page name='extensionWhere'/>
+        <page name='Untitled Page'/>
     </pages>
 </playground>
