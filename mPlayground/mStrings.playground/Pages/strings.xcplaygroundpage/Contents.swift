@@ -44,5 +44,5 @@ if emptyString.isEmpty {
 var wildAnimal = "elephant"
 var zooAnimal = wildAnimal
 zooAnimal += " (endangered)"
-wildAnimal
+
 
