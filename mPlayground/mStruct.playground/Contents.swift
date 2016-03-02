@@ -9,7 +9,8 @@ struct Size {
   var width = 0.0, height = 0.0
 }
 
-// --------------------- setter/getter
+//: --------------------- setter/getter
+
 struct Rect {
   var origin = Point()
   var size = Size()
@@ -33,7 +34,8 @@ let initialSquareCenter = square.center
 square.center = Point(x: 15.0, y: 15.0)  // Custom getter/setter
 print("square.origin is now at (\(square.origin.x), \(square.origin.y))")
 
-// -- Alternate version
+//: -- Alternate version
+
 struct ShorthandRect {
   var origin = Point()
   var size = Size()
@@ -51,7 +53,8 @@ struct ShorthandRect {
 }
 
 
-// ----------------- Read Only - eg volume
+//: ----------------- Read Only - eg volume
+
 struct Cuboid {
   var width = 0.0, height = 0.0, depth = 0.0
   var volume: Double {
@@ -62,7 +65,8 @@ let fourByFiveByTwo = Cuboid(width: 4.0, height: 5.0, depth: 2.0)
 fourByFiveByTwo.volume
 
 
-// ------------------ Property Observer
+//: ------------------ Property Observer
+
 class StepCounter {
   var totalSteps: Int = 0 {
     willSet(newTotalSteps) {
@@ -80,13 +84,15 @@ stepCounter.totalSteps = 200
 // About to set totalSteps to 200
 // Added 200 steps
 
-/* - NOTE: Output of print/println functions goes to console - you can see it in assistant editor (use app menu View -> Assistant editor -> Show assistant editor to show it
+/*:
+  NOTE: Output of print/println functions goes to console - you can see it in assistant editor (use app menu View -> Assistant editor -> Show assistant editor to show it
 
   To see the above output of the willSet, didSet - check the console
 */
 
 
-// -------------------- Type Properties
+//: -------------------- Type Properties
+
 struct SomeStructure {
   static var storedTypeProperty = "Some value."
   static var computedTypeProperty: Int {
@@ -100,7 +106,8 @@ SomeStructure.storedTypeProperty
 SomeStructure.someTypeMethod()
 
 
-// -------------------- Functions
+//: -------------------- Functions
+
 struct MyPoint {
   var x = 0.0, y = 0.0
   mutating func mutatingMoveByX(deltaX: Double, y deltaY: Double) {
@@ -117,8 +124,9 @@ somePoint.mutatingMoveByX(2.0, y: 3.0)
 var anotherPoint = somePoint.moveByX(3.0, y: 4.0)
 
 
-// -------------------- Initializers
-// Note - there is no func on a init declaration
+//: -------------------- Initializers
+//: Note - there is no func on a init declaration
+
 struct Celsius {
   var temperatureInCelsius: Double
   init(fromFahrenheit fahrenheit: Double) {
@@ -136,7 +144,8 @@ let freezingPointOfWater = Celsius(fromKelvin: 273.15)
 let bodyTemperature = Celsius(37.0)
 
 
-// --------------------- constant & deferred initialiation
+//: --------------------- constant & deferred initialiation
+
 class SurveyQuestion {
   let text: String
   var response: String?
@@ -152,7 +161,8 @@ beetsQuestion.ask()
 beetsQuestion.response = "I also like beets. (But not with cheese.)"
 
 
-// --------------------- initialization options / delegation
+//: --------------------- initialization options / delegation
+
 struct MyRect {
   var origin = Point()
   var size = Size()
@@ -167,3 +177,4 @@ struct MyRect {
     self.init(origin: Point(x: originX, y: originY), size: size)
   }
 }
+

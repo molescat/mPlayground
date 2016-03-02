@@ -2,7 +2,8 @@
 
 import Foundation
 
-// ---------------------------------------------- Designated / Convenience  and Automatic initializers
+//: ----------------- Designated / Convenience and Automatic initializers
+
 class Food {
   var name: String
   init(name: String) {

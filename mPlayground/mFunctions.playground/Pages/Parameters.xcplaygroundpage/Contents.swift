@@ -1,9 +1,11 @@
 //: [Previous](@previous)
-// Playground - Functions
+
+//: ----------------- Functions
 
 import UIKit
 
-// ---------------------------------------- Passing out a value
+//: ----------------- Passing out a value
+
 func passingOut(inout number :Int) {
   number += 10
 }
@@ -13,7 +15,8 @@ passingOut(&myNumber)
 myNumber
 
 
-// ---------------------------------------- Local mutable copy of passed in variable
+//: ----------------- Local mutable copy of passed in variable
+
 func simpleAddition(var number :Int) -> Int {
   number += 10
   return number
@@ -24,7 +27,8 @@ simpleAddition(anotherNumber)
 anotherNumber
 
 
-// ---------------------------------------- Default parameters
+//: ----------------- Default parameters
+
 func joiner(a :String, b :String, join :String = "", suffix :String = ".") -> String {
   return a + join + b + suffix
 }
@@ -33,7 +37,8 @@ let dogCat = joiner("dog", b: "cat")
 let dogMinusCat = joiner("dog", b: "cat", suffix: "!", join: " - ")
 
 
-// ---------------------------------------- Tupples
+//: ----------------- Tupples
+
 func calculate(scores: [Int]) ->(min: Int, max: Int, sum: Int) {
   var min = scores[0]
   var max = scores[0]
@@ -55,7 +60,8 @@ statistics.sum
 statistics.2  // third tupple
 
 
-// ---------------------------------------- Var args
+//: ----------------- Var args
+
 func sumOf(numbers: Int...) -> Int {
   var sum = 0
   for number in numbers {

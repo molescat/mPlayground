@@ -1,5 +1,4 @@
-// Playground 
-// Color examples
+//: Color examples
 
 import UIKit
 

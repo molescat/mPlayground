@@ -2,12 +2,12 @@
 
 import Foundation
 
-// Playground - Basics
-// Plain old types, strings, casts and optionals
+//: Basics
+//: Plain old types, strings, casts and optionals
 
 import UIKit
 
-// ---------------------------------------- Plain types, const and variables
+//: ----------------- Plain types, const and variables
 let mVersion = 1.0
 let mFloat: Float = -33.3
 var mDouble = -33.3
@@ -18,19 +18,19 @@ let mUnicode = "\u{1F425}"
 let mAcute: Character = "\u{E9}"
 
 
-// ---------------------------------------- Number conversions
+//: ----------------- Number conversions
 let stringNumber = "123"
 var mInt = Int(stringNumber)!
 var someNumber: Int = Int(stringNumber)!
 
 
-// ---------------------------------------- Number bounds
+//: ----------------- Number bounds
 var mMax8 = UInt8.max
 var mMax32 = UInt32.max
 var mMinS32 = Int32.min
 
 
-// ---------------------------------------- Casting
+//: ----------------- Casting
 let mUInt16: UInt16 = UInt16(mMax8)
 
 

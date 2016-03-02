@@ -3,11 +3,13 @@
 import Foundation
 
 
-// --- Split into an Array of words
+//: --- Split into an Array of words
+
 var fullname = "Alfred E. Newman"
 var x = fullname.characters.split(" ").map(String.init)
 
-// --- String from Class
+//: --- String from Class
+
 class Shape {
   func hello() {
     print(" [\(String(self))]")

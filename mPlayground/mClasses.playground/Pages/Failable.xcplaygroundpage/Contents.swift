@@ -2,7 +2,8 @@
 
 import Foundation
 
-// ---------------------------------------------- Failable initializers
+//: ----------------- Failable initializers
+
 class Product {
   let name: String!
   init?(name: String) {

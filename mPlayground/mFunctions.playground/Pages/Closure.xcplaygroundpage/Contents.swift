@@ -4,7 +4,7 @@ import Foundation
 
 var strangeNumbers = [10, 100, 8, 16]
 
-// ---------------------------------------- map
+//: ----------------- map
 
 let doubledNumbers = strangeNumbers.map({
   (number: Int) -> Int in
@@ -18,7 +18,8 @@ let trippledNumbers = strangeNumbers.map({ number in
 trippledNumbers
 
 
-// ----------------------------------------- sort
+//: ----------------- sort
+
 func backwards(a :Int, b :Int) -> Bool {
   return a > b
 }
@@ -34,7 +35,8 @@ strangeNumbers.sortInPlace(<)  // Mutate
 strangeNumbers
 
 
-// ---------------------------------------- Trailing Closure shorthand
+//: ----------------- Trailing Closure shorthand
+
 func someFunctionThatTakesAClosure(closure: () -> ()) {
   closure()
 }

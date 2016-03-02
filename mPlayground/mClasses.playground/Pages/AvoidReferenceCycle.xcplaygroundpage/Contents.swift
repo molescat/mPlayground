@@ -36,7 +36,7 @@ beatles = nil
 
 print("----")
 
-// ---------- Closures
+//: ----------------- Closures
 
 class Alpha {
   deinit {

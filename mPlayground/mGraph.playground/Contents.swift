@@ -1,4 +1,4 @@
-// Playground - Graphing
+//: Graphing
 
 import UIKit
 

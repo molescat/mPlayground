@@ -2,7 +2,8 @@
 
 import Foundation
 
-// ---------------------------------------- Nesting
+//: ----------------- Nesting
+
 func simpleFunc() -> Int {
   var y = 10
   func addFive() {

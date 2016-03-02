@@ -1,5 +1,4 @@
-// Playground - Containers
-// Arrays, Dictionaries
+//: ----------------- Containers
 
 import UIKit
 
@@ -10,7 +9,7 @@ func printMyType<T>(myType: T) {
   debugPrint(myType)
 }
 
-// ---------------------------------------- Array
+//: ----------------- Array
 let mEmptyArray = []
 //printMyType(mEmptyArray)
 
@@ -33,7 +32,7 @@ mArray.removeLast()
 mArray
 mArray.count
 
-// --- Reduce
+//: ----------------- Reduce
 
 var stats = [1,2,3,4,5,6,7,8,9,1,1,1,1,]
 var average = Double(stats.reduce(0){$0 + $1}) / Double(stats.count)

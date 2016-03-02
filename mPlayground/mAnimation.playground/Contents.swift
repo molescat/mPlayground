@@ -1,12 +1,13 @@
-// 
-// Animation example
-// Next, make sure the Assistant Editor is showing. 
-// The Assistant Editor can be opened from 
-//  View -> Assistant Editor -> Show Assistant Editor.
-//
-// You may need to select Editor > Execute Playground
-//
-//
+/*:
+ Animation example
+
+ Make sure the Assistant Editor is showing. 
+ The Assistant Editor can be opened from 
+  View -> Assistant Editor -> Show Assistant Editor.
+
+ You may need to select Editor > Execute Playground
+*/
+
 
 import UIKit
 import XCPlayground
@@ -50,6 +51,4 @@ UIView.animateWithDuration(2.0,
       rectangle.transform = rotationTransform
   },
   completion: nil)
-
-
 

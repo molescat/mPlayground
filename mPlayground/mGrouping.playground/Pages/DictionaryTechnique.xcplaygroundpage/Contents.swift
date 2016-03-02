@@ -32,5 +32,4 @@ let keys = ["a", "b", "c", "d", "e", "f", "g", "h", "i"]
 let groups = keys.groupBy(groupingFunction: groupForAddress)
 
 
-
 //: [Next](@next)

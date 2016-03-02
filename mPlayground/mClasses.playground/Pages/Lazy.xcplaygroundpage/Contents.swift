@@ -2,7 +2,8 @@
 
 import Foundation
 
-// ---------------------------------------------- Lazy
+//: ----------------- Lazy
+
 class DataImporter {
   /*
   The class is assumed to take a non-trivial amount of time to initialize.

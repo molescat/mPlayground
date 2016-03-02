@@ -1,4 +1,4 @@
-// Playground - sorting and graphing the results
+//: ----------------- sorting and graphing the results
 
 import UIKit
 
@@ -9,7 +9,8 @@ for i in 0..<20 {
 }
 randomData
 
-// ------------------------------------------------
+//: ----------------- 
+
 var data = [84, 74, 56, 54, 18, 26, 69, 91, 35, 48, 45, 15, 19, 70, 63, 32, 79, 31, 79, 41]
 
 func exchange<T>(inout data: [T], i: Int, j: Int) {

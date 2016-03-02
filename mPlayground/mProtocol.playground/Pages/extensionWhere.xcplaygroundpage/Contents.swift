@@ -27,7 +27,7 @@ if let threeNextsAfterTwo = Number(rawValue: 2)?.nextCase()?.nextCase()?.nextCas
 let oneBeforeOne = Number(rawValue: 1)?.previousCase()
 
 
-/// ---
+//: ---
 
 protocol Bird {
   var name: String { get }

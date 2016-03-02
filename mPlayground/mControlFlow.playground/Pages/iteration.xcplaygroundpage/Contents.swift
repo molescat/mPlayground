@@ -2,7 +2,8 @@
 
 import Foundation
 
-//  ---------------------------------------- iteration
+//: ----------------- iteration
+
 var mStringArray = ["dog", "cat", "fish"]
 
 var concat: String = ""

@@ -1,4 +1,4 @@
-// Playground - Classes Inheritence
+//: ----------------- Classes Inheritence
 
 import UIKit
 
@@ -36,6 +36,5 @@ if anotherShape === myShape {
   print("refers to exacly the same object")
 }
 myShape  // note - myShape is now 10 sided, even though it is const, and you modified anotherShape
-
 
 

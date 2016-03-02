@@ -1,4 +1,3 @@
-// Playground - noun: a place where people can play
 
 import UIKit
 
@@ -10,7 +9,8 @@ let attrString = NSAttributedString(string: "Hello",
     NSFontAttributeName:UIFont.systemFontOfSize(42)]
 )
 
-// Remember playground is a package, and the image lives in Resources folder
+//: Remember playground is a package, and the image lives in Resources folder
+
 let image = UIImage(named:"bulb")
 
 class DataSource: NSObject, UITableViewDataSource {

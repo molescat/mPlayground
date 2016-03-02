@@ -2,7 +2,7 @@
 
 import Foundation
 
-// ---------------------------------------------- Override / Final
+//: ----------------- Override / Final
 class Animal {
   func species() -> String { return "" }
   final func youCantOverrideThis() -> String { return "final" }

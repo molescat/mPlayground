@@ -1,10 +1,11 @@
-// Playground - Strings
+//: Strings
 
 import UIKit
 
 let version = 33.333333333
 
-// ---------------------------------------- Strings
+//: ----------------- Basics
+
 var name: String
 name = "Ruffus"
 
@@ -19,7 +20,8 @@ print("Welcome \(mString)")
 print("String length \(mString.characters.count)")
 
 
-// ---------------------------------------- using strings
+//: ----------------- using strings
+
 var animal = "dog"
 var pet = "dog"
 if pet == animal {
@@ -44,5 +46,4 @@ if emptyString.isEmpty {
 var wildAnimal = "elephant"
 var zooAnimal = wildAnimal
 zooAnimal += " (endangered)"
-
 

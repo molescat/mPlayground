@@ -2,7 +2,8 @@
 
 import Foundation
 
-//--------------------------------- RawValue value
+//: ----------------- RawValue value
+
 enum Planet: Int {
   case Mercury = 1, Venus, Earth, Mars, Jupiter, Saturn, Uranus, Neptune
 }
@@ -21,7 +22,6 @@ default: // switch must be exhaustive
 
 let possiblePlanet = Planet(rawValue: 7)
 let impossiblePlanet = Planet(rawValue: 14)
-
 
 
 //: [Next](@next)

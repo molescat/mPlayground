@@ -1,4 +1,4 @@
-//: Playground - noun: a place where people can play
+//: Set
 
 import Cocoa
 
@@ -43,4 +43,4 @@ letters = []
 var favoriteGenres: Set<String> = ["Rock", "Classical", "Hip hop"]
 var favoriteGenresShort: Set = ["Rock", "Classical", "Hip hop"]
 
-favoriteGenres.insert(")
+favoriteGenres.insert("Jazz")

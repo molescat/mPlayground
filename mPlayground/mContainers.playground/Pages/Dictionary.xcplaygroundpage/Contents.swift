@@ -2,7 +2,8 @@
 
 import Foundation
 
-// ---------------------------------------- Dictionary
+//: ----------------- Dictionary
+
 let thingDict = [
     "a" : 1,
     "b" : "cat",

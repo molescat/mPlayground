@@ -2,7 +2,7 @@
 
 import Foundation
 
-// ---------------------------------------- Optional
+//: ---------------------------------------- Optional
 var optionalString: String? = "Hello"
 //optionalString = nil
 
@@ -13,9 +13,8 @@ if let name = optionalString {
   print(result)
 }
 
-// Nil Coalescing Operator
+//: Nil Coalescing Operator
 var x: String = optionalString ?? "sentinel"
-
 
 
 //: [Next](@next)

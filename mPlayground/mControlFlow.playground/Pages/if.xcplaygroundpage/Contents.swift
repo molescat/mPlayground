@@ -1,9 +1,10 @@
-// Playground - Control Flow
+//: ----------------- Control Flow
 
 import UIKit
 
 
-//  ---------------------------------------- if
+//: ----------------- if
+
 var temperatureInFahrenheit = 30
 if temperatureInFahrenheit <= 32 {
   print("It's freezing")

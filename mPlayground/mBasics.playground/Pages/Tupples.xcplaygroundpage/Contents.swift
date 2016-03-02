@@ -15,13 +15,13 @@ namedStatus.code
 
 var playerScore: (score: Int, firstName: String, lastName: String) = (23, "Steve", "Jobs")
 
-// Decomposed the tupple
+//: Decomposed the tupple
 let (x, y, z) = playerScore
 x
 y
 z
 
-// Modify the tupple
+//: Modify the tupple
 playerScore.firstName = "Bill"
 playerScore.lastName = "Gates"
 playerScore

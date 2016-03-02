@@ -2,7 +2,8 @@
 
 import Foundation
 
-// ---------------------------------------------- Type Properties
+//: ----------------- Type Properties
+
 class SomeClass {
   static var storedTypeProperty = "Some value."
   static var computedTypeProperty: Int {
@@ -20,7 +21,6 @@ SomeClass.storedTypeProperty
 SomeClass.storedTypeProperty = "frog"
 SomeClass.storedTypeProperty
 SomeClass.someTypeMethod()
-
 
 
 //: [Next](@next)

@@ -2,7 +2,6 @@
 
 import Foundation
 
-// ----------------------------------------------
 class MyPoint {
   var x = 0.0, y = 0.0
   init() {}
@@ -21,7 +20,6 @@ var somePoint = MyPoint(x: 1.0, y: 1.0)
 somePoint.mutatingMoveByX(2.0, y: 3.0)
 
 var anotherPoint = somePoint.moveByX(3.0, y: 4.0)
-
 
 
 //: [Next](@next)
