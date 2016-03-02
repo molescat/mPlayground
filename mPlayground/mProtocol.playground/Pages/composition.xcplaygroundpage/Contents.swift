@@ -2,14 +2,12 @@
 
 import Foundation
 
-// --
-// The required keyword means that inheriting classes must provide an implementation of the method.
-// The class keyword here, means conformance requires a class (rather than just a struct)
 
 protocol HasTitle {
   var title: String { get }
 }
 
+//: The class *keyword* here, means conformance requires a class (rather than just a struct)
 protocol Ratable: class {
   var ratings: [Int] { get set }
   func addRating(rating: Int)
@@ -20,6 +18,7 @@ protocol Purchasable: HasTitle {
   var price: Double { get set }
 }
 
+//: The *required* keyword means that inheriting classes must provide an implementation of the method.
 class Book: Purchasable, Ratable {
   var title = ""
   var ratings = [Int]()
@@ -67,7 +66,7 @@ class BluRay: Ratable, Purchasable {
 let bluRay = BluRay(title: "Harry Potter and the Ravages of Time", price: 39.56)
 
 
-// -- Type Aliasing, protocol composition
+//: Type Aliasing, protocol composition
 
 typealias LineItemable = protocol<Purchasable, Ratable>
 
