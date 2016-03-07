@@ -6,6 +6,6 @@
         <page name='extensionStruct'/>
         <page name='extensionDefaultComputedProperties'/>
         <page name='extensionWhere'/>
-        <page name='Untitled Page'/>
+        <page name='extensionWhereType'/>
     </pages>
 </playground>

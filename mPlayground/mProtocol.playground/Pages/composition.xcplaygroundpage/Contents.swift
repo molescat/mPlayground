@@ -2,6 +2,11 @@
 
 import Foundation
 
+/*: https://developer.apple.com/library/ios/documentation/Swift/Conceptual/Swift_Programming_Language/Protocols.html
+Protocol Composition
+
+It can be useful to require a type to conform to multiple protocols at once. You can combine multiple protocols into a single requirement with a protocol composition. Protocol compositions have the form protocol<SomeProtocol, AnotherProtocol>. You can list as many protocols within the pair of angle brackets (<>) as you need, separated by commas.
+*/
 
 protocol HasTitle {
   var title: String { get }
