@@ -1,14 +1,10 @@
 //: [Previous](@previous)
-
-import Foundation
-
 /*: http://www.codingexplorer.com/swift-extensions/
+## Extensions - Default computed properties
+
 Extensions can add computed instance properties and computed type properties to existing types.
 
-
 There is something important to know before we go any further.  Swift extensions cannot add stored properties to a type.  You can make computed properties, but you cannot store them unless they store via a stored property that is already in the type you are extending (like if you added an extension to a Bool to take the Strings “Oui” or “Non” and just mapped them back to true and false and stored those as the Bool’s value).  You also cannot add property observers to properties that already exist in the type you are extending.
-
-Default computed properties, for protocols
 
 #### Protocol extension vs class extension in Swift
 

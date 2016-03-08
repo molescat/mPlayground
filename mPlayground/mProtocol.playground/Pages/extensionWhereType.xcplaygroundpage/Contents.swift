@@ -1,6 +1,8 @@
 //: [Previous](@previous)
+/*:
+## Where Type - Enum Example
 
-import Foundation
+*/
 
 extension RawRepresentable where RawValue: IntegerType {
   
@@ -23,7 +25,5 @@ if let threeNextsAfterTwo = Number(rawValue: 2)?.nextCase()?.nextCase()?.nextCas
 }
 
 let oneBeforeOne = Number(rawValue: 1)?.previousCase()
-
-
 
 //: [Next](@next)

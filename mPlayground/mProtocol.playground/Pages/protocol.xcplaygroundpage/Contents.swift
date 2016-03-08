@@ -1,8 +1,7 @@
-//: Protocol
-
-import Foundation
-
+//: [Previous](@previous)
 /*: http://www.raywenderlich.com/109156/introducing-protocol-oriented-programming-in-swift-2
+## Protocols
+
 Why Not Base Classes?
 Protocol extensions and default implementations may seem similar to using a base class or even abstract classes in other languages, but they offer a few key advantages in Swift:
 Because types can conform to more than one protocol, they can be decorated with default behaviors from multiple protocols. Unlike multiple inheritance of classes which some programming languages support, protocol extensions do not introduce any additional state.
@@ -23,3 +22,4 @@ protocol DemonstratesProtocol {
   
 }
 
+//: [Next](@next)

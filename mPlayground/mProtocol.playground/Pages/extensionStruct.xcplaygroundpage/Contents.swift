@@ -1,6 +1,6 @@
 //: [Previous](@previous)
-
 /*: https://developer.apple.com/library/ios/documentation/Swift/Conceptual/Swift_Programming_Language/Extensions.html
+## Extensions
 
 Extensions add new functionality to an existing class, structure, enumeration, or protocol type. This includes the ability to extend types for which you do not have access to the original source code (known as retroactive modeling). Extensions are similar to categories in Objective-C. (Unlike Objective-C categories, Swift extensions do not have names.)
 
@@ -14,8 +14,6 @@ Extensions in Swift can:
 * Make an existing type conform to a protocol
 
 */
-
-import Foundation
 
 struct Person {
   var firstName: String
