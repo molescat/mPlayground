@@ -47,8 +47,7 @@ protocol Motorized {
 }
 
 extension Motorized {
-  func internalEngineSizeDefault() -> Int { return 2300 }
-  var engineSizeCc: Int { return internalEngineSizeDefault() }
+  var engineSizeCc: Int { return 11 }
 }
 
 //: ---
@@ -56,11 +55,10 @@ extension Motorized {
 class Sedan: Vehicular, Paintable, Motorized {
   
   var secondaryBodyColors: [String]?
-  var engineSizeCc: Int = 0 // Basically this overides the protocol extension
+  var engineSizeCc: Int = 22 // Basically this overides the protocol extension
   
   init(engineSizeCc: Int) {
-//    self.engineSizeCc = engineSizeCc
-    self.engineSizeCc = internalEngineSizeDefault()
+    self.engineSizeCc = engineSizeCc
   }
   
   func paint(newPrimaryColor: String, newSecondaryColors: [String]) {
@@ -70,12 +68,13 @@ class Sedan: Vehicular, Paintable, Motorized {
   
 }
 
-let sedan = Sedan(engineSizeCc: 4000)
+let sedan = Sedan(engineSizeCc: 33)
 sedan.passengerCapacity
 sedan.primaryBodyColor
 sedan.engineSizeCc
 
 sedan.paint("red", newSecondaryColors: ["white stripes"])
+
 
 /*: 
 ## QUESTION
