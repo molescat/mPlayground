@@ -1,5 +1,7 @@
 //: [Previous](@previous)
-
+/*:
+## Classes - avoid reference cycle
+*/
 import Foundation
 
 class Band {

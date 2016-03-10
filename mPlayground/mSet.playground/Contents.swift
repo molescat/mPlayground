@@ -1,6 +1,7 @@
-//: Set
-
-import Cocoa
+/*:
+## Set
+*/
+import Foundation
 
 struct Option: OptionSetType {
   

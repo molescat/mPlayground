@@ -1,8 +1,8 @@
 //: [Previous](@previous)
-
+/*:
+## Control Flow - guard
+*/
 import Foundation
-
-//: ----------------- guard
 
 func greet(person: [String: String]) {
   guard let name = person["name"] else {

@@ -1,6 +1,8 @@
-//: Playground - Enumerations
-
-import UIKit
+//: [Previous](@previous)
+/*:
+## Enumerations
+*/
+import Foundation
 
 enum CompassPoint {
   case North
@@ -12,4 +14,4 @@ enum CompassPoint {
 var direction = CompassPoint.North
 
 
-
+//: [Previous](@previous)

@@ -1,5 +1,7 @@
 //: [Previous](@previous)
-
+/*:
+## Functions - error handling
+*/
 import Foundation
 
 

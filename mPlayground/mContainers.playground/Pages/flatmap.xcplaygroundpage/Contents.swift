@@ -1,5 +1,7 @@
 //: [Previous](@previous)
-
+/*:
+## Flatmap
+*/
 import Foundation
 
 let nestedArray = [[1,2,3,4],[6,7,8,9]]
@@ -61,4 +63,4 @@ reducedNested
 let flatmapIsLikeJoinNested = myThreeNestedStrings.flatMap{$0 + ["XXX"]}
 flatmapIsLikeJoinNested
 
-
+//: [Next](@next)

@@ -1,8 +1,8 @@
 //: [Previous](@previous)
-
+/*: 
+## Designated / Convenience and Automatic initializers
+*/
 import Foundation
-
-//: ----------------- Designated / Convenience and Automatic initializers
 
 class Food {
   var name: String

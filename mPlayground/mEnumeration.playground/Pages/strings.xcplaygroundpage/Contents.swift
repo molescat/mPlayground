@@ -1,5 +1,7 @@
 //: [Previous](@previous)
-
+/*:
+## Enumeration - strings
+*/
 import Foundation
 
 enum CompassPoint: String {

@@ -1,7 +1,8 @@
 //: [Previous](@previous)
-
+/*:
+## String conversions
+*/
 import Foundation
-
 
 //: --- Split into an Array of words
 
@@ -24,3 +25,4 @@ String(Shape)
 NSStringFromClass(Shape.self)
 NSStringFromClass(Shape)
 
+//: [Next](@next)

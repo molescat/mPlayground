@@ -1,5 +1,6 @@
-//: Graphing
-
+/*:
+## Graphing
+*/
 import UIKit
 
 let sineArraySize = 64

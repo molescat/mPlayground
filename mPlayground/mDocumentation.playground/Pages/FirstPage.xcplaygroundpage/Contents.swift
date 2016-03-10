@@ -1,9 +1,8 @@
-//: Playground - Documentation
-
-import UIKit
+/*:
+# Documentation in Playgrounds
+*/
 
 var str = "Remember to toggle on the 'Render Documention' in the playground settings"
-
 
 //: These two lines of single delimiter text
 //: show up as one rich comment block in the playground

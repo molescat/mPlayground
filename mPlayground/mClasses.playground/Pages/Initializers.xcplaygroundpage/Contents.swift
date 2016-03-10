@@ -1,5 +1,7 @@
 //: [Previous](@previous)
-
+/*:
+## Classes - initializers
+*/
 import Foundation
 
 class MyPoint {

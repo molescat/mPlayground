@@ -1,4 +1,7 @@
-//: ----------------- sorting and graphing the results
+//: [Previous](@previous)
+/*:
+## sorting and graphing the results
+*/
 
 import UIKit
 

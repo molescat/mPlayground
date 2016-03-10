@@ -1,9 +1,9 @@
-//: ----------------- Control Flow
+//: [Previous](@previous)
+/*:
+## Control Flow - if
+*/
 
-import UIKit
-
-
-//: ----------------- if
+import Foundation
 
 var temperatureInFahrenheit = 30
 if temperatureInFahrenheit <= 32 {
@@ -14,3 +14,4 @@ if temperatureInFahrenheit <= 32 {
   print("It's meh")
 }
 
+//: [Next](@next)

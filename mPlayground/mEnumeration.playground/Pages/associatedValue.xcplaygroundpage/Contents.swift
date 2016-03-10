@@ -1,8 +1,9 @@
 //: [Previous](@previous)
-
+/*:
+## Associated value
+*/
 import Foundation
 
-//--------------------------------- Associated value
 enum Barcode {
   case UPCA(Int, Int, Int, Int)
   case QRCode(String)
@@ -18,7 +19,6 @@ case .UPCA(let numberSystem, let manufacturer, let product, let check):
 case let .QRCode(productCode):
   print("QR Code: \(productCode)")
 }
-
 
 
 //: [Next](@next)

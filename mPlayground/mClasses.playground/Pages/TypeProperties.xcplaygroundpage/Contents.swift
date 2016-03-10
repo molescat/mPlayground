@@ -1,8 +1,8 @@
 //: [Previous](@previous)
-
+/*:
+## Classes - Type properties
+*/
 import Foundation
-
-//: ----------------- Type Properties
 
 class SomeClass {
   static var storedTypeProperty = "Some value."

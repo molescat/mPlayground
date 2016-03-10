@@ -1,8 +1,8 @@
 //: [Previous](@previous)
-
+/*:
+## Dictionary
+*/
 import Foundation
-
-//: ----------------- Dictionary
 
 let thingDict = [
     "a" : 1,

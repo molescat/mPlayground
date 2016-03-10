@@ -1,5 +1,7 @@
-//: ----------------- Classes Inheritence
-
+//: [Previous](@previous)
+/*:
+## Classes Inheritence
+*/
 import UIKit
 
 class Shape {
@@ -37,4 +39,4 @@ if anotherShape === myShape {
 }
 myShape  // note - myShape is now 10 sided, even though it is const, and you modified anotherShape
 
-
+//: [Next](@next)

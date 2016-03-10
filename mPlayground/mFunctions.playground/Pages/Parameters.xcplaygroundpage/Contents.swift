@@ -1,7 +1,7 @@
 //: [Previous](@previous)
-
-//: ----------------- Functions
-
+/*:
+## Functions - parameters
+*/
 import UIKit
 
 //: ----------------- Passing out a value

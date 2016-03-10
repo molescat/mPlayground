@@ -25,7 +25,7 @@ struct FlappyBird: Bird, Flyable {
   let name: String
   let flappyAmplitude: Double
   let flappyFrequency: Double
-  //  let canFly = true
+//  let canFly = true
   
   var airspeedVelocity: Double {
     return 3 * flappyFrequency * flappyAmplitude

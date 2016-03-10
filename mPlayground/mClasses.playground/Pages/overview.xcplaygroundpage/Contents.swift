@@ -1,6 +1,6 @@
 //: [Previous](@previous)
 
-/*
+/*:
 Classes have additional capabilities that structures do not:
 
 * Inheritance enables one class to inherit the characteristics of another.

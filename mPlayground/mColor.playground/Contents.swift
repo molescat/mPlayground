@@ -1,5 +1,6 @@
-//: Color examples
-
+/*:
+## Color examples
+*/
 import UIKit
 
 var apple = UIColor.greenColor()

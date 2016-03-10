@@ -1,8 +1,9 @@
 //: [Previous](@previous)
-
+/*:
+## Optional
+*/
 import Foundation
 
-//: ---------------------------------------- Optional
 var optionalString: String? = "Hello"
 //optionalString = nil
 

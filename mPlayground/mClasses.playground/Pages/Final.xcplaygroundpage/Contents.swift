@@ -1,8 +1,9 @@
 //: [Previous](@previous)
-
+/*:
+## Override / Final
+*/
 import Foundation
 
-//: ----------------- Override / Final
 class Animal {
   func species() -> String { return "" }
   final func youCantOverrideThis() -> String { return "final" }

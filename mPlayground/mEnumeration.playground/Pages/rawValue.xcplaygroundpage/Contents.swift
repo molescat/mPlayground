@@ -1,8 +1,8 @@
 //: [Previous](@previous)
-
+/*:
+## RawValue value
+*/
 import Foundation
-
-//: ----------------- RawValue value
 
 enum Planet: Int {
   case Mercury = 1, Venus, Earth, Mars, Jupiter, Saturn, Uranus, Neptune

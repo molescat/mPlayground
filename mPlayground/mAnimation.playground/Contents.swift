@@ -1,5 +1,5 @@
 /*:
- Animation example
+## Animation example
 
  Make sure the Assistant Editor is showing. 
  The Assistant Editor can be opened from 
@@ -7,8 +7,6 @@
 
  You may need to select Editor > Execute Playground
 */
-
-
 import UIKit
 import XCPlayground
 

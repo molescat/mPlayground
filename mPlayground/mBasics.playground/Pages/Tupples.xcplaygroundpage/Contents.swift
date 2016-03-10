@@ -1,13 +1,11 @@
 //: [Previous](@previous)
-
+/*:
+## Tupples
+*/
 import Foundation
 
 var response = (200, "Good")
-
-
 var status: (Int, Float, String) = (32, 1.2, "Good")
-
-
 var namedStatus: (code: Int, value: Float, name: String?) = (21, 1.2, nil)
 namedStatus.code
 
@@ -25,3 +23,5 @@ z
 playerScore.firstName = "Bill"
 playerScore.lastName = "Gates"
 playerScore
+
+//: [Next](@next)

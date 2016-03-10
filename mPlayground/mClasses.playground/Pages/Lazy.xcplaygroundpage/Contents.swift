@@ -1,8 +1,8 @@
 //: [Previous](@previous)
-
+/*:
+## Classes -  Lazy
+*/
 import Foundation
-
-//: ----------------- Lazy
 
 class DataImporter {
   /*

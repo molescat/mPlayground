@@ -31,7 +31,7 @@ extension Person {
 //: Extension can extend an existing type to make it adopt one or more protocols
 extension Person: CustomStringConvertible {
   var description: String {
-    return "Fullname -> \(fullName)"
+    return "Fullname is >>>\(fullName)<<<"
   }
 }
 

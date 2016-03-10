@@ -1,8 +1,8 @@
 //: [Previous](@previous)
-
+/*:
+## Functions - Nesting
+*/
 import Foundation
-
-//: ----------------- Nesting
 
 func simpleFunc() -> Int {
   var y = 10

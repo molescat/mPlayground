@@ -1,11 +1,9 @@
 //: [Previous](@previous)
-
+/*:
+## Basics
+Plain old types, strings, casts and optionals
+*/
 import Foundation
-
-//: Basics
-//: Plain old types, strings, casts and optionals
-
-import UIKit
 
 //: ----------------- Plain types, const and variables
 let mVersion = 1.0

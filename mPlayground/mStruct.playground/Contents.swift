@@ -1,5 +1,6 @@
-//: Playground - structs
-
+/*:
+## structs
+*/
 import UIKit
 
 struct Point {

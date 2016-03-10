@@ -9,7 +9,7 @@ protocol HasTitle {
   var title: String { get }
 }
 
-//: The class *keyword* here, means conformance requires a class (rather than just a struct)
+//: The *class* keyword here, means conformance requires a class (rather than just a struct)
 protocol Ratable: class {
   var ratings: [Int] { get set }
   func addRating(rating: Int)
@@ -22,6 +22,7 @@ protocol Purchasable: HasTitle {
 
 //: The *required* keyword means that inheriting classes must provide an implementation of the method.
 class Book: Purchasable, Ratable {
+  
   var title = ""
   var ratings = [Int]()
   var price = 0.0
@@ -44,7 +45,7 @@ class Book: Purchasable, Ratable {
 let book = Book(title: "Harry Potter and the Philosopher's Stone")
 
 
-class BluRay: Ratable, Purchasable {
+class BluRay: Purchasable, Ratable {
   
   var ratings = [Int]()
   var title: String

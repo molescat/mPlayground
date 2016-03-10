@@ -1,7 +1,8 @@
 //: [Previous](@previous)
-
-//: Grouping - simple experiment using dictionary as the unique key
-
+/*:
+## Grouping
+- simple experiment using dictionary as the unique key
+*/
 import Foundation
 
 extension Array {

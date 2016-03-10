@@ -1,8 +1,8 @@
 //: [Previous](@previous)
-
+/*:
+## Control Flow - iteration
+*/
 import Foundation
-
-//: ----------------- iteration
 
 var mStringArray = ["dog", "cat", "fish"]
 

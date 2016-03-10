@@ -1,5 +1,7 @@
 //: [Previous](@previous)
-
+/*:
+## Classes - singleton
+*/
 import Foundation
 
 // Note the init is private

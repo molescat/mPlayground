@@ -1,4 +1,7 @@
-//: Strings
+//: [Previous](@previous)
+/*:
+## Strings
+*/
 
 import UIKit
 
@@ -47,3 +50,4 @@ var wildAnimal = "elephant"
 var zooAnimal = wildAnimal
 zooAnimal += " (endangered)"
 
+//: [Next](@next)

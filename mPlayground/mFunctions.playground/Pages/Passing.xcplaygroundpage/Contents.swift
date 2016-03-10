@@ -1,5 +1,7 @@
 //: [Previous](@previous)
-
+/*:
+## Functions - functions as objects
+*/
 import Foundation
 
 //: ----------------- Returning func

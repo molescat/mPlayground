@@ -1,8 +1,8 @@
 //: [Previous](@previous)
-
+/*:
+## Failable initializers
+*/
 import Foundation
-
-//: ----------------- Failable initializers
 
 class Product {
   let name: String!

@@ -1,5 +1,7 @@
 //: [Previous](@previous)
-
+/*:
+## Closure
+*/
 import Foundation
 
 var strangeNumbers = [10, 100, 8, 16]
