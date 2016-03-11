@@ -25,18 +25,28 @@ public struct Bookmark {
 
 let aBookmark = Bookmark(title: "Appventure", url: NSURL(string: "appventure.me")!, keywords: ["Swift", "iOS", "OSX"], group: .Tech)
 
-
+//: ---
 let aMirror = Mirror(reflecting: aBookmark)
-
 for case let (label?, value) in aMirror.children {
   print(label, value)
 }
 
+//: Subject Type
+aMirror.subjectType
 print(aMirror.subjectType)
-//prints : Bookmark
 print(Mirror(reflecting: 5).subjectType)
-//prints : Int
 print(Mirror(reflecting: "test").subjectType)
-//prints : String
 print(Mirror(reflecting: NSNull()).subjectType)
-//print : NSNull
+
+//: Display Style
+// Known
+aMirror.displayStyle
+print(aMirror.displayStyle)
+// Unknown
+let closure = { (a: Int) -> Int in return a * 2 }
+Mirror(reflecting: closure).displayStyle
+
+//: Superclass
+print(Mirror(reflecting: aBookmark).superclassMirror())
+print(Mirror(reflecting: aBookmark.store).superclassMirror())
+
