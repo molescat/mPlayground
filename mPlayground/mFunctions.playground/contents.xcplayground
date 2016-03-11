@@ -2,6 +2,9 @@
 <playground version='6.0' target-platform='ios' last-migration='0700'>
     <pages>
         <page name='Parameters'/>
+        <page name='tupples'/>
+        <page name='varargs'/>
+        <page name='overloading'/>
         <page name='Local'/>
         <page name='Closure'/>
         <page name='Passing'/>

@@ -1,8 +1,8 @@
-//: Tupples
-
-import UIKit
+//: [Previous](@previous)
+/*:
+## Functions - tupples
+*/
 import Foundation
-
 
 func dealACard() -> (value: String, suit: String)
 {
@@ -12,7 +12,7 @@ func dealACard() -> (value: String, suit: String)
   func randomIndexForCount(count: Int) -> Int {
     return Int(arc4random_uniform(UInt32(count)))
   }
-
+  
   let value = values[randomIndexForCount(values.count)]
   let suit = suits[randomIndexForCount(suits.count)]
   return (value, suit)
@@ -26,3 +26,4 @@ print("Card is \(a.0) of \(a.1)")
 
 let b = dealACard().suit
 
+//: [Next](@next)
