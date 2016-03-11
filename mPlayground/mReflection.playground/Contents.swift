@@ -23,7 +23,9 @@ public struct Bookmark {
   let group: Group
 }
 
-let aBookmark = Bookmark(title: "Appventure", url: NSURL(string: "appventure.me")!, keywords: ["Swift", "iOS", "OSX"], group: .Tech)
+let aBookmark = Bookmark(title: "Appventure",
+  url: NSURL(string: "appventure.me")!,
+  keywords: ["Swift", "iOS", "OSX"], group: .Tech)
 
 //: ---
 let aMirror = Mirror(reflecting: aBookmark)
@@ -31,14 +33,16 @@ for case let (label?, value) in aMirror.children {
   print(label, value)
 }
 
-//: Subject Type
+
+print("=== Subject Type")
 aMirror.subjectType
 print(aMirror.subjectType)
 print(Mirror(reflecting: 5).subjectType)
 print(Mirror(reflecting: "test").subjectType)
 print(Mirror(reflecting: NSNull()).subjectType)
 
-//: Display Style
+
+print("=== Display Style")
 // Known
 aMirror.displayStyle
 print(aMirror.displayStyle)
@@ -46,7 +50,12 @@ print(aMirror.displayStyle)
 let closure = { (a: Int) -> Int in return a * 2 }
 Mirror(reflecting: closure).displayStyle
 
-//: Superclass
+
+print("=== superclass")
 print(Mirror(reflecting: aBookmark).superclassMirror())
 print(Mirror(reflecting: aBookmark.store).superclassMirror())
+
+
+if aMirror.displayStyle == .Struct { print("Matched") }
+
 
