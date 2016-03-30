@@ -15,18 +15,6 @@ passingOut(&myNumber)
 myNumber
 
 
-//: ----------------- Local mutable copy of passed in variable
-
-func simpleAddition(var number :Int) -> Int {
-  number += 10
-  return number
-}
-
-var anotherNumber = 10
-simpleAddition(anotherNumber)
-anotherNumber
-
-
 //: ----------------- Default parameters
 
 func joiner(a :String, b :String, join :String = "", suffix :String = ".") -> String {

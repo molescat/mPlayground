@@ -36,8 +36,4 @@ for (creature, legs) in numberOfLegs {
   print("\(creature) = \(legs)")
 }
 
-for var index = 0; index < 3; ++index {
-  print("index = \(index)")
-}
-
 //: [Next](@next)

@@ -27,7 +27,7 @@ func performAction() throws {
   
   guard encounteredErrorB == false else {
     let randomCode = Int(arc4random_uniform(10))
-    throw Error.B(code: randomCode, function: __FUNCTION__, line: __LINE__)
+    throw Error.B(code: randomCode, function: #function, line: #line)
   }
   
   print("  Action completed successfully!")

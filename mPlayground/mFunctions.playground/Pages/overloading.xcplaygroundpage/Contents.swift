@@ -1,6 +1,6 @@
 //: [Previous](@previous)
 /*:
-## Functions - varargs
+## Functions - overloading
 */
 
 import Foundation

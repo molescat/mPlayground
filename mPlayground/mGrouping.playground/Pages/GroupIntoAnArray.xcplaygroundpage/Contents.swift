@@ -38,7 +38,8 @@ for listing in listings {
     results[index].append(listing)
   } else {
     results.append([listing])
-    map[key] = counter++
+    map[key] = counter
+    counter += 1
   }
 }
 

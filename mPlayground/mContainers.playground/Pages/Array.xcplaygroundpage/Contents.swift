@@ -7,7 +7,7 @@ import UIKit
 var mString = "Hello, world"
 
 func printMyType<T>(myType: T) {
-  debugPrint("TypeName = \(_stdlib_getDemangledTypeName(myType))")
+  debugPrint("TypeName = \(myType.dynamicType)")
   debugPrint(myType)
 }
 
