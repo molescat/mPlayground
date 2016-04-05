@@ -3,6 +3,10 @@
 */
 import UIKit
 
+//: Color literals are entered via the Menu
+//: * Editor > Insert Color Literal
+
+let colorLiteral = [#Color(colorLiteralRed: 0.9346159696578979, green: 0.6284804344177246, blue: 0.107728436589241, alpha: 1)#]
 let color = UIColor.redColor()
 
 let attrString = NSAttributedString(string: "Hello",
