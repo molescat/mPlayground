@@ -3,9 +3,9 @@ import XCPlayground
 
 public class DragView: UIView {
   
+  private let box: UIView
   private var animator: UIDynamicAnimator?
   private var snapBehavior: UISnapBehavior?
-  private let box: UIView?
   
   public init() {
     box = UIView(frame: CGRect(x: 0, y: 0, width: 44, height: 44))
@@ -13,8 +13,8 @@ public class DragView: UIView {
     super.init(frame: CGRect(x: 0, y: 0, width: 320, height: 320))
     self.backgroundColor = UIColor.whiteColor()
     
-    box?.backgroundColor = UIColor.redColor()
-    self.addSubview(box!)
+    box.backgroundColor = UIColor.redColor()
+    self.addSubview(box)
     
     animator = UIDynamicAnimator(referenceView: self)
   }
