@@ -37,7 +37,20 @@ mArray.count
 //: ----------------- Reduce
 
 var stats = [1,2,3,4,5,6,7,8,9,1,1,1,1,]
-var average = Double(stats.reduce(0){$0 + $1}) / Double(stats.count)
+var average = Double(stats.reduce(0) {$0 + $1}) / Double(stats.count)
 average
+
+
+//: ----------------- filter
+
+var evens = stats.filter {$0 % 2 == 0 }
+evens
+
+
+//: ----------------- Contains
+
+var doesContainGreaterThanEight = stats.contains { $0 > 8 }
+doesContainGreaterThanEight
+
 
 //: [Next](@next)
