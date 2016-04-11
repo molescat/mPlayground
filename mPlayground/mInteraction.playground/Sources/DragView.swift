@@ -31,8 +31,8 @@ extension DragView {
   override public func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
     if let touch = touches.first {
       let touchLocation = touch.locationInView(superview)
-      if (CGRectContainsPoint(box!.frame, touchLocation)) {
-        snapBehavior = UISnapBehavior(item: box!, snapToPoint: touchLocation)
+      if (CGRectContainsPoint(box.frame, touchLocation)) {
+        snapBehavior = UISnapBehavior(item: box, snapToPoint: touchLocation)
         animator?.addBehavior(snapBehavior!)
       }
     }
