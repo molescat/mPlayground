@@ -62,6 +62,7 @@
 		33EBC4E319E344CF0096855B /* mContainers.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = mContainers.playground; sourceTree = "<group>"; };
 		33EBC4E419E3454F0096855B /* mFunctions.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = mFunctions.playground; sourceTree = "<group>"; };
 		33EBC4E519E347590096855B /* mControlFlow.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = mControlFlow.playground; sourceTree = "<group>"; };
+		33F187F51CBC79FF00EF561F /* mLocalization.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = mLocalization.playground; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +109,8 @@
 				334F451019DB6BAD005774CF /* ViewController.h */,
 				334F451119DB6BAD005774CF /* ViewController.m */,
 				334F451319DB6BAD005774CF /* Main.storyboard */,
+				334F451819DB6BAD005774CF /* LaunchScreen.xib */,
+				334F451619DB6BAD005774CF /* Images.xcassets */,
 				33C478041ADCEB97003C105F /* mDocumentation.playground */,
 				334F453219DB6C14005774CF /* mBasics.playground */,
 				331D5EFA1AC3C46700206C2F /* mStrings.playground */,
@@ -127,11 +130,10 @@
 				3371D9671B66246C004D04CC /* mGrouping.playground */,
 				33B7FF251ABA8B9A003E4A8B /* mAnimation.playground */,
 				335006A91C91171700F65CAC /* mReflection.playground */,
-				334F451619DB6BAD005774CF /* Images.xcassets */,
-				334F451819DB6BAD005774CF /* LaunchScreen.xib */,
 				338EB61B1CADD6B400856ED5 /* mInteraction.playground */,
 				339DD3BF1CB4F665000B7B26 /* mUnitTest.playground */,
 				332DB2411CB5CD3E00930D25 /* mSequenceType.playground */,
+				33F187F51CBC79FF00EF561F /* mLocalization.playground */,
 				334F450919DB6BAD005774CF /* Supporting Files */,
 			);
 			path = mPlayground;

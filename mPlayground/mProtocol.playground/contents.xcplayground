@@ -8,5 +8,6 @@
         <page name='extensionDefaultComputedProperties'/>
         <page name='extensionWhere'/>
         <page name='extensionWhereType'/>
+        <page name='extensionBase'/>
     </pages>
 </playground>
