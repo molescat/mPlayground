@@ -27,6 +27,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		331388931CC0B44D00B7B595 /* mLog.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = mLog.playground; sourceTree = "<group>"; };
 		331D5EFA1AC3C46700206C2F /* mStrings.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = mStrings.playground; sourceTree = "<group>"; };
 		3327DB211C5EBA9200246731 /* mProtocol.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = mProtocol.playground; sourceTree = "<group>"; };
 		332C75BF1AF8350C00CF9881 /* mStruct.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = mStruct.playground; sourceTree = "<group>"; };
@@ -134,6 +135,7 @@
 				339DD3BF1CB4F665000B7B26 /* mUnitTest.playground */,
 				332DB2411CB5CD3E00930D25 /* mSequenceType.playground */,
 				33F187F51CBC79FF00EF561F /* mLocalization.playground */,
+				331388931CC0B44D00B7B595 /* mLog.playground */,
 				334F450919DB6BAD005774CF /* Supporting Files */,
 			);
 			path = mPlayground;
