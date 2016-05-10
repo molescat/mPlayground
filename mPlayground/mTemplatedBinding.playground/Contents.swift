@@ -29,32 +29,40 @@ class Binding<T> {
 }
 
 class ViewModel {
-  var userName: Binding<String?> = Binding("placeholder")
+  var counter: Binding<Int> = Binding(0)
+  func incrementCounter() {
+    counter.value += 5
+  }
 }
 
-class MyViewController: UIViewController, UITextFieldDelegate {
+class MyViewController: UIViewController {
   
   var viewModel = ViewModel()
   
-  var textField: UITextField = UITextField(frame: CGRect(x: 10, y: 10, width: 300, height: 44))
+  var textLabel = UILabel(frame: CGRect(x: 10, y: 10, width: 300, height: 44))
+  var button = UIButton(type: UIButtonType.System)
   
   override func viewDidLoad() {
-    view.backgroundColor = UIColor.grayColor()
-    view.addSubview(textField)
+    view.backgroundColor = UIColor.whiteColor()
     
-    textField.backgroundColor = UIColor.whiteColor()
-    textField.delegate = self
+    textLabel.backgroundColor = UIColor.whiteColor()
+    view.addSubview(textLabel)
+
+    button.frame = CGRect(x: 10, y: 60, width: 300, height: 44)
+    button.setTitle("Update", forState: UIControlState.Normal)
+    button.backgroundColor = UIColor.cyanColor()
+    button.addTarget(self, action: #selector(MyViewController.buttonAction(_:)), forControlEvents: UIControlEvents.TouchUpInside)
+    view.addSubview(button)
     
-    viewModel.userName.bind { [weak self] in
-      self?.textField.text = $0
+    viewModel.counter.bind { [weak self] in
+      self?.textLabel.text = "Counter \($0)"
     }
   }
   
-  func textField(textField: UITextField, shouldChangeCharactersInRange range: NSRange, replacementString string: String) -> Bool {
-    viewModel.userName.value = textField.text
-    return true
+  func buttonAction(sender:UIButton!) {
+    viewModel.incrementCounter()
   }
+  
 }
-
 
 XCPlaygroundPage.currentPage.liveView = MyViewController()
