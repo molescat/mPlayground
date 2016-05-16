@@ -1,5 +1,5 @@
 /*:
-## Unit Test - Stubbing and mocking
+## Unit Test - Avoiding stubbing and mocking
 */
 
 import Foundation
