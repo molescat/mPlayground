@@ -64,6 +64,7 @@
 		33EBC4E419E3454F0096855B /* mFunctions.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = mFunctions.playground; sourceTree = "<group>"; };
 		33EBC4E519E347590096855B /* mControlFlow.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = mControlFlow.playground; sourceTree = "<group>"; };
 		33F187F51CBC79FF00EF561F /* mLocalization.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = mLocalization.playground; sourceTree = "<group>"; };
+		687701011CF94B9F00E16F36 /* mSwiftDojo.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = mSwiftDojo.playground; sourceTree = "<group>"; };
 		6896947B1CE018F60075F719 /* mTemplatedBinding.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = mTemplatedBinding.playground; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -138,6 +139,7 @@
 				33F187F51CBC79FF00EF561F /* mLocalization.playground */,
 				6896947B1CE018F60075F719 /* mTemplatedBinding.playground */,
 				331388931CC0B44D00B7B595 /* mLog.playground */,
+				687701011CF94B9F00E16F36 /* mSwiftDojo.playground */,
 				334F450919DB6BAD005774CF /* Supporting Files */,
 			);
 			path = mPlayground;
