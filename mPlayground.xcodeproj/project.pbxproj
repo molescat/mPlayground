@@ -28,6 +28,7 @@
 
 /* Begin PBXFileReference section */
 		331388931CC0B44D00B7B595 /* mLog.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = mLog.playground; sourceTree = "<group>"; };
+		331601641CFBAD6300224F05 /* mGenerics.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = mGenerics.playground; sourceTree = "<group>"; };
 		331D5EFA1AC3C46700206C2F /* mStrings.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = mStrings.playground; sourceTree = "<group>"; };
 		3327DB211C5EBA9200246731 /* mProtocol.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = mProtocol.playground; sourceTree = "<group>"; };
 		332C75BF1AF8350C00CF9881 /* mStruct.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = mStruct.playground; sourceTree = "<group>"; };
@@ -140,6 +141,7 @@
 				6896947B1CE018F60075F719 /* mTemplatedBinding.playground */,
 				331388931CC0B44D00B7B595 /* mLog.playground */,
 				687701011CF94B9F00E16F36 /* mSwiftDojo.playground */,
+				331601641CFBAD6300224F05 /* mGenerics.playground */,
 				334F450919DB6BAD005774CF /* Supporting Files */,
 			);
 			path = mPlayground;
