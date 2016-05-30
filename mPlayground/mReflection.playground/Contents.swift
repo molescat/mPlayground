@@ -6,9 +6,11 @@ import Foundation
 public class Store {
   let storesToDisk: Bool = true
 }
+
 public class BookmarkStore: Store {
   let itemCount: Int = 10
 }
+
 public struct Bookmark {
   enum Group {
     case Tech
@@ -57,5 +59,12 @@ print(Mirror(reflecting: aBookmark.store).superclassMirror())
 
 
 if aMirror.displayStyle == .Struct { print("Matched") }
+
+print("=== Function")
+func testFunction() -> Int {
+  return 7
+}
+
+print(Mirror(reflecting: testFunction).description)
 
 
