@@ -6,6 +6,7 @@ import Foundation
 
 var optionalString: String? = "Hello"
 //optionalString = nil
+print(optionalString)
 
 //let bang = optionalString!
 
