@@ -8,7 +8,7 @@ import XCPlayground
 
 
 class Binding<T> {
-  typealias Listener = T -> Void
+  typealias Listener = (T) -> Void
   var listener: Listener?
   
   var value: T {
@@ -32,12 +32,11 @@ class Binding<T> {
 
 
 class ViewModel {
-  var counter: Binding<Int> = Binding(0)
+  var counter = Binding(0)
   
-  func incrementCounter() {
+  func increment() {
     counter.value += 5
   }
-  
 }
 
 class MyViewController: UIViewController {
@@ -53,10 +52,12 @@ class MyViewController: UIViewController {
     view.addSubview(textLabel)
     
     let button = UIButton(type: UIButtonType.System)
+    button.backgroundColor = UIColor.cyanColor()
     button.frame = CGRect(x: 10, y: 60, width: 300, height: 44)
     button.setTitle("Update", forState: UIControlState.Normal)
-    button.backgroundColor = UIColor.cyanColor()
-    button.addTarget(self, action: #selector(MyViewController.buttonAction(_:)), forControlEvents: UIControlEvents.TouchUpInside)
+    button.addTarget(self,
+                     action: #selector(MyViewController.action(_:)),
+                     forControlEvents: .TouchUpInside)
     view.addSubview(button)
 
   
@@ -65,18 +66,14 @@ class MyViewController: UIViewController {
     }
   }
   
-  func buttonAction(sender:UIButton!) {
-    viewModel.incrementCounter()
+  func action(sender:UIButton!) {
+    viewModel.increment()
     
-    print("buttonAction, \(viewModel.counter)")
+    print("action, \(viewModel.counter.value)")
   }
   
 }
 
 XCPlaygroundPage.currentPage.liveView = MyViewController()
-
-//: [Next](@next)
-
-
 
 //: [Next](@next)

@@ -14,18 +14,21 @@ class MyViewController: UIViewController {
     view.backgroundColor = UIColor.whiteColor()
     
     textLabel.backgroundColor = UIColor.lightGrayColor()
+    textLabel.text = "Value"
     view.addSubview(textLabel)
     
     let button = UIButton(type: UIButtonType.System)
+    button.backgroundColor = UIColor.cyanColor()
     button.frame = CGRect(x: 10, y: 60, width: 300, height: 44)
     button.setTitle("Update", forState: UIControlState.Normal)
-    button.backgroundColor = UIColor.cyanColor()
-    button.addTarget(self, action: #selector(MyViewController.buttonAction(_:)), forControlEvents: UIControlEvents.TouchUpInside)
+    button.addTarget(self,
+                     action: #selector(MyViewController.action(_:)),
+                     forControlEvents: .TouchUpInside)
     view.addSubview(button)
   }
   
-  func buttonAction(sender:UIButton!) {
-    print("buttonAction")
+  func action(sender: UIButton!) {
+    print("action")
   }
   
 }
