@@ -1,17 +1,45 @@
 //: [Previous](@previous)
 /*:
- ## SwiftDojo - Basic ViewController, with ViewModel
+ ## SwiftDojo - Basic ViewController, with ViewModel and Template Binding
  */
 
 import UIKit
 import XCPlayground
 
 
+class Binding<T> {
+  typealias Listener = (T) -> Void
+  var listener: Listener?
+  
+  var value: T {
+    didSet {
+      listener?(value)
+    }
+  }
+  
+  init(_ value: T)
+  {
+    self.value = value
+  }
+  
+  func bind(listener: Listener?) {
+    self.listener = listener
+    listener?(value)
+  }
+}
+
+//: ---
+
+
 class ViewModel {
-  var counter = 0
+  var counter = Binding(0)
   
   func increment() {
-    counter += 5
+    counter.value += 5
+  }
+  
+  func displayText(item: Int) -> String {
+    return "Counter \(item)"
   }
 }
 
@@ -25,7 +53,6 @@ class MyViewController: UIViewController {
     view.backgroundColor = UIColor.whiteColor()
     
     textLabel.backgroundColor = UIColor.lightGrayColor()
-    textLabel.text = "Value"
     view.addSubview(textLabel)
     
     let button = UIButton(type: UIButtonType.System)
@@ -36,15 +63,18 @@ class MyViewController: UIViewController {
                      action: #selector(MyViewController.action(_:)),
                      forControlEvents: .TouchUpInside)
     view.addSubview(button)
+    
+    viewModel.counter.bind { [weak self] in
+      self?.textLabel.text = self?.viewModel.displayText($0)
+    }
   }
   
   func action(sender:UIButton!) {
     viewModel.increment()
-    print("action, \(viewModel.counter)")
+    print("action, \(viewModel.counter.value)")
   }
 }
 
 XCPlaygroundPage.currentPage.liveView = MyViewController()
 
 //: [Next](@next)
-

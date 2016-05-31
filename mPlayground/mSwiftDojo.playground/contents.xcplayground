@@ -4,5 +4,6 @@
         <page name='BasicViewController'/>
         <page name='WithViewModel'/>
         <page name='WithTemplatedBinding'/>
+        <page name='WithViewModelTextCreation'/>
     </pages>
 </playground>

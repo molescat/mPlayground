@@ -20,7 +20,7 @@ class MyViewController: UIViewController {
     let button = UIButton(type: UIButtonType.System)
     button.backgroundColor = UIColor.cyanColor()
     button.frame = CGRect(x: 10, y: 60, width: 300, height: 44)
-    button.setTitle("Update", forState: UIControlState.Normal)
+    button.setTitle("+", forState: UIControlState.Normal)
     button.addTarget(self,
                      action: #selector(MyViewController.action(_:)),
                      forControlEvents: .TouchUpInside)
@@ -30,7 +30,6 @@ class MyViewController: UIViewController {
   func action(sender: UIButton!) {
     print("action")
   }
-  
 }
 
 XCPlaygroundPage.currentPage.liveView = MyViewController()

@@ -54,12 +54,11 @@ class MyViewController: UIViewController {
     let button = UIButton(type: UIButtonType.System)
     button.backgroundColor = UIColor.cyanColor()
     button.frame = CGRect(x: 10, y: 60, width: 300, height: 44)
-    button.setTitle("Update", forState: UIControlState.Normal)
+    button.setTitle("+", forState: UIControlState.Normal)
     button.addTarget(self,
                      action: #selector(MyViewController.action(_:)),
                      forControlEvents: .TouchUpInside)
     view.addSubview(button)
-
   
     viewModel.counter.bind { [weak self] in
       self?.textLabel.text = "Counter \($0)"
@@ -68,10 +67,8 @@ class MyViewController: UIViewController {
   
   func action(sender:UIButton!) {
     viewModel.increment()
-    
     print("action, \(viewModel.counter.value)")
   }
-  
 }
 
 XCPlaygroundPage.currentPage.liveView = MyViewController()
