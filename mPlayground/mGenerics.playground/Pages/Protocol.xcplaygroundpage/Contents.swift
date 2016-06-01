@@ -3,6 +3,8 @@
  ## Generics
  */
 
+import Foundation
+
 protocol QueueType {
   associatedtype Element
   
