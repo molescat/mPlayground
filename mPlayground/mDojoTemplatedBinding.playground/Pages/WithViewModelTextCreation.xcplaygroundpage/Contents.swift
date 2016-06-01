@@ -38,8 +38,8 @@ class ViewModel {
     counter.value += 5
   }
   
-  func displayText(item: Int) -> String {
-    return "Counter \(item)"
+  var displayText: String {
+    return "Counter \(counter.value)"
   }
 }
 
@@ -64,8 +64,8 @@ class MyViewController: UIViewController {
                      forControlEvents: .TouchUpInside)
     view.addSubview(button)
     
-    viewModel.counter.bind { [weak self] in
-      self?.textLabel.text = self?.viewModel.displayText($0)
+    viewModel.counter.bind { [weak self] _ in
+      self?.textLabel.text = self?.viewModel.displayText
     }
   }
   

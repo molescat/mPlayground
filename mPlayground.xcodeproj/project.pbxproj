@@ -66,7 +66,7 @@
 		33EBC4E419E3454F0096855B /* mFunctions.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = mFunctions.playground; sourceTree = "<group>"; };
 		33EBC4E519E347590096855B /* mControlFlow.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = mControlFlow.playground; sourceTree = "<group>"; };
 		33F187F51CBC79FF00EF561F /* mLocalization.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = mLocalization.playground; sourceTree = "<group>"; };
-		687701011CF94B9F00E16F36 /* mSwiftDojo.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = mSwiftDojo.playground; sourceTree = "<group>"; };
+		687701011CF94B9F00E16F36 /* mDojoTemplatedBinding.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = mDojoTemplatedBinding.playground; sourceTree = "<group>"; };
 		6896947B1CE018F60075F719 /* mTemplatedBinding.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = mTemplatedBinding.playground; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -91,6 +91,8 @@
 		334F44FD19DB6BAD005774CF = {
 			isa = PBXGroup;
 			children = (
+				33CE49201CFF9FB400D9E228 /* mExamples */,
+				33CE49211CFFA00200D9E228 /* mDojo */,
 				334F450819DB6BAD005774CF /* mPlayground */,
 				334F452219DB6BAD005774CF /* mPlaygroundTests */,
 				334F450719DB6BAD005774CF /* Products */,
@@ -116,34 +118,6 @@
 				334F451319DB6BAD005774CF /* Main.storyboard */,
 				334F451819DB6BAD005774CF /* LaunchScreen.xib */,
 				334F451619DB6BAD005774CF /* Images.xcassets */,
-				33C478041ADCEB97003C105F /* mDocumentation.playground */,
-				334F453219DB6C14005774CF /* mBasics.playground */,
-				331D5EFA1AC3C46700206C2F /* mStrings.playground */,
-				33EBC4E319E344CF0096855B /* mContainers.playground */,
-				33EBC4E519E347590096855B /* mControlFlow.playground */,
-				33EBC4E419E3454F0096855B /* mFunctions.playground */,
-				33A8FCC01ABA9E2A006B68C3 /* mColor.playground */,
-				332C75BF1AF8350C00CF9881 /* mStruct.playground */,
-				33A97A8D19E49698008E9617 /* mClasses.playground */,
-				334EA0721C6BEE050017B18F /* mSet.playground */,
-				33381DD31AF0499C0097F5D6 /* mEnumeration.playground */,
-				334F452F19DB6C14005774CF /* mGraph.playground */,
-				334F453119DB6C14005774CF /* mAlgorithm.playground */,
-				334F453019DB6C14005774CF /* mPhysics.playground */,
-				3327DB211C5EBA9200246731 /* mProtocol.playground */,
-				334F453319DB6C14005774CF /* mUIKit.playground */,
-				3371D9671B66246C004D04CC /* mGrouping.playground */,
-				33B7FF251ABA8B9A003E4A8B /* mAnimation.playground */,
-				335006A91C91171700F65CAC /* mReflection.playground */,
-				338EB61B1CADD6B400856ED5 /* mInteraction.playground */,
-				339DD3BF1CB4F665000B7B26 /* mUnitTest.playground */,
-				332DB2411CB5CD3E00930D25 /* mSequenceType.playground */,
-				33F187F51CBC79FF00EF561F /* mLocalization.playground */,
-				6896947B1CE018F60075F719 /* mTemplatedBinding.playground */,
-				331388931CC0B44D00B7B595 /* mLog.playground */,
-				687701011CF94B9F00E16F36 /* mSwiftDojo.playground */,
-				331601641CFBAD6300224F05 /* mGenerics.playground */,
-				33E485151CFE89C20062F934 /* mSelector.playground */,
 				334F450919DB6BAD005774CF /* Supporting Files */,
 			);
 			path = mPlayground;
@@ -173,6 +147,50 @@
 				334F452419DB6BAD005774CF /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		33CE49201CFF9FB400D9E228 /* mExamples */ = {
+			isa = PBXGroup;
+			children = (
+				33C478041ADCEB97003C105F /* mDocumentation.playground */,
+				334F453219DB6C14005774CF /* mBasics.playground */,
+				331D5EFA1AC3C46700206C2F /* mStrings.playground */,
+				33EBC4E319E344CF0096855B /* mContainers.playground */,
+				33EBC4E519E347590096855B /* mControlFlow.playground */,
+				33EBC4E419E3454F0096855B /* mFunctions.playground */,
+				33A8FCC01ABA9E2A006B68C3 /* mColor.playground */,
+				332C75BF1AF8350C00CF9881 /* mStruct.playground */,
+				33A97A8D19E49698008E9617 /* mClasses.playground */,
+				334EA0721C6BEE050017B18F /* mSet.playground */,
+				33381DD31AF0499C0097F5D6 /* mEnumeration.playground */,
+				334F452F19DB6C14005774CF /* mGraph.playground */,
+				334F453119DB6C14005774CF /* mAlgorithm.playground */,
+				334F453019DB6C14005774CF /* mPhysics.playground */,
+				3327DB211C5EBA9200246731 /* mProtocol.playground */,
+				334F453319DB6C14005774CF /* mUIKit.playground */,
+				3371D9671B66246C004D04CC /* mGrouping.playground */,
+				33B7FF251ABA8B9A003E4A8B /* mAnimation.playground */,
+				335006A91C91171700F65CAC /* mReflection.playground */,
+				338EB61B1CADD6B400856ED5 /* mInteraction.playground */,
+				339DD3BF1CB4F665000B7B26 /* mUnitTest.playground */,
+				332DB2411CB5CD3E00930D25 /* mSequenceType.playground */,
+				33F187F51CBC79FF00EF561F /* mLocalization.playground */,
+				6896947B1CE018F60075F719 /* mTemplatedBinding.playground */,
+				331388931CC0B44D00B7B595 /* mLog.playground */,
+				331601641CFBAD6300224F05 /* mGenerics.playground */,
+				33E485151CFE89C20062F934 /* mSelector.playground */,
+			);
+			name = mExamples;
+			path = mPlayground;
+			sourceTree = "<group>";
+		};
+		33CE49211CFFA00200D9E228 /* mDojo */ = {
+			isa = PBXGroup;
+			children = (
+				687701011CF94B9F00E16F36 /* mDojoTemplatedBinding.playground */,
+			);
+			name = mDojo;
+			path = mPlayground;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
