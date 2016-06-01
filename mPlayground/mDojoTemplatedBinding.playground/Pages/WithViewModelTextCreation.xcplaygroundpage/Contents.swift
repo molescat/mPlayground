@@ -1,11 +1,10 @@
 //: [Previous](@previous)
 /*:
- ## SwiftDojo - Basic ViewController, with ViewModel and Template Binding
+ ## SwiftDojo - Basic ViewController, with ViewModel, Template Binding, viewModel display
  */
 
 import UIKit
 import XCPlayground
-
 
 class Binding<T> {
   typealias Listener = (T) -> Void
@@ -50,9 +49,9 @@ class MyViewController: UIViewController {
   var viewModel = ViewModel()
   
   override func viewDidLoad() {
-    view.backgroundColor = UIColor.whiteColor()
+    view.backgroundColor = UIColor.lightGrayColor()
     
-    textLabel.backgroundColor = UIColor.lightGrayColor()
+    textLabel.backgroundColor = UIColor.whiteColor()
     view.addSubview(textLabel)
     
     let button = UIButton(type: UIButtonType.System)
@@ -71,7 +70,7 @@ class MyViewController: UIViewController {
   
   func action(sender:UIButton!) {
     viewModel.increment()
-    print("action, \(viewModel.counter.value)")
+    print("action: \(viewModel.counter.value)")
   }
 }
 

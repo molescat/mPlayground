@@ -45,9 +45,9 @@ class MyViewController: UIViewController {
   var viewModel = ViewModel()
   
   override func viewDidLoad() {
-    view.backgroundColor = UIColor.whiteColor()
+    view.backgroundColor = UIColor.lightGrayColor()
     
-    textLabel.backgroundColor = UIColor.lightGrayColor()
+    textLabel.backgroundColor = UIColor.whiteColor()
     textLabel.text = "Value"
     view.addSubview(textLabel)
     

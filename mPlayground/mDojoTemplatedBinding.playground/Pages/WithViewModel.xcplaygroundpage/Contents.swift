@@ -22,9 +22,9 @@ class MyViewController: UIViewController {
   var viewModel = ViewModel()
   
   override func viewDidLoad() {
-    view.backgroundColor = UIColor.whiteColor()
+    view.backgroundColor = UIColor.lightGrayColor()
     
-    textLabel.backgroundColor = UIColor.lightGrayColor()
+    textLabel.backgroundColor = UIColor.whiteColor()
     textLabel.text = "Value"
     view.addSubview(textLabel)
     
@@ -33,14 +33,14 @@ class MyViewController: UIViewController {
     button.frame = CGRect(x: 10, y: 60, width: 300, height: 44)
     button.setTitle("+", forState: UIControlState.Normal)
     button.addTarget(self,
-                     action: #selector(MyViewController.action(_:)),
+                     action: #selector(action(_:)),
                      forControlEvents: .TouchUpInside)
     view.addSubview(button)
   }
   
   func action(sender:UIButton!) {
     viewModel.increment()
-    print("action, \(viewModel.counter)")
+    print("action: \(viewModel.counter)")
   }
 }
 

@@ -6,7 +6,6 @@
 import UIKit
 import XCPlayground
 
-
 class Binding<T> {
   typealias Listener = (T) -> Void
   var listener: Listener?
@@ -30,7 +29,6 @@ class Binding<T> {
 
 //: ---
 
-
 class ViewModel {
   var counter = Binding(0)
   
@@ -46,9 +44,9 @@ class MyViewController: UIViewController {
   var viewModel = ViewModel()
   
   override func viewDidLoad() {
-    view.backgroundColor = UIColor.whiteColor()
+    view.backgroundColor = UIColor.lightGrayColor()
     
-    textLabel.backgroundColor = UIColor.lightGrayColor()
+    textLabel.backgroundColor = UIColor.whiteColor()
     view.addSubview(textLabel)
     
     let button = UIButton(type: UIButtonType.System)
@@ -56,7 +54,7 @@ class MyViewController: UIViewController {
     button.frame = CGRect(x: 10, y: 60, width: 300, height: 44)
     button.setTitle("+", forState: UIControlState.Normal)
     button.addTarget(self,
-                     action: #selector(MyViewController.action(_:)),
+                     action: #selector(action(_:)),
                      forControlEvents: .TouchUpInside)
     view.addSubview(button)
   
@@ -67,7 +65,7 @@ class MyViewController: UIViewController {
   
   func action(sender:UIButton!) {
     viewModel.increment()
-    print("action, \(viewModel.counter.value)")
+    print("action: \(viewModel.counter.value)")
   }
 }
 
