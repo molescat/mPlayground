@@ -6,10 +6,10 @@ import XCPlayground
 
 //: Scene
 var container = UIView(frame: CGRect(x: 0, y: 0, width: 320, height: 320))
-container.backgroundColor = UIColor.lightGrayColor()
+container.backgroundColor = UIColor.lightGray()
 
 var square = UIView(frame: CGRect(x: 0, y: 0, width: 100, height: 44))
-square.backgroundColor = UIColor.redColor()
+square.backgroundColor = UIColor.red()
 
 container.addSubview(square)
 
