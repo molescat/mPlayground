@@ -54,11 +54,11 @@ Mirror(reflecting: closure).displayStyle
 
 
 print("=== superclass")
-print(Mirror(reflecting: aBookmark).superclassMirror())
-print(Mirror(reflecting: aBookmark.store).superclassMirror())
+print(Mirror(reflecting: aBookmark).superclassMirror)
+print(Mirror(reflecting: aBookmark.store).superclassMirror)
 
 
-if aMirror.displayStyle == .Struct { print("Matched") }
+if aMirror.displayStyle == .struct { print("Matched") }
 
 print("=== Function")
 func testFunction() -> Int {

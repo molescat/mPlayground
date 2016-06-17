@@ -16,25 +16,25 @@ randomData
 
 var data = [84, 74, 56, 54, 18, 26, 69, 91, 35, 48, 45, 15, 19, 70, 63, 32, 79, 31, 79, 41]
 
-func exchange<T>(inout data: [T], i: Int, j: Int) {
+func exchange<T>(data: inout [T], i: Int, j: Int) {
   let temp = data[i]
   data[i] = data[j]
   data[j] = temp
 }
 
-func swapLeft<T: Comparable>(inout data: [T], index: Int) {
-  for i in Array((1...index).reverse()) {
+func swapLeft<T: Comparable>(data: inout [T], index: Int) {
+  for i in Array((1...index).reversed()) {
     if data[i] < data[i - 1] {
-      exchange(&data, i: i, j: i - 1)
+      exchange(data: &data, i: i, j: i - 1)
     } else {
       break
     }
   }
 }
 
-func isort<T: Comparable>(inout data: [T]) {
+func isort<T: Comparable>(data: inout [T]) {
   for i in 1...(data.count - 1) {
-    swapLeft(&data, index: i)
+    swapLeft(data: &data, index: i)
   }
 }
 
@@ -42,7 +42,7 @@ for item in data {
   item
 }
 
-isort(&data)
+isort(data: &data)
 
 for item in data {
     item

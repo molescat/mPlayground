@@ -1,7 +1,7 @@
 //: [Previous](@previous)
 /*:
-## Enumerations
-*/
+ ## Enumerations
+ */
 import Foundation
 
 enum CompassPoint {
@@ -12,6 +12,7 @@ enum CompassPoint {
 }
 
 var direction = CompassPoint.North
+var heading: CompassPoint = .South
 
 
 //: [Previous](@previous)

@@ -1,7 +1,7 @@
 //: [Previous](@previous)
 /*:
-## Strings
-*/
+ ## Strings
+ */
 
 import UIKit
 

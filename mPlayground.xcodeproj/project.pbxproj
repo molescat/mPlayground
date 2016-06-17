@@ -54,6 +54,8 @@
 		334F453219DB6C14005774CF /* mBasics.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = mBasics.playground; sourceTree = "<group>"; };
 		334F453319DB6C14005774CF /* mUIKit.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = mUIKit.playground; sourceTree = "<group>"; };
 		335006A91C91171700F65CAC /* mReflection.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = mReflection.playground; sourceTree = "<group>"; };
+		336508011D1371FD003741DC /* mSIMD.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = mSIMD.playground; sourceTree = "<group>"; };
+		336508021D137C15003741DC /* m3D.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = m3D.playground; sourceTree = "<group>"; };
 		3371D9671B66246C004D04CC /* mGrouping.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = mGrouping.playground; sourceTree = "<group>"; };
 		338EB61B1CADD6B400856ED5 /* mInteraction.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = mInteraction.playground; sourceTree = "<group>"; };
 		339DD3BF1CB4F665000B7B26 /* mUnitTest.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = mUnitTest.playground; sourceTree = "<group>"; };
@@ -180,6 +182,8 @@
 				331388931CC0B44D00B7B595 /* mLog.playground */,
 				331601641CFBAD6300224F05 /* mGenerics.playground */,
 				33E485151CFE89C20062F934 /* mSelector.playground */,
+				336508011D1371FD003741DC /* mSIMD.playground */,
+				336508021D137C15003741DC /* m3D.playground */,
 				33E7B4841D05216B00141DB0 /* mExperiment.playground */,
 			);
 			name = mExamples;
@@ -240,14 +244,16 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftMigration = 0720;
-				LastUpgradeCheck = 0700;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "Myles Abbott";
 				TargetAttributes = {
 					334F450519DB6BAD005774CF = {
 						CreatedOnToolsVersion = 6.0;
+						LastSwiftMigration = 0800;
 					};
 					334F451E19DB6BAD005774CF = {
 						CreatedOnToolsVersion = 6.0;
+						LastSwiftMigration = 0800;
 						TestTargetID = 334F450519DB6BAD005774CF;
 					};
 				};
@@ -363,6 +369,7 @@
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -405,6 +412,7 @@
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -427,6 +435,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "TorpsDevelopment.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -438,6 +447,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "TorpsDevelopment.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -457,6 +467,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "TorpsDevelopment.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/mPlayground.app/mPlayground";
 			};
 			name = Debug;
@@ -473,6 +484,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "TorpsDevelopment.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/mPlayground.app/mPlayground";
 			};
 			name = Release;

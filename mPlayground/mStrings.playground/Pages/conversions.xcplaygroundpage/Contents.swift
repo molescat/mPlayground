@@ -1,7 +1,7 @@
 //: [Previous](@previous)
 /*:
-## String conversions
-*/
+ ## String conversions
+ */
 import Foundation
 
 //: --- Split into an Array of words

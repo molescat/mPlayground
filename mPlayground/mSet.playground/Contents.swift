@@ -3,7 +3,7 @@
 */
 import Foundation
 
-struct Option: OptionSetType {
+struct Option: OptionSet {
   
   let rawValue: Int
   
@@ -30,6 +30,8 @@ for option in all {
   print(option)
 }
 
+let emptyOptions: Option = []
+print(emptyOptions)
 //: ---
 
 var letters = Set<Character>()

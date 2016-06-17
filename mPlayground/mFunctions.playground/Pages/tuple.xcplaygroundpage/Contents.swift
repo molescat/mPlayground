@@ -1,7 +1,7 @@
 //: [Previous](@previous)
 /*:
-## Functions - tupples
-*/
+ ## Functions - tuples
+ */
 import Foundation
 
 func dealACard() -> (value: String, suit: String)

@@ -11,9 +11,9 @@ public class DragView: UIView {
     box = UIView(frame: CGRect(x: 0, y: 0, width: 44, height: 44))
     
     super.init(frame: CGRect(x: 0, y: 0, width: 320, height: 320))
-    self.backgroundColor = UIColor.whiteColor()
+    self.backgroundColor = UIColor.white()
     
-    box.backgroundColor = UIColor.redColor()
+    box.backgroundColor = UIColor.red()
     self.addSubview(box)
     
     animator = UIDynamicAnimator(referenceView: self)
@@ -28,26 +28,26 @@ public class DragView: UIView {
 // MARK: Touch Handling
 
 extension DragView {
-  override public func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+  override public func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
     if let touch = touches.first {
-      let touchLocation = touch.locationInView(superview)
-      if (CGRectContainsPoint(box.frame, touchLocation)) {
-        snapBehavior = UISnapBehavior(item: box, snapToPoint: touchLocation)
+      let touchLocation = touch.location(in: superview)
+      if (box.frame.contains(touchLocation)) {
+        snapBehavior = UISnapBehavior(item: box, snapTo: touchLocation)
         animator?.addBehavior(snapBehavior!)
       }
     }
   }
   
-  override public func touchesMoved(touches: Set<UITouch>, withEvent event: UIEvent?) {
+  override public func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
     if let touch = touches.first {
-      let touchLocation = touch.locationInView(superview)
+      let touchLocation = touch.location(in: superview)
       if let snapBehavior = snapBehavior {
         snapBehavior.snapPoint = touchLocation
       }
     }
   }
   
-  public override func touchesEnded(touches: Set<UITouch>, withEvent event: UIEvent?) {
+  public override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
     if let snapBehavior = snapBehavior {
       animator?.removeBehavior(snapBehavior)
     }

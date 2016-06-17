@@ -1,13 +1,11 @@
 //: [Previous](@previous)
 /*:
-## Control Flow - guard
-*/
+ ## Control Flow - guard
+ */
 import Foundation
 
 func greet(person: [String: String]) {
-  guard let name = person["name"] else {
-    return
-  }
+  guard let name = person["name"] else { return }
   
   print("Hello \(name)")
   

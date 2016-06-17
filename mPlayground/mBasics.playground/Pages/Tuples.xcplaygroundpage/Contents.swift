@@ -1,6 +1,6 @@
 //: [Previous](@previous)
 /*:
-## Tupples
+## Tuples
 */
 import Foundation
 
@@ -13,13 +13,13 @@ namedStatus.code
 
 var playerScore: (score: Int, firstName: String, lastName: String) = (23, "Steve", "Jobs")
 
-//: Decomposed the tupple
+//: Decomposed the tuple
 let (x, y, z) = playerScore
 x
 y
 z
 
-//: Modify the tupple
+//: Modify the tuple
 playerScore.firstName = "Bill"
 playerScore.lastName = "Gates"
 playerScore

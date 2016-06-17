@@ -25,7 +25,7 @@ let dogCat = joiner("dog", b: "cat")
 let dogMinusCat = joiner("dog", b: "cat", suffix: "!", join: " - ")
 
 
-//: ----------------- Tupples
+//: ----------------- Tuples
 
 func calculate(scores: [Int]) ->(min: Int, max: Int, sum: Int) {
   var min = scores[0]
@@ -45,7 +45,7 @@ func calculate(scores: [Int]) ->(min: Int, max: Int, sum: Int) {
 
 let statistics = calculate([5, 3, 100, 3, 9])
 statistics.sum
-statistics.2  // third tupple
+statistics.2  // third tuple
 
 
 //: ----------------- Var args

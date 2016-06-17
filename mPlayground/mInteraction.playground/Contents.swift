@@ -13,9 +13,9 @@
 */
 
 import UIKit
-import XCPlayground
+import PlaygroundSupport
 
 let view = DragView()
 
-XCPlaygroundPage.currentPage.liveView = view
+PlaygroundPage.current.liveView = view
 

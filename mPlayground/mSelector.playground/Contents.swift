@@ -4,7 +4,7 @@
  */
 
 import UIKit
-import XCPlayground
+import PlaygroundSupport
 
 let fontMethodNames = ["debugFont", "designerFont"]
 
@@ -17,19 +17,19 @@ extension UIFont {
   }
 }
 
-func fontForIndex(index: Int) -> UIFont? {
+func fontForIndex(_ index: Int) -> UIFont? {
   let fontMethodName = fontMethodNames[index]
   let sel = Selector(fontMethodName)
-  if UIFont.respondsToSelector(sel) {
-    return UIFont.performSelector(sel).takeUnretainedValue() as? UIFont
+  if UIFont.responds(to: sel) {
+    return UIFont.perform(sel).takeUnretainedValue() as? UIFont
   }
   return nil
 }
 
 let label = UILabel.init(frame: CGRect(x: 0, y: 0, width: 320, height: 88))
 label.text = "The quick brown fox jumps over the lazy dog"
-label.backgroundColor = UIColor.whiteColor()
+label.backgroundColor = UIColor.white()
 label.numberOfLines = 0
 label.font = fontForIndex(0)
 
-XCPlaygroundPage.currentPage.liveView = label
+PlaygroundPage.current.liveView = label

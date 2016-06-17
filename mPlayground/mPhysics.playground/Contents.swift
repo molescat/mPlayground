@@ -2,7 +2,7 @@
 ## Physics
 */
 import UIKit
-import XCPlayground
+import PlaygroundSupport
 
 //: Scene
 var container = UIView(frame: CGRect(x: 0, y: 0, width: 320, height: 320))
@@ -27,4 +27,4 @@ var collision = UICollisionBehavior(items: [square])
 collision.translatesReferenceBoundsIntoBoundary = true
 animator.addBehavior(collision)
 
-XCPlaygroundPage.currentPage.liveView = container
+PlaygroundPage.current.liveView = container
