@@ -30,12 +30,8 @@ var torus = SCNTorus(
 var torusNode = SCNNode(geometry: torus)
 scene.rootNode.addChildNode(torusNode)
 
-torus.firstMaterial?.diffuse.contents = UIColor(
-  hue: CGFloat(arc4random_uniform(100)) / 300.0 + 0.3,
-  saturation: 0.5,
-  brightness: 1.0,
-  alpha: 0.95)
-torus.firstMaterial?.specular.contents = UIColor.red()
+torus.firstMaterial?.diffuse.contents = UIColor.red()
+torus.firstMaterial?.specular.contents = UIColor.white()
 
 var spin = CABasicAnimation(keyPath: "rotation")
 let toVector = SCNVector4(
