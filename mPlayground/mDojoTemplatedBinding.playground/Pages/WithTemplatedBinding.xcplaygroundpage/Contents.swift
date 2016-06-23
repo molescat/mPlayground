@@ -4,7 +4,7 @@
  */
 
 import UIKit
-import XCPlayground
+import PlaygroundSupport
 
 class Binding<T> {
   typealias Listener = (T) -> Void
@@ -69,6 +69,6 @@ class MyViewController: UIViewController {
   }
 }
 
-XCPlaygroundPage.currentPage.liveView = MyViewController()
+PlaygroundPage.current.liveView = MyViewController()
 
 //: [Next](@next)
