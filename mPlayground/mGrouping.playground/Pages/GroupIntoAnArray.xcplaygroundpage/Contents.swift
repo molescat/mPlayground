@@ -5,9 +5,12 @@
 import Foundation
 
 class Listing : CustomStringConvertible {
-  let latitude: Int!
-  let name: String!
-  init(latitude: Int, name: String) {self.latitude = latitude; self.name = name }
+  let latitude: Int
+  let name: String
+  init(latitude: Int, name: String) {
+    self.latitude = latitude
+    self.name = name
+  }
   
   func makeKey() -> String {
     return String(self.latitude)
