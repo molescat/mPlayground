@@ -4,7 +4,7 @@
  */
 import Foundation
 
-func greet(person: [String: String]) {
+func greet(_ person: [String: String]) {
   guard let name = person["name"] else { return }
   
   print("Hello \(name)")

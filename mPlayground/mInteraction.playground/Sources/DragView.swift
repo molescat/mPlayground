@@ -3,17 +3,16 @@ import XCPlayground
 
 public class DragView: UIView {
   
-  private let box: UIView
-  private var animator: UIDynamicAnimator?
-  private var snapBehavior: UISnapBehavior?
+  let box: UIView
+  var animator: UIDynamicAnimator?
+  var snapBehavior: UISnapBehavior?
   
   public init() {
     box = UIView(frame: CGRect(x: 0, y: 0, width: 44, height: 44))
     
     super.init(frame: CGRect(x: 0, y: 0, width: 320, height: 320))
-    self.backgroundColor = UIColor.white()
-    
-    box.backgroundColor = UIColor.red()
+    self.backgroundColor = UIColor.white   
+    box.backgroundColor = UIColor.red
     self.addSubview(box)
     
     animator = UIDynamicAnimator(referenceView: self)

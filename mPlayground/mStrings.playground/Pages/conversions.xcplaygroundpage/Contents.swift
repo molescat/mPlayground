@@ -6,22 +6,21 @@ import Foundation
 
 //: --- Split into an Array of words
 
-var fullname = "Alfred E. Newman"
-var x = fullname.characters.split(" ").map(String.init)
+//var fullname = "Alfred E. Newman"
+//var x = fullname.characters.split(separator: " ").map(String.init)
 
 //: --- String from Class
 
 class Shape {
   func hello() {
-    print(" [\(String(self))]")
+    print(String(describing: Shape.self))
   }
 }
 
 let shape = Shape()
 shape.hello()
-String(shape)
+String(describing: Shape.self)
 
-String(Shape)
 NSStringFromClass(Shape.self)
 NSStringFromClass(Shape)
 

@@ -7,13 +7,7 @@ import UIKit
 //: * Editor > Insert Color Literal
 
 let colorLiteral = #colorLiteral(red: 0.9346159696578979, green: 0.6284804344177246, blue: 0.107728436589241, alpha: 1)
-let color = UIColor.red()
-
-let attrString = AttributedString(string: "Hello",
-  attributes:[
-    NSForegroundColorAttributeName:color,
-    NSFontAttributeName:UIFont.systemFont(ofSize: 42)]
-)
+let color = UIColor.red
 
 //: Remember playground is a package, and the image lives in Resources folder
 

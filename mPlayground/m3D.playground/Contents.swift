@@ -15,7 +15,7 @@ var view = SCNView(frame: CGRect(
   height: height))
 var scene = SCNScene()
 view.scene = scene
-view.backgroundColor = UIColor.black()
+view.backgroundColor = UIColor.black
 view.autoenablesDefaultLighting = true
 
 var camera = SCNCamera()
@@ -30,8 +30,8 @@ var torus = SCNTorus(
 var torusNode = SCNNode(geometry: torus)
 scene.rootNode.addChildNode(torusNode)
 
-torus.firstMaterial?.diffuse.contents = UIColor.red()
-torus.firstMaterial?.specular.contents = UIColor.white()
+torus.firstMaterial?.diffuse.contents = UIColor.red
+torus.firstMaterial?.specular.contents = UIColor.white
 
 var spin = CABasicAnimation(keyPath: "rotation")
 let toVector = SCNVector4(
@@ -43,7 +43,7 @@ let toVector = SCNVector4(
 spin.toValue = NSValue(scnVector4: toVector)
 spin.duration = TimeInterval(arc4random_uniform(20) + 5)
 spin.repeatCount = HUGE
-torusNode.add(spin, forKey: "spin")
+torusNode.addAnimation(spin, forKey: "spin")
 
 PlaygroundPage.current.liveView = view
 

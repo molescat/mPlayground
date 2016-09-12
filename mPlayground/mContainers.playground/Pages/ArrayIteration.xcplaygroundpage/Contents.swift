@@ -46,18 +46,18 @@ for x in collection.dropLast(5) {
 }
 
 print("\nIteration - index / item")
-for (num, item) in collection.enumerate() {
+for (num, item) in collection.enumerated() {
   print("\(num) - \(item)")
 }
 
 print("\nIteration - find first index")
-if let index = collection.indexOf(15) {
+if let index = collection.index(of: 15) {
   print(index)
 }
 
 print("\nIteration - find first index passing predicate")
 func myPredicate(x: Int) -> Bool { return x == 15 }
-if let index = collection.indexOf(myPredicate) {
+if let index = collection.index(where: myPredicate) {
   print(index)
 }
 

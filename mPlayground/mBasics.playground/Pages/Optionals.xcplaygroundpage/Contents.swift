@@ -6,13 +6,14 @@ import Foundation
 
 var optionalString: String? = "Hello"
 //optionalString = nil
+let forcedString: String = optionalString!
 print(optionalString)
 
-//let bang = optionalString!
+var implicitlyUnwrappedString: String! = "there"
+var implicitString = implicitlyUnwrappedString
 
 if let name = optionalString {
-  var result = name
-  print(result)
+  print("\(name) \(implicitlyUnwrappedString)")
 }
 
 //: Nil Coalescing Operator
