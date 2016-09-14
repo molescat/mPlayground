@@ -6,16 +6,16 @@ import Foundation
 
 let nestedArray = [[1,2,3,4],[6,7,8,9]]
 
-let joined = Array(nestedArray.joinWithSeparator([]))
-let reduced = nestedArray.reduce([], combine: {$0 + $1})
+let joined = Array(nestedArray.joined(separator: []))
+let reduced = nestedArray.reduce([], +)
 let flattened = nestedArray.flatMap{$0}
 joined // [1, 2, 3, 4, 6, 7, 8, 9]
 reduced // [1, 2, 3, 4, 6, 7, 8, 9]
 flattened // [1, 2, 3, 4, 6, 7, 8, 9]
 
 
-let joinedPlus = Array(nestedArray.joinWithSeparator([5]))
-let reducedPlus = nestedArray.reduce([], combine: {$0 + [5] + $1})
+let joinedPlus = Array(nestedArray.joined(separator: [5]))
+let reducedPlus = nestedArray.reduce([]){ $0 + [5] + $1}
 let flattenedPlus = nestedArray.flatMap{$0 + [5]}
 joinedPlus // [1, 2, 3, 4, 5, 6, 7, 8, 9]
 reducedPlus // [5, 1, 2, 3, 4, 5, 6, 7, 8, 9]
@@ -23,37 +23,33 @@ flattenedPlus // [1, 2, 3, 4, 5, 6, 7, 8, 9, 5]
 
 
 //: Let's start with a simple array of strings
-
 let myStrings = ["one","two","three"]
 
-
 //: Joining things together
-myStrings.joinWithSeparator(", ")  // "one, two, three"
-
+myStrings.joined(separator: ", ")  // "one, two, three"
 
 //: Reducing things together
-let reducedWords = myStrings.reduce("",combine:{$0 + $1}) // "onetwothree"
-reducedWords
+let reducedWords = myStrings.reduce("", +) // "onetwothree"
 
-let reducedReverseWords = myStrings.reduce("",combine:{$1 + $0}) // "threetwoone"
-reducedReverseWords
+let reducedReverseWords = myStrings.reduce("",{$1 + $0})
+reducedReverseWords // "threetwoone"
 
-let reducedReverseWordsDelimiter = myStrings.reduce("",combine:{$1 + "-" + $0}) // "three-two-one-"
-reducedReverseWordsDelimiter
+let reducedReverseWordsDelimiter = myStrings.reduce("", {$1 + "-" + $0})
+reducedReverseWordsDelimiter // "three-two-one-"
 
-let myList = myStrings.enumerate().reduce("",combine:{
-    $0 + $1.element + ($1.index < myStrings.endIndex-1 ? ", " : ".")
-}) // "one, two, three."
-myList
+let myList = myStrings.enumerated().reduce("", {
+    $0 + $1.element + ($1.offset < myStrings.endIndex-1 ? ", " : ".")
+})
+myList // "one, two, three."
 
 
 //: So next let's look at nested arrays
 let myThreeNestedStrings = [["one","two","three"],["five","six","seven"],["eight","nine","ten"]]
 
-Array(myThreeNestedStrings.joinWithSeparator(["XXX"]))
+Array(myThreeNestedStrings.joined(separator:["XXX"]))
 
 //: Notice 'YYY' is at the start
-let reducedNested = myThreeNestedStrings.reduce(["YYY"],combine:{$0 + $1})
+let reducedNested = myThreeNestedStrings.reduce(["YYY"], +)
 reducedNested
 
 
