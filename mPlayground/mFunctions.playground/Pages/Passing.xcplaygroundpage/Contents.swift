@@ -1,12 +1,12 @@
 //: [Previous](@previous)
 /*:
-## Functions - functions as objects
-*/
+ ## Functions - functions as objects
+ */
 import Foundation
 
 //: ----------------- Returning func
 
-func makeIncrementer() -> (Int -> Int) {
+func makeIncrementer() -> ((Int) -> Int) {
   func addOne(number: Int) -> Int {
     return number + 1
   }
@@ -18,7 +18,7 @@ increment(7)
 
 //: ----------------- Passing in func
 
-func hasAnyMatches(list: [Int], condition: Int -> Bool) -> Bool {
+func hasAnyMatches(list: [Int], condition: (Int) -> Bool) -> Bool {
   for item in list {
     if condition(item) {
       return true
@@ -31,7 +31,7 @@ func lessThanTen(number: Int) -> Bool {
 }
 
 var numbers = [20, 19, 7, 12]
-hasAnyMatches(numbers, condition: lessThanTen)
+hasAnyMatches(list: numbers, condition: lessThanTen)
 
 
 //: ----------------- Function as a return type

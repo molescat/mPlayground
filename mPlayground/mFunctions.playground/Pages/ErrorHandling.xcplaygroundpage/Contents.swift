@@ -1,13 +1,13 @@
 //: [Previous](@previous)
 /*:
-## Functions - error handling
-*/
+ ## Functions - error handling
+ */
 import Foundation
 
 
-enum Error: ErrorType {
-  case A
-  case B(code: Int, function: String, line: Int)
+enum MyError: Error {
+  case a
+  case b(code: Int, function: String, line: Int)
 }
 
 func performAction() throws {
@@ -22,12 +22,12 @@ func performAction() throws {
   let encounteredErrorB = simulatedErrorDidOccur()
   
   guard encounteredErrorA == false else {
-    throw Error.A
+    throw MyError.a
   }
   
   guard encounteredErrorB == false else {
     let randomCode = Int(arc4random_uniform(10))
-    throw Error.B(code: randomCode, function: #function, line: #line)
+    throw MyError.b(code: randomCode, function: #function, line: #line)
   }
   
   print("  Action completed successfully!")
@@ -37,9 +37,9 @@ func doSomething() {
   do {
     try performAction()
     print("No error occurred")
-  } catch Error.A {
+  } catch MyError.a {
     print("Error A encountered!")
-  } catch let Error.B(code, function, line) where code > 4 {
+  } catch let MyError.b(code, function, line) where code > 4 {
     print("Error B encountered in \(function) at line \(line) (code: \(code))")
   } catch {
     print("Error - Something went wrong: \(error)")

@@ -1,28 +1,17 @@
 //: [Previous](@previous)
 /*:
-## Functions - parameters
-*/
+ ## Functions - parameters
+ */
 import UIKit
-
-//: ----------------- Passing out a value
-
-func passingOut(inout number :Int) {
-  number += 10
-}
-
-var myNumber = 10
-passingOut(&myNumber)
-myNumber
-
 
 //: ----------------- Default parameters
 
-func joiner(a :String, b :String, join :String = "", suffix :String = ".") -> String {
+func joiner(a: String, b: String, join: String = "", suffix: String = ".") -> String {
   return a + join + b + suffix
 }
 
-let dogCat = joiner("dog", b: "cat")
-let dogMinusCat = joiner("dog", b: "cat", suffix: "!", join: " - ")
+let dogCat = joiner(a: "dog", b: "cat")
+let dogMinusCat = joiner(a: "dog", b: "cat", join: " - ", suffix: "!")
 
 
 //: ----------------- Tuples
@@ -43,14 +32,14 @@ func calculate(scores: [Int]) ->(min: Int, max: Int, sum: Int) {
   return (min, max, sum)
 }
 
-let statistics = calculate([5, 3, 100, 3, 9])
+let statistics = calculate(scores: [5, 3, 100, 3, 9])
 statistics.sum
 statistics.2  // third tuple
 
 
 //: ----------------- Var args
 
-func sumOf(numbers: Int...) -> Int {
+func sumOf(_ numbers: Int...) -> Int {
   var sum = 0
   for number in numbers {
     sum += number

@@ -18,7 +18,7 @@ class Text {
 }
 
 let script = Text()
-script.statement("test")
+script.statement(name: "test")
 script.statement()
 
 //: [Next](@next)

@@ -13,7 +13,7 @@ enum Number {
 let someNumber = Number.FloatingPoint(12.34)
 //let someNumber = Number.Text("12.34")
 
-if case .FloatingPoint(let number) = someNumber where number > 12.0 {
+if case .FloatingPoint(let number) = someNumber, number > 12.0 {
   print("SomeNumber \(number)")
 }
 
