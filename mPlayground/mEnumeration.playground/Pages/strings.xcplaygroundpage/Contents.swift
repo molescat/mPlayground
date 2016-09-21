@@ -35,20 +35,4 @@ let compass = CompassPoint(rawValue: "North")
 print(compass)
 
 
-//: Iteration foo - iterate through the Enum, getting each of the string values!
-
-func iterateEnum<T: Hashable>(_: T.Type) -> AnyGenerator<T> {
-  var i = 0
-  return AnyGenerator {
-    let next = withUnsafePointer(&i) { UnsafePointer<T>($0).memory }
-    let j = i
-    i += 1
-    return next.hashValue == j ? next : nil
-  }
-}
-
-for f in iterateEnum(CompassPoint) {
-  print("\(f) = \(f.hashValue)")
-}
-
 //: [Next](@next)

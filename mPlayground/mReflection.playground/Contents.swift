@@ -3,20 +3,20 @@
 */
 import Foundation
 
-public class Store {
+class Store {
   let storesToDisk: Bool = true
 }
 
-public class BookmarkStore: Store {
+class BookmarkStore: Store {
   let itemCount: Int = 10
 }
 
-public struct Bookmark {
+struct Bookmark {
   enum Group {
     case Tech
     case News
   }
-  private let store = {
+  fileprivate let store = {
     return BookmarkStore()
   }()
   let title: String?

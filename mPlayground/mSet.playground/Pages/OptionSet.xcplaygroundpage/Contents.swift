@@ -1,6 +1,5 @@
-/*:
-## Set
-*/
+//: [Previous](@previous)
+
 import Foundation
 
 struct Option: OptionSet {
@@ -34,17 +33,4 @@ let emptyOptions: Option = []
 print(emptyOptions)
 //: ---
 
-var letters = Set<Character>()
-print("letters is of type Set<Character> with \(letters.count) items.")
-
-letters.insert("a")
-letters.insert("b")
-letters.count
-
-letters = []
-// letters is now an empty set, but is still of type Set<Character>
-
-var favoriteGenres: Set<String> = ["Rock", "Classical", "Hip hop"]
-var favoriteGenresShort: Set = ["Rock", "Classical", "Hip hop"]
-
-favoriteGenres.insert("Jazz")
+//: [Next](@next)
