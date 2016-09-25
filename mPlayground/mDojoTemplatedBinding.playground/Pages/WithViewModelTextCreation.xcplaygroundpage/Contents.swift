@@ -49,18 +49,18 @@ class MyViewController: UIViewController {
   var viewModel = ViewModel()
   
   override func viewDidLoad() {
-    view.backgroundColor = UIColor.lightGrayColor()
+    view.backgroundColor = UIColor.lightGray
     
-    textLabel.backgroundColor = UIColor.whiteColor()
+    textLabel.backgroundColor = UIColor.white
     view.addSubview(textLabel)
     
-    let button = UIButton(type: UIButtonType.System)
-    button.backgroundColor = UIColor.cyanColor()
+    let button = UIButton(type: .system)
+    button.backgroundColor = UIColor.cyan
     button.frame = CGRect(x: 10, y: 60, width: 300, height: 44)
-    button.setTitle("+", forState: UIControlState.Normal)
+    button.setTitle("+", for: .normal)
     button.addTarget(self,
-                     action: #selector(MyViewController.action(_:)),
-                     forControlEvents: .TouchUpInside)
+                     action: #selector(MyViewController.action(sender:)),
+                     for: .touchUpInside)
     view.addSubview(button)
     
     viewModel.counter.bind { [weak self] _ in
