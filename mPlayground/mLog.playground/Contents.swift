@@ -14,8 +14,8 @@ NSLog("NSLogv var args: %@ and %@", "cat", "dog")
 
 protocol Loggable {
   var isLoggingEnabled: Bool { get }
-  func debugLog(format: String,
-                _ args: CVarArgType...,
+  func debugLog(_ format: String,
+                _ args: CVarArg...,
                   file: String,
               function: String,
                   line: Int
@@ -24,8 +24,8 @@ protocol Loggable {
 
 extension Loggable {
   var isLoggingEnabled: Bool { get { return false } }
-  func debugLog(format: String,
-                _ args: CVarArgType...,
+  func debugLog(_ format: String,
+                _ args: CVarArg...,
                   file: String = #file,
               function: String = #function,
                   line: Int = #line) {
@@ -59,8 +59,8 @@ public struct Tracer: Loggable {
   
   var isLoggingEnabled: Bool { get { return Tracer.enabled } }
   
-  public static func print(format: String,
-                           _ args: CVarArgType...,
+  public static func print(_ format: String,
+                           _ args: CVarArg...,
                              file: String = #file,
                          function: String = #function,
                              line: Int = #line) {
