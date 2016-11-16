@@ -53,6 +53,7 @@
 		336508011D1371FD003741DC /* mSIMD.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = mSIMD.playground; sourceTree = "<group>"; };
 		336508021D137C15003741DC /* m3D.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = m3D.playground; sourceTree = "<group>"; };
 		3371D9671B66246C004D04CC /* mGrouping.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = mGrouping.playground; sourceTree = "<group>"; };
+		3389FD7B1D99E21000B85DC8 /* mJSON.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = mJSON.playground; sourceTree = "<group>"; };
 		338EB61B1CADD6B400856ED5 /* mInteraction.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = mInteraction.playground; sourceTree = "<group>"; };
 		339DD3BF1CB4F665000B7B26 /* mUnitTest.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = mUnitTest.playground; sourceTree = "<group>"; };
 		33A8FCC01ABA9E2A006B68C3 /* mColor.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = mColor.playground; sourceTree = "<group>"; };
@@ -177,6 +178,7 @@
 				33E485151CFE89C20062F934 /* mSelector.playground */,
 				336508011D1371FD003741DC /* mSIMD.playground */,
 				336508021D137C15003741DC /* m3D.playground */,
+				3389FD7B1D99E21000B85DC8 /* mJSON.playground */,
 				33E7B4841D05216B00141DB0 /* mExperiment.playground */,
 			);
 			name = mExamples;

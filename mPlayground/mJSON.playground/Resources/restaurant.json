@@ -1,0 +1,8 @@
+{
+  "name": "Caffè Macs",
+  "coordinates": {
+    "lat": 37.330576,
+    "lng": -122.029739
+  },
+  "meals": ["breakfast", "lunch", "dinner"]
+}
