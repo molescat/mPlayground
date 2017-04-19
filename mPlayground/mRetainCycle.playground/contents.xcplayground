@@ -4,5 +4,6 @@
         <page name='WeakClassReference'/>
         <page name='WeakClosure'/>
         <page name='WeakLocalObject'/>
+        <page name='WeakClosureOnAsync'/>
     </pages>
 </playground>
