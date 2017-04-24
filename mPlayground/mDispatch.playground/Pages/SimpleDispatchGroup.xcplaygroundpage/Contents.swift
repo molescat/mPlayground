@@ -8,20 +8,26 @@ PlaygroundPage.current.needsIndefiniteExecution = true
 
 let group = DispatchGroup()
 
-DispatchQueue.global().async(group: group) {
+print("> Queue 1")
+group.enter()
+DispatchQueue.global().async {
   print("Job 1 started")
   sleep(2)
   print("Job 1 finished")
+  group.leave()
 }
 
-DispatchQueue.global().async(group: group) {
+print("> Queue 2")
+group.enter()
+DispatchQueue.global().async {
   print("Job 2 started")
   sleep(4)
   print("Job 2 finished")
+  group.leave()
 }
 
 group.notify(queue: DispatchQueue.global()) {
-  print("> All done")
+  print("All done")
 }
 
 print("> Now wait")
