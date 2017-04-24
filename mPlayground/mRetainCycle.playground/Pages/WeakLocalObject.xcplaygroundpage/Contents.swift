@@ -3,9 +3,6 @@
 class Foo {
   var success: (() -> Void)? = nil
 
-  init() {
-  }
-
   func display() {
     print("display")
   }
@@ -30,7 +27,6 @@ class Test {
     x.success?()
   }
 }
-
 
 var x: Test? = Test()
 x?.simple()
