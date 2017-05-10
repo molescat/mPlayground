@@ -29,35 +29,29 @@ public final class AtomicInteger {
   }
 
   public func incrementAndGet() -> Int {
-//    print("  incrementAndGet")
-    lock.wait()
+//    lock.wait()
     defer {
-      lock.signal()
-///      print("  incremented")
+//      lock.signal()
     }
     _value += 1
     return _value
   }
 }
 
-print("Start")
 
 let atomic = AtomicInteger(value: 0)
-print(atomic.value)
+print("start", atomic.value)
 
 func job() {
   DispatchQueue.global().async {
-//    print(" Dog")
-    print(atomic.incrementAndGet())
+    atomic.incrementAndGet()
   }
 
-//  DispatchQueue.global().async {
-////    print(" Cat")
-//    print(atomic.incrementAndGet())
-//  }
+  atomic.incrementAndGet()
 }
 
-(0..<40).forEach { i in
-//  print(">", i)
+for _ in 0..<10000 {
   job()
 }
+
+print("Final", atomic.value)

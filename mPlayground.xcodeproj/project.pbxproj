@@ -69,7 +69,6 @@
 		33EBC4E519E347590096855B /* mControlFlow.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = mControlFlow.playground; sourceTree = "<group>"; };
 		33F187F51CBC79FF00EF561F /* mLocalization.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = mLocalization.playground; sourceTree = "<group>"; };
 		33F1C20C1EC01C9E0014FC96 /* mAtomic.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = mAtomic.playground; sourceTree = "<group>"; };
-		687701011CF94B9F00E16F36 /* mDojoTemplatedBinding.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = mDojoTemplatedBinding.playground; sourceTree = "<group>"; };
 		6896947B1CE018F60075F719 /* mTemplatedBinding.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = mTemplatedBinding.playground; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -95,7 +94,6 @@
 			isa = PBXGroup;
 			children = (
 				33CE49201CFF9FB400D9E228 /* mExamples */,
-				33CE49211CFFA00200D9E228 /* mDojo */,
 				334F450819DB6BAD005774CF /* mPlayground */,
 				334F452219DB6BAD005774CF /* mPlaygroundTests */,
 				334F450719DB6BAD005774CF /* Products */,
@@ -188,15 +186,6 @@
 				33F1C20C1EC01C9E0014FC96 /* mAtomic.playground */,
 			);
 			name = mExamples;
-			path = mPlayground;
-			sourceTree = "<group>";
-		};
-		33CE49211CFFA00200D9E228 /* mDojo */ = {
-			isa = PBXGroup;
-			children = (
-				687701011CF94B9F00E16F36 /* mDojoTemplatedBinding.playground */,
-			);
-			name = mDojo;
 			path = mPlayground;
 			sourceTree = "<group>";
 		};

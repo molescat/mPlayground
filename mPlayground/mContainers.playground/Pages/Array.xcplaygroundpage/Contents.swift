@@ -7,11 +7,6 @@ import Foundation
 
 var mString = "Hello, world"
 
-//func printMyType<T>(myType: T) {
-//  debugPrint("TypeName = \(myType.dynamicType)")
-//  debugPrint(myType)
-//}
-
 //: ----------------- Array
 var stringArray: [String] = []
 stringArray.append("fish")
