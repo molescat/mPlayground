@@ -5,7 +5,7 @@
 import Foundation
 
 class SomeClass {
-  static var storedTypeProperty = "Some value."
+  static var storedTypeProperty = "cat"
   static var computedTypeProperty: Int {
     return 23
   }
@@ -17,9 +17,11 @@ class SomeClass {
   }
 }
 
-SomeClass.storedTypeProperty
+print(SomeClass.storedTypeProperty)
 SomeClass.storedTypeProperty = "frog"
-SomeClass.storedTypeProperty
+print(SomeClass.storedTypeProperty)
+
+print(SomeClass.computedTypeProperty)
 SomeClass.someTypeMethod()
 
 

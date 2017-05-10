@@ -14,6 +14,7 @@ var mCounter: UInt64 = 1
 var mBool: Bool = true
 let mUnicode = "\u{1F425}"
 let mAcute: Character = "\u{E9}"
+let mEmojiString = "🐥"
 
 
 //: ----------------- Number conversions

@@ -3,6 +3,7 @@
     <pages>
         <page name='overview'/>
         <page name='associatedValue'/>
+        <page name='associatedValueLabel'/>
         <page name='rawValue'/>
         <page name='prepopulated'/>
         <page name='strings'/>

@@ -21,6 +21,7 @@ mString = NSString(format: "%.2f", version) as String
 print("hello " + mString)
 print("Welcome \(mString)")
 print("String length \(mString.characters.count)")
+print("Print varargs", mString, name)
 
 
 //: ----------------- using strings
