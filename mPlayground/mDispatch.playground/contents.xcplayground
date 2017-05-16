@@ -4,5 +4,6 @@
         <page name='DispatchGroup'/>
         <page name='DispatchWorkItem'/>
         <page name='SimpleDispatchGroup'/>
+        <page name='DispatchQueue'/>
     </pages>
 </playground>
