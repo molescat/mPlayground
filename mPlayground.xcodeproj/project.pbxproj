@@ -34,6 +34,7 @@
 		332C75BF1AF8350C00CF9881 /* mStruct.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = mStruct.playground; sourceTree = "<group>"; };
 		332DB2411CB5CD3E00930D25 /* mSequenceType.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = mSequenceType.playground; sourceTree = "<group>"; };
 		33381DD31AF0499C0097F5D6 /* mEnumeration.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = mEnumeration.playground; sourceTree = "<group>"; };
+		333F1C531EC5653F00B35C07 /* mTime.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = mTime.playground; sourceTree = "<group>"; };
 		334EA0721C6BEE050017B18F /* mSet.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = mSet.playground; sourceTree = "<group>"; };
 		334F450619DB6BAD005774CF /* mPlayground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mPlayground.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		334F450A19DB6BAD005774CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -184,6 +185,7 @@
 				339778731EA6EBF3005937D5 /* mRetainCycle.playground */,
 				3303CE161EA821BB003E114D /* mDispatch.playground */,
 				33F1C20C1EC01C9E0014FC96 /* mAtomic.playground */,
+				333F1C531EC5653F00B35C07 /* mTime.playground */,
 			);
 			name = mExamples;
 			path = mPlayground;
