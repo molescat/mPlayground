@@ -29,9 +29,9 @@ public final class AtomicInteger {
   }
 
   public func incrementAndGet() -> Int {
-//    lock.wait()
+    lock.wait()
     defer {
-//      lock.signal()
+      lock.signal()
     }
     _value += 1
     return _value
@@ -44,7 +44,7 @@ print("start", atomic.value)
 
 func job() {
   DispatchQueue.global().async {
-    atomic.incrementAndGet()
+    _ = atomic.incrementAndGet()
   }
 
   atomic.incrementAndGet()
