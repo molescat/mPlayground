@@ -10,8 +10,8 @@ var namedStatus: (code: Int, value: Float, name: String?) = (21, 1.2, nil)
 namedStatus.code
 
 
-
-var playerScore: (score: Int, firstName: String, lastName: String) = (23, "Steve", "Jobs")
+typealias PlayerScore = (score: Int, firstName: String, lastName: String)
+var playerScore: PlayerScore = (23, "Steve", "Jobs")
 
 //: Decomposed the tuple
 let (x, y, z) = playerScore
