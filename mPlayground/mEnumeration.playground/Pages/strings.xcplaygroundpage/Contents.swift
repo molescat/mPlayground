@@ -18,21 +18,19 @@ enum CompassPoint: String {
     case .West: return .East
     }
   }
+
+  func key() -> String {
+    return self.rawValue
+  }
   
 }
 
 var value: CompassPoint = .North
 print(value.reverse)
 
-var optionalValue: CompassPoint? = .North
-print(optionalValue?.reverse)
-
-var reverseValue = optionalValue?.reverse
-print(reverseValue)
-print(reverseValue?.rawValue)
-
-let compass = CompassPoint(rawValue: "North")
+let compass = CompassPoint(rawValue: "North")!
 print(compass)
 
+let x: String = compass.key()
 
 //: [Next](@next)

@@ -5,16 +5,15 @@
 import Foundation
 
 enum Planet: Int {
-  case Mercury = 1, Venus, Earth, Mars, Jupiter, Saturn, Uranus, Neptune
+  case mercury = 1, venus, earth, mars, jupiter, saturn, uranus, neptune
 }
 
-var planet = Planet.Mercury
-planet = .Mercury
+var planet: Planet = .mercury
 
 switch planet {
-case Planet.Jupiter:
+case Planet.jupiter:
   fallthrough
-case .Saturn:
+case .saturn:
   print("gas giants")
 default: // switch must be exhaustive
   print("just a rock")

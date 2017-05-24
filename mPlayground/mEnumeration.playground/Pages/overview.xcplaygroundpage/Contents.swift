@@ -5,14 +5,14 @@
 import Foundation
 
 enum CompassPoint {
-  case North
-  case South
-  case East
-  case West
+  case north
+  case south
+  case east
+  case west
 }
 
-var direction = CompassPoint.North
-var heading: CompassPoint = .South
+var direction = CompassPoint.north
+var heading: CompassPoint = .south
 
 
 //: [Previous](@previous)
