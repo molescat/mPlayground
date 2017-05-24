@@ -15,6 +15,7 @@ final class Atomic<A> {
   }
 
   func mutate(_ transform: (inout A) -> Void) {
+    //print(Thread.current)
     queue.sync {
       transform(&self._value)
     }
