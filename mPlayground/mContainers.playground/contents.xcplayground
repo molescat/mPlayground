@@ -9,5 +9,6 @@
         <page name='Dictionary'/>
         <page name='flatmap'/>
         <page name='flatmapFunction'/>
+        <page name='flatmapNil'/>
     </pages>
 </playground>
