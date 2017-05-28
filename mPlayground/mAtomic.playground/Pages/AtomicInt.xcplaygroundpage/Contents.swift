@@ -13,12 +13,9 @@ public final class AtomicInteger {
 
   public var value: Int {
     get {
-      print("  Get")
+      // print("  Get")
       lock.wait()
-      defer {
-        print("  GOT")
-        lock.signal()
-      }
+      defer { lock.signal() }
       return _value
     }
     set {
@@ -30,9 +27,7 @@ public final class AtomicInteger {
 
   public func incrementAndGet() -> Int {
     lock.wait()
-    defer {
-      lock.signal()
-    }
+    defer { lock.signal() }
     _value += 1
     return _value
   }
@@ -40,7 +35,7 @@ public final class AtomicInteger {
 
 
 let atomic = AtomicInteger(value: 0)
-print("start", atomic.value)
+print("Start", atomic.value)
 
 func job() {
   DispatchQueue.global().async {

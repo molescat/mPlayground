@@ -33,7 +33,7 @@ work2.notify(queue: DispatchQueue.global()) { [unowned work2] in
 DispatchQueue.global().async(execute: work1)
 DispatchQueue.global().async(execute: work2)
 
-//sleep(1)
+sleep(1)
 
 work1.cancel()
 
