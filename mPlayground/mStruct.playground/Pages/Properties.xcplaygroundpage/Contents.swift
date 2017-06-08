@@ -5,8 +5,6 @@
 */
 import UIKit
 
-
-
 //: ----------------- Read Only - eg volume
 
 struct Cuboid {
@@ -37,13 +35,6 @@ let stepCounter = StepCounter()
 stepCounter.totalSteps = 200
 // About to set totalSteps to 200
 // Added 200 steps
-
-/*:
-  NOTE: Output of print/println functions goes to console - you can see it in assistant editor (use app menu View -> Assistant editor -> Show assistant editor to show it
-
-  To see the above output of the willSet, didSet - check the console
-*/
-
 
 //: -------------------- Type Properties
 

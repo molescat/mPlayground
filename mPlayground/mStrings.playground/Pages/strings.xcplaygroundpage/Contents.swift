@@ -21,6 +21,7 @@ mString = NSString(format: "%.2f", version) as String
 print("hello " + mString)
 print("Welcome \(mString)")
 print("String length \(mString.characters.count)")
+mString.count
 print("Print varargs", mString, name)
 
 
@@ -47,7 +48,7 @@ if emptyString.isEmpty {
 }
 
 
-var wildAnimal = "elephant"
+let wildAnimal = "elephant"
 var zooAnimal = wildAnimal
 zooAnimal += " (endangered)"
 

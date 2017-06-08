@@ -22,7 +22,7 @@ simpleDictionary["books"] = nil
 simpleDictionary
 
 
-var mDict = ["apple":1, "baNana":2]
+var mDict = ["Apple":1, "baNana":2]
 mDict["orange"] = 3
 //mDict["pear"] = "awesome" // Must be Int
 mDict
@@ -35,22 +35,22 @@ for (key, value) in mDict {
 }
 
 
-var x = mDict.map {key, value in
-  (key.lowercased(), value)}
-x
+var lowerCased = mDict.map {
+  return ($0.key.lowercased(), $0.value)
+}
+lowerCased
 
-var y = mDict.reduce([String:Any]()) { dict, pair in
+var lowerCasedFruit = mDict.reduce([String:Any]()) { dict, pair in
   var d = dict
   d[pair.0.lowercased()] = pair.1
   return d
 }
-y
-var myString = "hello the dog"
-var myArray = Array(myString.characters)
-var z = myArray.reduce("") { $1 == " "
+lowerCasedFruit
+var mySentence = "hello the dog"
+var myCharacters = Array(mySentence.characters)
+var z = myCharacters.reduce("") { $1 == " "
   ? "\($0)-"
   : "\($0)\($1)" }
 z
-
 
 //: [Next](@next)

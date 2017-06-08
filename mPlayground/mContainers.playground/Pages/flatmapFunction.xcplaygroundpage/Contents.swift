@@ -22,6 +22,4 @@ deck
 
 deck.count
 
-
-
 //: [Next](@next)

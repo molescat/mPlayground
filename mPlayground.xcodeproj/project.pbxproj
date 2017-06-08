@@ -59,7 +59,7 @@
 		338EB61B1CADD6B400856ED5 /* mInteraction.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = mInteraction.playground; sourceTree = "<group>"; };
 		339778731EA6EBF3005937D5 /* mRetainCycle.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = mRetainCycle.playground; sourceTree = "<group>"; };
 		339DD3BF1CB4F665000B7B26 /* mUnitTest.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = mUnitTest.playground; sourceTree = "<group>"; };
-		33A8FCC01ABA9E2A006B68C3 /* mColor.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = mColor.playground; sourceTree = "<group>"; };
+		33A8FCC01ABA9E2A006B68C3 /* mColor.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = mColor.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		33A97A8D19E49698008E9617 /* mClasses.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = mClasses.playground; sourceTree = "<group>"; };
 		33B7FF251ABA8B9A003E4A8B /* mAnimation.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = mAnimation.playground; sourceTree = "<group>"; };
 		33C478041ADCEB97003C105F /* mDocumentation.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = mDocumentation.playground; sourceTree = "<group>"; };
@@ -241,7 +241,7 @@
 				TargetAttributes = {
 					334F450519DB6BAD005774CF = {
 						CreatedOnToolsVersion = 6.0;
-						LastSwiftMigration = 0800;
+						LastSwiftMigration = 0900;
 					};
 					334F451E19DB6BAD005774CF = {
 						CreatedOnToolsVersion = 6.0;
@@ -431,7 +431,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "TorpsDevelopment.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -443,7 +444,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "TorpsDevelopment.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};

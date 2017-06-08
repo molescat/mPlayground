@@ -4,6 +4,7 @@
 */
 import Foundation
 
+// You can also have final class (which I generally recommend)
 class Animal {
   func species() -> String { return "" }
   final func youCantOverrideThis() -> String { return "final" }

@@ -37,17 +37,4 @@ statistics.sum
 statistics.2  // third tuple
 
 
-//: ----------------- Var args
-
-func sumOf(_ numbers: Int...) -> Int {
-  var sum = 0
-  for number in numbers {
-    sum += number
-  }
-  return sum
-}
-
-sumOf(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
-
-
 //: [Next](@next)

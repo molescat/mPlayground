@@ -1,6 +1,5 @@
 //: [Previous](@previous)
-
-import Foundation
+import UIKit
 
 //: --------------------- constant & deferred initialiation
 
@@ -20,6 +19,13 @@ beetsQuestion.response = "I also like beets. (But not with cheese.)"
 
 
 //: --------------------- initialization options / delegation
+struct Point {
+  var x = 0.0, y = 0.0
+}
+
+struct Size {
+  var width = 0.0, height = 0.0
+}
 
 struct MyRect {
   var origin = Point()
@@ -35,7 +41,5 @@ struct MyRect {
     self.init(origin: Point(x: originX, y: originY), size: size)
   }
 }
-
-
 
 //: [Next](@next)

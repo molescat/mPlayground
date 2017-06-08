@@ -11,16 +11,16 @@ enum MyError: Error {
 }
 
 func performAction() throws {
-  defer {
-    let count = (encounteredErrorA ? 1 : 0) + (encounteredErrorB ? 1 : 0)
-    print("  Action error count \(count)")
-  }
-  
   print("Action started")
   
   let encounteredErrorA = simulatedErrorDidOccur()
   let encounteredErrorB = simulatedErrorDidOccur()
-  
+
+  defer {
+    let count = (encounteredErrorA ? 1 : 0) + (encounteredErrorB ? 1 : 0)
+    print("  Action error count \(count)")
+  }
+
   guard encounteredErrorA == false else {
     throw MyError.a
   }

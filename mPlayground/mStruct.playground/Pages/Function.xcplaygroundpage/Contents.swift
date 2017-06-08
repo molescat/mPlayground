@@ -1,8 +1,5 @@
 //: [Previous](@previous)
-
 import Foundation
-
-
 
 //: -------------------- Functions
 
@@ -40,7 +37,5 @@ struct Celsius {
 let boilingPointOfWater = Celsius(fromFahrenheit: 212.0)
 let freezingPointOfWater = Celsius(fromKelvin: 273.15)
 let bodyTemperature = Celsius(37.0)
-
-
 
 //: [Next](@next)
