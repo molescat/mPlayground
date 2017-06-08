@@ -4,5 +4,6 @@
         <page name='GMT'/>
         <page name='DateFormatter'/>
         <page name='RelativeDateTo'/>
+        <page name='Date'/>
     </pages>
 </playground>
