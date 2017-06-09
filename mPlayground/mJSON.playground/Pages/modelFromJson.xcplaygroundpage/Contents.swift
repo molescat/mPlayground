@@ -3,7 +3,6 @@
  */
 import Foundation
 
-
 struct Restaurant {
   enum Meal: String {
     case breakfast, lunch, dinner

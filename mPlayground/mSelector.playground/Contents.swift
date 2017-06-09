@@ -10,10 +10,10 @@ let fontMethodNames = ["debugFont", "designerFont"]
 
 extension UIFont {
   class func debugFont() -> UIFont? {
-    return UIFont.init(name: "Courier", size: 18)
+    return UIFont.init(name: "Courier", size: 12)
   }
   class func designerFont() -> UIFont? {
-    return UIFont.init(name: "Chalkduster", size: 18)
+    return UIFont.init(name: "Chalkduster", size: 12)
   }
 }
 

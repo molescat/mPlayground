@@ -8,16 +8,17 @@ PlaygroundPage.current.needsIndefiniteExecution = true
 final class Signal {
   typealias Callback = () -> Void
 
-  private let queue = DispatchQueue(label: "mPlayground")
+  private let queue = DispatchQueue(label: "mPlayground-DispatchQueue")
 
   var callback: Callback? = nil
 
   func send() {
-    let cb = queue.sync { self.callback }
+    queue.sync { self.callback?() }
   }
 }
 
 let signal = Signal()
 signal.callback = { print("Hello") }
+signal.send()
 
 //: [Next](@next)
