@@ -11,7 +11,6 @@ Protocols can be adopted by classes, structs and enums. Base classes and inherit
 //: Default parameters cannot be defined in the protocol itself
 
 protocol DemonstratesProtocol {
-  
   var propertyRequirement: String { get set }
   
   init?(x: Int, y: Int)
@@ -19,7 +18,6 @@ protocol DemonstratesProtocol {
   func methodRequirement(input: String?) -> Int?
   
   subscript(x: Int, y: Int) -> Int { get set }
-  
 }
 
 //: [Next](@next)

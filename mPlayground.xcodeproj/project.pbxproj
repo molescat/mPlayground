@@ -27,7 +27,7 @@
 
 /* Begin PBXFileReference section */
 		3303CE161EA821BB003E114D /* mDispatch.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = mDispatch.playground; sourceTree = "<group>"; };
-		331388931CC0B44D00B7B595 /* mLog.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = mLog.playground; sourceTree = "<group>"; };
+		331388931CC0B44D00B7B595 /* mLog.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = mLog.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		331601641CFBAD6300224F05 /* mGenerics.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = mGenerics.playground; sourceTree = "<group>"; };
 		331D5EFA1AC3C46700206C2F /* mStrings.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = mStrings.playground; sourceTree = "<group>"; };
 		3327DB211C5EBA9200246731 /* mProtocol.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = mProtocol.playground; sourceTree = "<group>"; };
@@ -46,31 +46,31 @@
 		334F451F19DB6BAD005774CF /* mPlaygroundTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mPlaygroundTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		334F452419DB6BAD005774CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		334F452519DB6BAD005774CF /* mPlaygroundTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = mPlaygroundTests.m; sourceTree = "<group>"; };
-		334F452F19DB6C14005774CF /* mGraph.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = mGraph.playground; sourceTree = "<group>"; };
-		334F453019DB6C14005774CF /* mPhysics.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = mPhysics.playground; sourceTree = "<group>"; };
-		334F453119DB6C14005774CF /* mAlgorithm.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = mAlgorithm.playground; sourceTree = "<group>"; };
+		334F452F19DB6C14005774CF /* mGraph.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = mGraph.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		334F453019DB6C14005774CF /* mPhysics.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = mPhysics.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		334F453119DB6C14005774CF /* mAlgorithm.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = mAlgorithm.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		334F453219DB6C14005774CF /* mBasics.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = mBasics.playground; sourceTree = "<group>"; };
-		334F453319DB6C14005774CF /* mUIKit.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = mUIKit.playground; sourceTree = "<group>"; };
-		335006A91C91171700F65CAC /* mReflection.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = mReflection.playground; sourceTree = "<group>"; };
+		334F453319DB6C14005774CF /* mUIKit.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = mUIKit.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		335006A91C91171700F65CAC /* mReflection.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = mReflection.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		336508011D1371FD003741DC /* mSIMD.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = mSIMD.playground; sourceTree = "<group>"; };
 		336508021D137C15003741DC /* m3D.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = m3D.playground; sourceTree = "<group>"; };
 		3371D9671B66246C004D04CC /* mGrouping.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = mGrouping.playground; sourceTree = "<group>"; };
 		3389FD7B1D99E21000B85DC8 /* mJSON.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = mJSON.playground; sourceTree = "<group>"; };
-		338EB61B1CADD6B400856ED5 /* mInteraction.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = mInteraction.playground; sourceTree = "<group>"; };
+		338EB61B1CADD6B400856ED5 /* mInteraction.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = mInteraction.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		339778731EA6EBF3005937D5 /* mRetainCycle.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = mRetainCycle.playground; sourceTree = "<group>"; };
 		339DD3BF1CB4F665000B7B26 /* mUnitTest.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = mUnitTest.playground; sourceTree = "<group>"; };
 		33A8FCC01ABA9E2A006B68C3 /* mColor.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = mColor.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		33A97A8D19E49698008E9617 /* mClasses.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = mClasses.playground; sourceTree = "<group>"; };
-		33B7FF251ABA8B9A003E4A8B /* mAnimation.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = mAnimation.playground; sourceTree = "<group>"; };
+		33B7FF251ABA8B9A003E4A8B /* mAnimation.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = mAnimation.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		33C478041ADCEB97003C105F /* mDocumentation.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = mDocumentation.playground; sourceTree = "<group>"; };
 		33E485151CFE89C20062F934 /* mSelector.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = mSelector.playground; sourceTree = "<group>"; };
 		33E7B4841D05216B00141DB0 /* mExperiment.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = mExperiment.playground; sourceTree = "<group>"; };
 		33EBC4E319E344CF0096855B /* mContainers.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = mContainers.playground; sourceTree = "<group>"; };
 		33EBC4E419E3454F0096855B /* mFunctions.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = mFunctions.playground; sourceTree = "<group>"; };
 		33EBC4E519E347590096855B /* mControlFlow.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = mControlFlow.playground; sourceTree = "<group>"; };
-		33F187F51CBC79FF00EF561F /* mLocalization.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = mLocalization.playground; sourceTree = "<group>"; };
+		33F187F51CBC79FF00EF561F /* mLocalization.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = mLocalization.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		33F1C20C1EC01C9E0014FC96 /* mAtomic.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = mAtomic.playground; sourceTree = "<group>"; };
-		6896947B1CE018F60075F719 /* mTemplatedBinding.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = mTemplatedBinding.playground; sourceTree = "<group>"; };
+		6896947B1CE018F60075F719 /* mTemplatedBinding.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = mTemplatedBinding.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */

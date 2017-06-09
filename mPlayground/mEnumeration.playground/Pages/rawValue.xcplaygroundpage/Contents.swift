@@ -11,7 +11,7 @@ enum Planet: Int {
 var planet: Planet = .mercury
 
 switch planet {
-case Planet.jupiter:
+case .jupiter:
   fallthrough
 case .saturn:
   print("gas giants")
@@ -21,6 +21,5 @@ default: // switch must be exhaustive
 
 let possiblePlanet = Planet(rawValue: 7)
 let impossiblePlanet = Planet(rawValue: 14)
-
 
 //: [Next](@next)

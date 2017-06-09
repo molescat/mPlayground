@@ -7,7 +7,7 @@ import UIKit
 
 // Use this to help make the random numbers for 'data'
 var randomData: [Int] = []
-for i in 0..<20 {
+for _ in 0..<20 {
   randomData.append(Int(arc4random() % 100))
 }
 randomData

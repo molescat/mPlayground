@@ -3,12 +3,17 @@
    version = "3.0">
    <TimelineItems>
       <LoggerValueHistoryTimelineItem
-         documentLocation = "#CharacterRangeLen=87&amp;CharacterRangeLoc=147&amp;EndingColumnNumber=90&amp;EndingLineNumber=10&amp;StartingColumnNumber=3&amp;StartingLineNumber=10&amp;Timestamp=479341256.929953"
+         documentLocation = "file:///Users/myles_abbott/mobile/mTest/mPlayground/mPlayground/mGraph.playground#CharacterRangeLen=104&amp;CharacterRangeLoc=147&amp;EndingColumnNumber=94&amp;EndingLineNumber=11&amp;StartingColumnNumber=31&amp;StartingLineNumber=10&amp;Timestamp=518657038.262373"
          selectedRepresentationIndex = "0"
          shouldTrackSuperviewWidth = "NO">
       </LoggerValueHistoryTimelineItem>
       <LoggerValueHistoryTimelineItem
-         documentLocation = "#CharacterRangeLen=87&amp;CharacterRangeLoc=160&amp;EndingColumnNumber=90&amp;EndingLineNumber=11&amp;StartingColumnNumber=3&amp;StartingLineNumber=11&amp;Timestamp=515490079.161713"
+         documentLocation = "file:///Users/myles_abbott/mobile/mTest/mPlayground/mPlayground/mGraph.playground#CharacterRangeLen=92&amp;CharacterRangeLoc=160&amp;EndingColumnNumber=0&amp;EndingLineNumber=12&amp;StartingColumnNumber=3&amp;StartingLineNumber=11&amp;Timestamp=518657038.262484"
+         selectedRepresentationIndex = "0"
+         shouldTrackSuperviewWidth = "NO">
+      </LoggerValueHistoryTimelineItem>
+      <LoggerValueHistoryTimelineItem
+         documentLocation = "file:///Users/myles_abbott/mobile/mTest/mPlayground/mPlayground/mGraph.playground#CharacterRangeLen=8&amp;CharacterRangeLoc=256&amp;EndingColumnNumber=0&amp;EndingLineNumber=15&amp;StartingColumnNumber=1&amp;StartingLineNumber=14&amp;Timestamp=518657038.26257"
          selectedRepresentationIndex = "0"
          shouldTrackSuperviewWidth = "NO">
       </LoggerValueHistoryTimelineItem>

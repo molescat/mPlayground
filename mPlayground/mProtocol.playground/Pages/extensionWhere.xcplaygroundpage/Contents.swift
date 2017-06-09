@@ -42,28 +42,4 @@ tweety.canFly
 
 var pengo = Penguin(name: "Pengy")
 pengo.canFly
-
-//: ---
-
-/*:
-NB: You can't extend a protocol to conform to other protocols
-Try
-  extension Bird: BooleanType { ...
-*/
-
-extension FlappyBird: BooleanType {
-}
-
-extension BooleanType where Self: Bird {
-  var boolValue: Bool {
-    return self.canFly
-  }
-}
-
-if tweety {
-  print("I can fly!")
-} else {
-  print("Guess I’ll just sit here :[")
-}
-
 //: [Next](@next)

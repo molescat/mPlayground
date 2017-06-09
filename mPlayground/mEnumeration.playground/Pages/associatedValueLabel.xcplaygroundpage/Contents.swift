@@ -18,7 +18,6 @@ func perform(trackingSource: TrackingSource) {
   }
 }
 
-
 var trackingSource: TrackingSource
 //trackingSource = .deepLink
 trackingSource = .instigator(source: "SearchResults")

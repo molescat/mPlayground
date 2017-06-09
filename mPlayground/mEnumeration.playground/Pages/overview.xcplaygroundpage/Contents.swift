@@ -14,5 +14,4 @@ enum CompassPoint {
 var direction = CompassPoint.north
 var heading: CompassPoint = .south
 
-
 //: [Previous](@previous)

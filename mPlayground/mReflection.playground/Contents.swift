@@ -47,24 +47,25 @@ print(Mirror(reflecting: NSNull()).subjectType)
 print("=== Display Style")
 // Known
 aMirror.displayStyle
-print(aMirror.displayStyle)
+print(aMirror.displayStyle!)
 // Unknown
 let closure = { (a: Int) -> Int in return a * 2 }
 Mirror(reflecting: closure).displayStyle
 
 
 print("=== superclass")
-print(Mirror(reflecting: aBookmark).superclassMirror)
-print(Mirror(reflecting: aBookmark.store).superclassMirror)
+print(Mirror(reflecting: aBookmark).superclassMirror ?? "no super")
+print(Mirror(reflecting: aBookmark.store).superclassMirror ?? "no store super")
 
 
-if aMirror.displayStyle == .struct { print("Matched") }
+if aMirror.displayStyle == .struct {
+  print("Matched")
+}
 
 print("=== Function")
 func testFunction() -> Int {
   return 7
 }
-
 print(Mirror(reflecting: testFunction).description)
 
 

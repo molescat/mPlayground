@@ -79,9 +79,8 @@ sedan.primaryBodyColor
 sedan.bringBackDefault()
 sedan.engineSizeCc
 
-(sedan as Motorized).engineSizeCc!
-
-sedan.paint("red", newSecondaryColors: ["white stripes"])
+sedan.paint(newPrimaryColor: "red",
+            newSecondaryColors: ["white stripes"])
 
 
 /*: 

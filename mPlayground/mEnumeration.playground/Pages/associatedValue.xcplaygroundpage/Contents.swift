@@ -20,5 +20,4 @@ case let .QRCode(productCode):
   print("QR Code: \(productCode)")
 }
 
-
 //: [Next](@next)

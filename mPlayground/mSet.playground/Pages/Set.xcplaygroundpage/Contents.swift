@@ -3,8 +3,6 @@
 */
 import Foundation
 
-
-
 var letters = Set<Character>()
 print("letters is of type Set<Character> with \(letters.count) items.")
 

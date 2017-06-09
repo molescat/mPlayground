@@ -36,7 +36,8 @@ class Book: Purchasable, Ratable {
   }
   
   func getAverageRating() -> Double {
-    return ratings.count == 0 ? 0.0
+    return ratings.count == 0
+      ? 0.0
       : Double(ratings.reduce(0) { $0 + $1 }) / Double(ratings.count)
   }
   
@@ -75,7 +76,7 @@ typealias LineItemable = protocol<Purchasable, Ratable>
 
 let myCart: [LineItemable] = [book, bluRay]
 
-func printLineItemsForCart(cart: [LineItemable]) {
+func printLineItemsForCart(_ cart: [LineItemable]) {
   for item in cart {
     print("\(item.title) - $\(item.price) - rating: \(item.getAverageRating())")
   }
