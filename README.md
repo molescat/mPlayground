@@ -8,7 +8,7 @@ Simple experimental project to test Xcode and Swift playgrounds
 Usage:
 ------
 
-Build and run using Xcode7.3 and Swift2.2 (or later).
+Build and run using Xcode9.x and Swift4.x.
 
 
 

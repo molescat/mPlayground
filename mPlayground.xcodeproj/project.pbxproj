@@ -54,7 +54,9 @@
 		335006A91C91171700F65CAC /* mReflection.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = mReflection.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		336508011D1371FD003741DC /* mSIMD.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = mSIMD.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		336508021D137C15003741DC /* m3D.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = m3D.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		33656FAC1EEE636500FBE33E /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		3371D9671B66246C004D04CC /* mGrouping.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = mGrouping.playground; sourceTree = "<group>"; };
+		337306391EEE6B8300BE88CD /* mFuture.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = mFuture.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		3389FD7B1D99E21000B85DC8 /* mJSON.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = mJSON.playground; sourceTree = "<group>"; };
 		338EB61B1CADD6B400856ED5 /* mInteraction.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = mInteraction.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		339778731EA6EBF3005937D5 /* mRetainCycle.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = mRetainCycle.playground; sourceTree = "<group>"; };
@@ -94,6 +96,7 @@
 		334F44FD19DB6BAD005774CF = {
 			isa = PBXGroup;
 			children = (
+				33656FAC1EEE636500FBE33E /* README.md */,
 				33CE49201CFF9FB400D9E228 /* mExamples */,
 				334F450819DB6BAD005774CF /* mPlayground */,
 				334F452219DB6BAD005774CF /* mPlaygroundTests */,
@@ -185,6 +188,7 @@
 				3303CE161EA821BB003E114D /* mDispatch.playground */,
 				33F1C20C1EC01C9E0014FC96 /* mAtomic.playground */,
 				333F1C531EC5653F00B35C07 /* mTime.playground */,
+				337306391EEE6B8300BE88CD /* mFuture.playground */,
 				33E7B4841D05216B00141DB0 /* mExperiment.playground */,
 			);
 			name = mExamples;
