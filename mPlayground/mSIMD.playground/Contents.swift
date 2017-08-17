@@ -6,7 +6,6 @@
 /* Neural Networks and Accelerate, System Frameworks | 715
  */
 
-
 import UIKit
 import simd
 
@@ -23,16 +22,15 @@ let t = cross(y, x)
 // cross
 //   use simd_orient for facing calculation
 
-let m = float3x3([float3(0,0,0), float3(), float3()])
+let m = float3x3([float3(0, 0, 0), float3(), float3()])
 
 print(m)
 
-let identity = float3x3.init(diagonal: float3(1,1,1))
+let identity = float3x3.init(diagonal: float3(1, 1, 1))
 print(identity)
 
 //simd_orient(<#T##__x: vector_double2##vector_double2#>, <#T##__y: vector_double2##vector_double2#>)
 
-
 func test() {
-  
+
 }

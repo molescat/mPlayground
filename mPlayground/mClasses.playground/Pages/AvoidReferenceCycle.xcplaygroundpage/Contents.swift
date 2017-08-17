@@ -6,11 +6,11 @@ import Foundation
 
 class Band {
   var drummer: Drummer
-  
+
   init(drummer: Drummer) {
     self.drummer = drummer
   }
-  
+
   deinit {
     print("Band will be deallocated")
   }
@@ -19,7 +19,7 @@ class Band {
 class Drummer {
   weak var band: Band?
 //  var band: Band?
-  
+
   deinit {
     print("Drummer will be deallocated")
   }
@@ -34,8 +34,6 @@ ringo?.band = beatles
 ringo = nil
 beatles = nil
 
-
-
 print("----")
 
 //: ----------------- Closures
@@ -48,17 +46,17 @@ class Alpha {
 
 class Bravo {
   let alpha = Alpha()
-  
-  lazy var printOutValues: () -> () = {
+
+  lazy var printOutValues: () -> Void = {
     [unowned self] in
     print(">>> \(self), \(self.alpha)")
   }
-  
-  lazy var printOutAlphaValue: () -> () = {
+
+  lazy var printOutAlphaValue: () -> Void = {
     [weak alpha = self.alpha] in
     print("+++ \(alpha)")
   }
-  
+
   deinit {
     print("Bravo deinit")
   }

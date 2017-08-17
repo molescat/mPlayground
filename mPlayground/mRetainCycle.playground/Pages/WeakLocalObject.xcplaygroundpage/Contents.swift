@@ -1,7 +1,7 @@
 //: [Previous](@previous)
 
 class Foo {
-  var success: (() -> Void)? = nil
+  var success: (() -> Void)?
 
   func display() {
     print("display")

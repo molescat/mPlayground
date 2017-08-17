@@ -14,7 +14,6 @@ extension Sequence {
   }
 }
 
-
 var list: [Animal] = [
   Animal(1, name: "cat"),
   Animal(3, name: "dog"),

@@ -44,7 +44,7 @@ class ShoppingListItem: RecipeIngredient {
 var breakfastList = [
   ShoppingListItem(),
   ShoppingListItem(name: "Bacon"),
-  ShoppingListItem(name: "Eggs", quantity: 6),
+  ShoppingListItem(name: "Eggs", quantity: 6)
 ]
 breakfastList[0].name = "Orange juice"
 breakfastList[0].purchased = true

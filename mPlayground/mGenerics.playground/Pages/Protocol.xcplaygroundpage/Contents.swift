@@ -17,6 +17,3 @@ var b = 123
 swapTwoValues(&a, &b)
 a
 b
-
-
-

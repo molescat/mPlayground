@@ -9,7 +9,7 @@ class Text {
   func statement(name: String) {
     print("\(name)")
   }
-  
+
   func statement() {
     print("empty")
   }

@@ -32,7 +32,7 @@ extension Loggable {
     if (isLoggingEnabled && _isDebugAssertConfiguration()) {
       let preamble = String("\n\tFile:\(file)\n\tFunction:\(function)\n\tLine:\(line)")
       print(preamble)
-      
+
       if args.count > 0 {
         print(String(format: format, arguments: args))
       } else {
@@ -53,12 +53,12 @@ testLog.debugLog("debugLog var args: %@ and %@", "cat", "dog")
 //: ### Struct
 
 public struct Tracer: Loggable {
-  
+
   private static let sharedInstance = Tracer()
   public static var enabled: Bool = true
-  
+
   var isLoggingEnabled: Bool { get { return Tracer.enabled } }
-  
+
   public static func print(_ format: String,
                            _ args: CVarArg...,
                              file: String = #file,

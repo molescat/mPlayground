@@ -15,7 +15,6 @@ let containerView = UIView(frame: CGRect(x: 0.0, y: 0.0, width: 375.0, height: 6
 PlaygroundPage.current.liveView = containerView
 PlaygroundPage.current.needsIndefiniteExecution = true
 
-
 let circle = UIView(frame: CGRect(x: 0.0, y: 0.0, width: 50.0, height: 50.0))
 circle.center = containerView.center
 circle.layer.cornerRadius = 25.0
@@ -24,7 +23,7 @@ let startingColor = UIColor.red
 
 circle.backgroundColor = startingColor
 
-containerView.addSubview(circle);
+containerView.addSubview(circle)
 
 let rectangle = UIView(frame: CGRect(x: 0.0, y: 0.0, width: 50.0, height: 50.0))
 rectangle.center = containerView.center
@@ -47,4 +46,3 @@ UIView.animate(withDuration: 2.0,
                 rectangle.transform = rotationTransform
 },
                completion: nil)
-

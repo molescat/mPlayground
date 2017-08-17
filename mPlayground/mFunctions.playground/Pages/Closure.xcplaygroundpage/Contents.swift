@@ -19,15 +19,14 @@ let trippledNumbers = strangeNumbers.map({ number in
   3 * number })
 trippledNumbers
 
-
 //: ----------------- sort
 
-func backwards(_ a :Int, _ b :Int) -> Bool {
+func backwards(_ a: Int, _ b: Int) -> Bool {
   return a > b
 }
 let reverseNumbers = strangeNumbers.sorted(by: backwards)
 
-let sortedNumbers = strangeNumbers.sorted{ $0 > $1 }
+let sortedNumbers = strangeNumbers.sorted { $0 > $1 }
 sortedNumbers
 
 strangeNumbers.sorted(by: <)
@@ -36,10 +35,9 @@ strangeNumbers
 strangeNumbers.sort(by: <)  // Mutate
 strangeNumbers
 
-
 //: ----------------- Trailing Closure shorthand
 
-func someFunctionThatTakesAClosure(_ closure: () -> ()) {
+func someFunctionThatTakesAClosure(_ closure: () -> Void) {
   closure()
 }
 
@@ -50,7 +48,6 @@ someFunctionThatTakesAClosure({
 someFunctionThatTakesAClosure() {
   print("Using trailing closure")
 }
-
 
 // ---
 var names = ["Steve", "Bill", "Woz", "Stew", "Myles", "Rie"]

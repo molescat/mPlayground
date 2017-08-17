@@ -50,7 +50,6 @@ let d1 = Date(year: 2016, month: 3, day: 19, hour: 11, minute: 30, second: 0, ti
 d1.debugDescription
 d1.timeIntervalSince1970
 
-
 timezone = TimeZone.current
 dump(timezone)
 

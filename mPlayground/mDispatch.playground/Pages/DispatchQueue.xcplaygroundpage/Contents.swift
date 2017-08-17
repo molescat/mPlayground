@@ -10,7 +10,7 @@ final class Signal {
 
   private let queue = DispatchQueue(label: "mPlayground-DispatchQueue")
 
-  var callback: Callback? = nil
+  var callback: Callback?
 
   func send() {
     queue.sync { self.callback?() }

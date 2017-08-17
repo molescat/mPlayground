@@ -33,7 +33,6 @@ public final class AtomicInteger {
   }
 }
 
-
 let atomic = AtomicInteger(value: 0)
 print("Start", atomic.value)
 

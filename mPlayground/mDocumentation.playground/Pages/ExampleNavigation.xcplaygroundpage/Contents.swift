@@ -8,7 +8,6 @@ import Foundation
 
 var str = "Hello, playground"
 
-
 /*: A bulleted list of 2 items
 * Item 1
 * Item 2

@@ -9,7 +9,6 @@ var status: (Int, Float, String) = (32, 1.2, "Good")
 var namedStatus: (code: Int, value: Float, name: String?) = (21, 1.2, nil)
 namedStatus.code
 
-
 typealias PlayerScore = (score: Int, firstName: String, lastName: String)
 var playerScore: PlayerScore = (23, "Steve", "Jobs")
 

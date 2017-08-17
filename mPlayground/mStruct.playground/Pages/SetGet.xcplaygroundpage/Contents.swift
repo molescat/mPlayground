@@ -53,7 +53,6 @@ struct ShorthandRect {
   }
 }
 
-
 //:- Private get
 
 struct PrivateGetModel {
@@ -85,6 +84,5 @@ struct PrivateSetModel {
 
 var privateSetModel = PrivateSetModel()
 print("PrivateSetModel", privateSetModel.height)
-
 
 //: [Next](@next)

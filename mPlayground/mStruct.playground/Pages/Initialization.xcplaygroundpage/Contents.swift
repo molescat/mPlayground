@@ -17,7 +17,6 @@ let beetsQuestion = SurveyQuestion(text: "How about beets?")
 beetsQuestion.ask()
 beetsQuestion.response = "I also like beets. (But not with cheese.)"
 
-
 //: --------------------- initialization options / delegation
 struct Point {
   var x = 0.0, y = 0.0

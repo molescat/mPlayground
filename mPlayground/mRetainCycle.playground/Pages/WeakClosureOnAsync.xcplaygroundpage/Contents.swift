@@ -58,11 +58,9 @@ class MyVC {
   }
 }
 
-
 var x: MyVC? = MyVC()
 x?.perform()
 x = nil
 print("release MyVC")
-
 
 //: [Next](@next)

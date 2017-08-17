@@ -4,8 +4,8 @@
 */
 import Foundation
 
-let die1 = [1,2,3,4,5,6]
-let die2 = [1,2,3,4,5,6]
+let die1 = [1, 2, 3, 4, 5, 6]
+let die2 = [1, 2, 3, 4, 5, 6]
 
 let rolled = (die1[2], die2[3])
 
@@ -23,6 +23,5 @@ case (_, 6):
 default:
   print("nothing")
 }
-
 
 //: [Next](@next)

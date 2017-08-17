@@ -24,7 +24,6 @@ print("String length \(mString.characters.count)")
 mString.count
 print("Print varargs", mString, name)
 
-
 //: ----------------- using strings
 
 var animal = "dog"
@@ -46,7 +45,6 @@ if emptyString == alsoEmpty {
 if emptyString.isEmpty {
   print("Empty")
 }
-
 
 let wildAnimal = "elephant"
 var zooAnimal = wildAnimal

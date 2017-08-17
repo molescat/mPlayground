@@ -34,5 +34,4 @@ ringo?.band = beatles
 ringo = nil
 beatles = nil
 
-
 //: [Next](@next)

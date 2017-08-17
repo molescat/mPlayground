@@ -46,4 +46,3 @@ spin.repeatCount = HUGE
 torusNode.addAnimation(spin, forKey: "spin")
 
 PlaygroundPage.current.liveView = view
-

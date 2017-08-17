@@ -32,5 +32,4 @@ if let oneUnnamed = CartItem(name: "", quantity: 1) {
   print("Unable to initialize one unnamed product")
 }
 
-
 //: [Next](@next)

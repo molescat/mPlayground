@@ -18,4 +18,3 @@ import PlaygroundSupport
 let view = DragView()
 
 PlaygroundPage.current.liveView = view
-

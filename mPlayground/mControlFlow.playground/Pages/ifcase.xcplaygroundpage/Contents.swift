@@ -17,7 +17,6 @@ if case .FloatingPoint(let number) = someNumber, number > 12.0 {
   print("SomeNumber \(number)")
 }
 
-
 let someAges: [Number] = [.Integer(19), .FloatingPoint(20.5), .Text("21")]
 
 for case .FloatingPoint(let age) in someAges {

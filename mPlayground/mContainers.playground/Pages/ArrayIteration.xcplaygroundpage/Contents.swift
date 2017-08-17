@@ -19,7 +19,6 @@ container.subviews.forEach { view in
   print(view)
 }
 
-
 //: Traps
 (0..<10).forEach { number in
   print(number)

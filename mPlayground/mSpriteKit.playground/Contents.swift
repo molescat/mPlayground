@@ -15,14 +15,12 @@ func makeBouncerAt(_ position: CGPoint) -> SKSpriteNode {
   return bouncer
 }
 
-
 let skView = SKView(frame: CGRect(x: 0, y: 0, width: 320, height: 320))
 
 let skScene = SKScene(size: CGSize(width: 320, height: 320))
 skScene.backgroundColor  = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
 //skScene.scaleMode = .aspectFit
 skScene.physicsBody = SKPhysicsBody(edgeLoopFrom: skView.frame)
-
 
 let box = makeBouncerAt(CGPoint(x: 75, y: 250))
 skScene.addChild(box)
@@ -31,4 +29,3 @@ skView.presentScene(skScene)
 
 PlaygroundPage.current.liveView = skView
 PlaygroundPage.current.needsIndefiniteExecution = true
-

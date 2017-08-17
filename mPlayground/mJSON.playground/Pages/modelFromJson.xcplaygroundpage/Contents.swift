@@ -7,7 +7,7 @@ struct Restaurant {
   enum Meal: String {
     case breakfast, lunch, dinner
   }
-  
+
   let name: String
   let location: (latitude: Double, longitude: Double)
   let meals: Set<Meal>
@@ -21,15 +21,15 @@ extension Restaurant {
       let longitude = coordinatesJSON["lng"],
       let mealsJSON = json["meals"] as? [String]
       else { return nil }
-    
+
     var meals: Set<Meal> = []
-    
+
     for string in mealsJSON {
       guard let meal = Meal(rawValue: string) else { return nil }
-      
+
       meals.insert(meal)
     }
-    
+
     self.name = name
     self.location = (latitude, longitude)
     self.meals = meals

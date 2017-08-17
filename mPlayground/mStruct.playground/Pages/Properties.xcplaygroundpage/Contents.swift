@@ -16,7 +16,6 @@ struct Cuboid {
 let fourByFiveByTwo = Cuboid(width: 4.0, height: 5.0, depth: 2.0)
 fourByFiveByTwo.volume
 
-
 //: ------------------ Property Observer
 
 class StepCounter {
@@ -25,7 +24,7 @@ class StepCounter {
       print("About to set totalSteps to \(newTotalSteps)")
     }
     didSet {
-      if totalSteps > oldValue  {
+      if totalSteps > oldValue {
         print("Added \(totalSteps - oldValue) steps")
       }
     }

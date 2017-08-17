@@ -20,5 +20,4 @@ class Dog: Animal {
 var spot = Dog()
 spot.species()
 
-
 //: [Next](@next)

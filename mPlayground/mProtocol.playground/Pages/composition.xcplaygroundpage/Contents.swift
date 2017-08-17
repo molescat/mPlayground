@@ -22,53 +22,51 @@ protocol Purchasable: HasTitle {
 
 //: The *required* keyword means that inheriting classes must provide an implementation of the method.
 class Book: Purchasable, Ratable {
-  
+
   var title = ""
   var ratings = [Int]()
   var price = 0.0
-  
+
   required init(title: String) {
     self.title = title
   }
-  
+
   func addRating(rating: Int) {
     ratings.append(rating)
   }
-  
+
   func getAverageRating() -> Double {
     return ratings.count == 0
       ? 0.0
       : Double(ratings.reduce(0) { $0 + $1 }) / Double(ratings.count)
   }
-  
+
 }
 
 let book = Book(title: "Harry Potter and the Philosopher's Stone")
 
-
 class BluRay: Purchasable, Ratable {
-  
+
   var ratings = [Int]()
   var title: String
   var price: Double
-  
+
   init(title: String, price: Double) {
     self.title = title
     self.price = price
   }
-  
+
   func addRating(rating: Int) {
     ratings.append(rating)
   }
-  
+
   func getAverageRating() -> Double {
     return ratings.count == 0 ? 0.0 : Double(ratings.reduce(0) { $0 + $1 }) / Double(ratings.count)
   }
-  
+
 }
 
 let bluRay = BluRay(title: "Harry Potter and the Ravages of Time", price: 39.56)
-
 
 //: Type Aliasing, protocol composition
 

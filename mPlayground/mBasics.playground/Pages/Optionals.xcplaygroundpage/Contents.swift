@@ -19,5 +19,4 @@ if let name = optionalString {
 //: Nil Coalescing Operator
 var x: String = optionalString ?? "sentinel"
 
-
 //: [Next](@next)

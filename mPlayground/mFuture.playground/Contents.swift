@@ -17,10 +17,10 @@ enum Result<A> {
 }
 
 final class KeyValueObserver<A>: NSObject {
-  let block: (A) -> ()
+  let block: (A) -> Void
   let keyPath: String
   var object: NSObject
-  init(object: NSObject, keyPath: String, _ block: @escaping (A) -> ()) {
+  init(object: NSObject, keyPath: String, _ block: @escaping (A) -> Void) {
     self.block = block
     self.keyPath = keyPath
     self.object = object
@@ -37,7 +37,6 @@ final class KeyValueObserver<A>: NSObject {
   }
 }
 
-
 extension Result {
   func map<B>(_ transform: (A) -> B) -> Result<B> {
     switch self {
@@ -50,10 +49,10 @@ extension Result {
 extension String: Error { }
 
 final class Signal<A> {
-  var callbacks: [(Result<A>) -> ()] = []
+  var callbacks: [(Result<A>) -> Void] = []
   var objects: [Any] = []
 
-  static func pipe() -> ((Result<A>) -> (), Signal<A>) {
+  static func pipe() -> ((Result<A>) -> Void, Signal<A>) {
     let signal = Signal<A>()
     return ({ [weak signal] value in signal?.send(value) }, signal)
   }
@@ -64,7 +63,7 @@ final class Signal<A> {
     }
   }
 
-  func subscribe(callback: @escaping (Result<A>) -> ()) {
+  func subscribe(callback: @escaping (Result<A>) -> Void) {
     callbacks.append(callback)
   }
 
@@ -112,4 +111,3 @@ vc?.textField.text = "18"
 
 //vc = nil
 //PlaygroundPage.current.liveView = nil
-

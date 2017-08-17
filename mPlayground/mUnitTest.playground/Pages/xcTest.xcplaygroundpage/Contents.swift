@@ -4,7 +4,7 @@
 
 import XCTest
 
-class MyTests : XCTestCase {
+class MyTests: XCTestCase {
   func testShouldFail() {
     XCTFail("You must fail to succeed!")
   }
@@ -15,7 +15,7 @@ class MyTests : XCTestCase {
 }
 
 //:
-class PlaygroundTestObserver : NSObject, XCTestObservation {
+class PlaygroundTestObserver: NSObject, XCTestObservation {
   func testCase(_ testCase: XCTestCase,
                 didFailWithDescription description: String,
                 inFile filePath: String?,

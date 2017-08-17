@@ -27,4 +27,3 @@ class FakeToggleToHideTabBar: TabBarToggle {
     return false
   }
 }
-

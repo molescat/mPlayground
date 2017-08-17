@@ -12,11 +12,11 @@ Protocols can be adopted by classes, structs and enums. Base classes and inherit
 
 protocol DemonstratesProtocol {
   var propertyRequirement: String { get set }
-  
+
   init?(x: Int, y: Int)
-  
+
   func methodRequirement(input: String?) -> Int?
-  
+
   subscript(x: Int, y: Int) -> Int { get set }
 }
 

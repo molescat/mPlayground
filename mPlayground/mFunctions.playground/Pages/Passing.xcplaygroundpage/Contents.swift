@@ -15,7 +15,6 @@ func makeIncrementer() -> ((Int) -> Int) {
 var increment = makeIncrementer()
 increment(7)
 
-
 //: ----------------- Passing in func
 
 func hasAnyMatches(list: [Int], condition: (Int) -> Bool) -> Bool {
@@ -33,10 +32,9 @@ func lessThanTen(number: Int) -> Bool {
 var numbers = [20, 19, 7, 12]
 hasAnyMatches(list: numbers, condition: lessThanTen)
 
-
 //: ----------------- Function as a return type
 
-func makeIncrementor(forIncrement amount :Int) -> () -> Int {
+func makeIncrementor(forIncrement amount: Int) -> () -> Int {
   var runningTotal = 0
   func incrementor() -> Int {
     runningTotal += amount

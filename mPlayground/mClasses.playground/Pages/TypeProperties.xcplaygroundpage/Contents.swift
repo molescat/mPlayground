@@ -24,5 +24,4 @@ print(SomeClass.storedTypeProperty)
 print(SomeClass.computedTypeProperty)
 SomeClass.someTypeMethod()
 
-
 //: [Next](@next)

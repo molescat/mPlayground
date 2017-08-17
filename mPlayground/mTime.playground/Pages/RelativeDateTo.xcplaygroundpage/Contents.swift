@@ -18,7 +18,6 @@ extension Int {
   }
 }
 
-
 extension Date {
   func relativeDateTo(_ time: Date,
                       locale: Locale = Locale.current,
@@ -60,9 +59,8 @@ extension Date {
 
     return nil
   }
-  
-}
 
+}
 
 var dateFormatter = DateFormatter()
 dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssSSSZ"

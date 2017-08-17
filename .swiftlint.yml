@@ -1,0 +1,50 @@
+# Swiftlint configuration
+#
+# See
+#   https://github.com/realm/SwiftLint
+#
+# Use the following to fix the issues if possible
+# > swiftlint autocorrect
+#
+
+# included:
+
+whitelist_rules:
+  - no_fit
+  - vertical_whitespace
+  - opening_brace
+  - colon
+  - comma
+  - trailing_comma
+  - trailing_whitespace
+  - trailing_semicolon
+  - trailing_newline
+  - void_return
+  - return_arrow_whitespace
+  - statement_position
+  - mark
+  - redundant_optional_initialization
+  - leading_whitespace
+  - closing_brace
+  - redundant_void_return
+  - empty_parameters
+  - redundant_discardable_let
+
+# disabled_rules: # rule identifiers to exclude from running
+#   - implicit_getter
+#   - shorthand_operator
+#   - closure_parameter_position
+#   - unused_closure_parameter
+#   - control_statement
+#   - syntactic_sugar
+#   - legacy_constructor
+#   - unused_optional_binding
+#   - line_length
+#   - empty_parentheses_with_trailing_closure
+#   - identifier_name
+#   - type_body_length
+#   - function_body_length
+#   - file_length
+#   - todo
+#   - type_name
+#   - cyclomatic_complexity

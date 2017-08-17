@@ -26,7 +26,7 @@ extension Vehicular {
 protocol Paintable: class {
   var primaryBodyColor: String { get set }
   var secondaryBodyColors: [String]? { get set }
-  
+
   func paint(newPrimaryColor: String, newSecondaryColors: [String])
 }
 
@@ -35,7 +35,7 @@ extension Paintable {
     get {
       return "black"
     }
-    
+
     set { }
   }
 }
@@ -53,24 +53,24 @@ extension Motorized {
 //: ---
 
 class Sedan: Vehicular, Paintable, Motorized {
-  
+
   var secondaryBodyColors: [String]?
   var engineSizeCc: Int?// = 22 // Basically this overides the protocol extension
-  
+
 //  init() {
 //    self.engineSizeCc = engineSizeCc
 //    
 //  }
-  
+
   func paint(newPrimaryColor: String, newSecondaryColors: [String]) {
     primaryBodyColor = newPrimaryColor
     secondaryBodyColors = newSecondaryColors
   }
-  
+
   func bringBackDefault() {
     self.engineSizeCc = (self as Motorized).engineSizeCc
   }
-  
+
 }
 
 let sedan = Sedan()
@@ -81,7 +81,6 @@ sedan.engineSizeCc
 
 sedan.paint(newPrimaryColor: "red",
             newSecondaryColors: ["white stripes"])
-
 
 /*: 
 ## QUESTION

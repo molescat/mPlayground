@@ -21,5 +21,4 @@ dateFormatter.timeZone.abbreviation()
 Calendar.current.timeZone.secondsFromGMT()
 dateFormatter.timeZone.secondsFromGMT()
 
-
 //: [Next](@next)

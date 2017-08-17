@@ -4,7 +4,6 @@
  */
 import Foundation
 
-
 enum MyError: Error {
   case a
   case b(code: Int, function: String, line: Int)
@@ -12,7 +11,7 @@ enum MyError: Error {
 
 func performAction() throws {
   print("Action started")
-  
+
   let encounteredErrorA = simulatedErrorDidOccur()
   let encounteredErrorB = simulatedErrorDidOccur()
 
@@ -24,12 +23,12 @@ func performAction() throws {
   guard encounteredErrorA == false else {
     throw MyError.a
   }
-  
+
   guard encounteredErrorB == false else {
     let randomCode = Int(arc4random_uniform(10))
     throw MyError.b(code: randomCode, function: #function, line: #line)
   }
-  
+
   print("  Action completed successfully!")
 }
 
@@ -48,7 +47,6 @@ func doSomething() {
 
 doSomething()
 
-
 //------------------------------ Throw the Throw
 func doSomethingThatCanThrow() throws {
   try performAction()
@@ -59,7 +57,6 @@ do {
 } catch {
   print("Fail - doSomethingThatCanThrow did throw")
 }
-
 
 //------------------------------ try inline
 func performActionThatMightFail() throws -> String {

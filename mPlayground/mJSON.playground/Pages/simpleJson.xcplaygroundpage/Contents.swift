@@ -13,18 +13,16 @@ let content = NSString(data: contentData!, encoding: String.Encoding.utf8.rawVal
 
 let json = try? JSONSerialization.jsonObject(with: contentData!, options: [])
 
-func model(with json: Any)
-{
+func model(with json: Any) {
   if let dictionary = json as? [String: Any] {
     guard let someKeyValue = dictionary["someKey"] else { return }
     print("someKeyValue \(someKeyValue)")
-    
+
     guard let anotherKeyValue = dictionary["anotherKey"] else { return }
     print("anotherKeyValue \(anotherKeyValue)")
   }
 }
 
 model(with: json)
-
 
 //: [Next](@next)

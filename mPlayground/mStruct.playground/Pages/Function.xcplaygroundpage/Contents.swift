@@ -18,7 +18,6 @@ somePoint.mutatingMoveByX(x: 2.0, y: 3.0)
 
 var anotherPoint = somePoint.moveByX(3.0, y: 4.0)
 
-
 //: -------------------- Initializers
 //: Note - there is no func on a init declaration
 

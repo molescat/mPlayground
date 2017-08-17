@@ -2,26 +2,26 @@ import UIKit
 import XCPlayground
 
 public class DragView: UIView {
-  
+
   let box: UIView
   var animator: UIDynamicAnimator?
   var snapBehavior: UISnapBehavior?
-  
+
   public init() {
     box = UIView(frame: CGRect(x: 0, y: 0, width: 44, height: 44))
-    
+
     super.init(frame: CGRect(x: 0, y: 0, width: 320, height: 320))
-    self.backgroundColor = UIColor.white   
+    self.backgroundColor = UIColor.white
     box.backgroundColor = UIColor.red
     self.addSubview(box)
-    
+
     animator = UIDynamicAnimator(referenceView: self)
   }
-  
+
   public required init?(coder aDecoder: NSCoder) {
     fatalError("init(coder:) has not been implemented")
   }
-  
+
 }
 
 // MARK: Touch Handling
@@ -36,7 +36,7 @@ extension DragView {
       }
     }
   }
-  
+
   override public func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
     if let touch = touches.first {
       let touchLocation = touch.location(in: superview)
@@ -45,12 +45,12 @@ extension DragView {
       }
     }
   }
-  
+
   public override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
     if let snapBehavior = snapBehavior {
       animator?.removeBehavior(snapBehavior)
     }
     snapBehavior = nil
   }
-  
+
 }

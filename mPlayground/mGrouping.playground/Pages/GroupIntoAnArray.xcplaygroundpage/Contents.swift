@@ -4,25 +4,25 @@
 */
 import Foundation
 
-class Listing : CustomStringConvertible {
+class Listing: CustomStringConvertible {
   let latitude: Int
   let name: String
   init(latitude: Int, name: String) {
     self.latitude = latitude
     self.name = name
   }
-  
+
   func makeKey() -> String {
     return String(self.latitude)
   }
-  
+
   var description: String { return "\(name) at \(latitude)" }
 }
 
 let testListing = Listing(latitude: 0, name: "Test")
 testListing.makeKey()
 
-let listings:[Listing] = [
+let listings: [Listing] = [
   Listing(latitude: 1, name: "Alice"),
   Listing(latitude: 2, name: "Bob"),
   Listing(latitude: 3, name: "Charles"),

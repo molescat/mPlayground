@@ -20,5 +20,3 @@ favoriteGenres.insert("Jazz")
 
 var intersection = favoriteGenres.intersection(favoriteGenresShort)
 var union = favoriteGenres.union(favoriteGenresShort)
-
-

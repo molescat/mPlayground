@@ -15,7 +15,6 @@ print("Remember to edit the markdown, you need to toggle via the menu Editor > S
 The first content line displayed in this block of rich text.
 */
 
-
 print("To add a new page, right click in the navigator 'New Playground Page")
 
 //: [Next](@next)

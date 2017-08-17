@@ -16,21 +16,17 @@ let mUnicode = "\u{1F425}"
 let mAcute: Character = "\u{E9}"
 let mEmojiString = "🐥"
 
-
 //: ----------------- Number conversions
 let stringNumber = "123"
 var mInt = Int(stringNumber)!
 var someNumber: Int = Int(stringNumber)!
-
 
 //: ----------------- Number bounds
 var mMax8 = UInt8.max
 var mMax32 = UInt32.max
 var mMinS32 = Int32.min
 
-
 //: ----------------- Casting
 let mUInt16: UInt16 = UInt16(mMax8)
-
 
 //: [Next](@next)

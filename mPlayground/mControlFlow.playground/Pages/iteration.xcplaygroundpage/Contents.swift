@@ -31,7 +31,7 @@ for _ in 1...10 {
 }
 total
 
-let numberOfLegs = ["spider" : 8, "ant" : 6, "dog" : 4]
+let numberOfLegs = ["spider": 8, "ant": 6, "dog": 4]
 for (creature, legs) in numberOfLegs {
   print("\(creature) = \(legs)")
 }

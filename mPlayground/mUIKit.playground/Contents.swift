@@ -15,24 +15,20 @@ let image = UIImage(named:"bulb")
 
 class DataSource: NSObject, UITableViewDataSource {
 
-  func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
-  {
-    return 4;
+  func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    return 4
   }
 
-  func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
-  {
-    let cellStyle = UITableViewCellStyle.value1	
+  func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    let cellStyle = UITableViewCellStyle.value1
     let cell = UITableViewCell(style: cellStyle, reuseIdentifier: nil)
     cell.textLabel?.text = "text"
-    if let detailTextLabel = cell.detailTextLabel
-    {
+    if let detailTextLabel = cell.detailTextLabel {
       detailTextLabel.text = "Detail Text"
     }
     return cell
   }
 
-  
 }
 
 let ds = DataSource()

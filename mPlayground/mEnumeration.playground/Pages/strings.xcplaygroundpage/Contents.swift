@@ -9,7 +9,7 @@ enum CompassPoint: String {
   case South
   case East
   case West
-  
+
   var reverse: CompassPoint {
     switch self {
     case .North: return .South
@@ -22,7 +22,7 @@ enum CompassPoint: String {
   func key() -> String {
     return self.rawValue
   }
-  
+
 }
 
 var value: CompassPoint = .North

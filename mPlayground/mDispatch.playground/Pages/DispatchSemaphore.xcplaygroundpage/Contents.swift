@@ -5,7 +5,6 @@ import PlaygroundSupport
 
 PlaygroundPage.current.needsIndefiniteExecution = true
 
-
 let lock = DispatchSemaphore(value: 0)
 
 DispatchQueue.global().async {
@@ -18,6 +17,5 @@ DispatchQueue.global().async {
 print("About to wait")
 lock.wait()
 print("Waited")
-
 
 //: [Next](@next)

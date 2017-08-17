@@ -7,9 +7,9 @@ import UIKit
 class Shape {
   var numberOfSides = 0
   let name: String
-  
+
   init(name: String) { self.name = name }
-  
+
   func simpleDescription() -> String {
     return "A \(name) with \(numberOfSides) sides"
   }
@@ -19,7 +19,6 @@ var triangle = Shape(name: "Triangle")
 triangle.numberOfSides = 3
 triangle.simpleDescription()
 
-
 class Square: Shape {
   init() {
     super.init(name: "Square")
@@ -27,10 +26,8 @@ class Square: Shape {
   }
 }
 
-
 let myShape = Square()
 myShape.simpleDescription()
-
 
 let anotherShape = myShape
 anotherShape.numberOfSides = 10

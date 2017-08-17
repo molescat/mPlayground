@@ -7,12 +7,12 @@ import UIKit
 import PlaygroundSupport
 
 class MyViewController: UIViewController {
-  
+
   var textLabel = UILabel(frame: CGRect(x: 10, y: 10, width: 100, height: 44))
-  
+
   override func viewDidLoad() {
     view.backgroundColor = UIColor.lightGray
-    
+
     textLabel.backgroundColor = UIColor.white
     textLabel.text = "Hello"
     textLabel.textColor = UIColor.cyan
@@ -27,7 +27,7 @@ class MyViewController: UIViewController {
                      for: .touchUpInside)
     view.addSubview(button)
   }
-  
+
   @objc func myAction(_ sender: UIButton) {
     print("action:")
   }

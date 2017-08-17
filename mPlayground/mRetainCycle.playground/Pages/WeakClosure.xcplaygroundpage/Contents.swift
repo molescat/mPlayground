@@ -11,12 +11,12 @@ class Alpha {
 class Bravo {
   let alpha = Alpha()
 
-  lazy var printOutValues: () -> () = {
+  lazy var printOutValues: () -> Void = {
     [unowned self] in
     print(">>> \(self), \(self.alpha)")
   }
 
-  lazy var printOutAlphaValue: () -> () = {
+  lazy var printOutAlphaValue: () -> Void = {
     [weak alpha = self.alpha] in
     print("+++ \(alpha)")
   }

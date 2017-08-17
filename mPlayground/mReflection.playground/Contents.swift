@@ -35,14 +35,12 @@ for case let (label?, value) in aMirror.children {
   print(label, value)
 }
 
-
 print("=== Subject Type")
 aMirror.subjectType
 print(aMirror.subjectType)
 print(Mirror(reflecting: 5).subjectType)
 print(Mirror(reflecting: "test").subjectType)
 print(Mirror(reflecting: NSNull()).subjectType)
-
 
 print("=== Display Style")
 // Known
@@ -52,11 +50,9 @@ print(aMirror.displayStyle!)
 let closure = { (a: Int) -> Int in return a * 2 }
 Mirror(reflecting: closure).displayStyle
 
-
 print("=== superclass")
 print(Mirror(reflecting: aBookmark).superclassMirror ?? "no super")
 print(Mirror(reflecting: aBookmark.store).superclassMirror ?? "no store super")
-
 
 if aMirror.displayStyle == .struct {
   print("Matched")
@@ -67,5 +63,3 @@ func testFunction() -> Int {
   return 7
 }
 print(Mirror(reflecting: testFunction).description)
-
-

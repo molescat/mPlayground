@@ -22,7 +22,6 @@ final class Atomic<A> {
   }
 }
 
-
 var atomic = Atomic(0)
 print("Start", atomic.value)
 
