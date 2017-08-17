@@ -18,7 +18,7 @@ class MyService {
     print("fetch")
 
     let url = URL(string: "http://i.imgur.com/aWkpX3W.png")
-    let task = URLSession.shared.dataTask(with: url!) { (data, response, error) in
+    let task = URLSession.shared.dataTask(with: url!) { (data, _, error) in
       if (error == nil) {
         print("response")
         var image = UIImage(data: data!)

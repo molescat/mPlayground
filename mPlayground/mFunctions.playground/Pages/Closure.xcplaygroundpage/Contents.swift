@@ -45,7 +45,7 @@ someFunctionThatTakesAClosure({
   print("without using trailing closure")
 })
 
-someFunctionThatTakesAClosure() {
+someFunctionThatTakesAClosure {
   print("Using trailing closure")
 }
 
@@ -56,7 +56,7 @@ let sNames = names.filter({ (name: String) -> Bool in
   return name.lowercased().characters.first! == "s"
 })
 
-let sNames2 = names.filter() { name -> Bool in
+let sNames2 = names.filter { name -> Bool in
   return name.lowercased().characters.first! == "s"
 }
 

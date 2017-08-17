@@ -10,7 +10,7 @@ func status(_ work: DispatchWorkItem) -> String {
   return (work.isCancelled) ? "Cancelled" : "Completed"
 }
 
-let work1 = DispatchWorkItem() {
+let work1 = DispatchWorkItem {
   print("Work1 started")
   sleep(3)
   print(" Work1 finished")
@@ -20,7 +20,7 @@ work1.notify(queue: DispatchQueue.global()) { [unowned work1] in
   print("> work1 \(status(work1))")
 }
 
-let work2 = DispatchWorkItem() {
+let work2 = DispatchWorkItem {
   print("Work2 started")
   sleep(3)
   print(" Work2 finished")
